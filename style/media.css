@@ -1,1 +1,8 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1225px) {
+  nav.menu nav.menu_item ul {
+    display: none; }
+  nav.menu .popup {
+    display: inline-block !important; }
+  nav.menu .button_item {
+    display: none; } }
