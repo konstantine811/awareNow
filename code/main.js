@@ -1,13 +1,8 @@
 /*
 * @Author: Abrams
 * @Date:   2017-04-28 22:36:59
-<<<<<<< HEAD
 * @Last Modified by:   Abrams
 * @Last Modified time: 2017-05-04 22:45:57
-=======
-* @Last Modified by:   Admin
-* @Last Modified time: 2017-05-03 18:36:25
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
 */
 
 'use strict';
@@ -81,11 +76,7 @@ $('.select-img').slick({
   slidesToScroll: 1,
   asNavFor: '.viewport',
   cssEase: 'ease-in-out',
-<<<<<<< HEAD
   dots: false,
-=======
-  dots: true,
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
   centerMode: false,
   focusOnSelect: true
 });

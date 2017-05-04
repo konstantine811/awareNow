@@ -33,7 +33,6 @@
     left: 330px;
     top: 62%; }
   .coaches .border_bottom {
-<<<<<<< HEAD
     bottom: 150px !important; }
   .coaches .show .text {
     width: 100% !important;
@@ -61,9 +60,6 @@
   .block-for-slider .viewport .slick-dots {
     top: 52%;
     left: 330px; } }
-=======
-    bottom: 100px !important; } }
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
 
 @media only screen and (max-width: 1225px) {
   nav.menu nav.menu_item ul {
@@ -75,11 +71,7 @@
   .back_img .meditation, .back_img .execut, .back_img .fear, .back_img .breathe, .back_img .health, .back_img .focus, .back_img .breathe_2, .back_img .leader {
     font-size: 12px; }
   .review .container .row .block-for-slider .select-img {
-<<<<<<< HEAD
     left: 10%;
-=======
-    margin: -45% 20%;
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
     width: 300px; }
     .review .container .row .block-for-slider .select-img img {
       width: 60%;
@@ -91,7 +83,6 @@
   .block-for-slider .viewport .slick-next {
     top: 57%; }
   .block-for-slider .viewport .slick-dots {
-<<<<<<< HEAD
     top: 56%; }
   .coaches .coaches_sld .slide p {
     width: 50%; }
@@ -111,9 +102,6 @@
     position: relative; }
   .coaches .border_bottom {
     bottom: 40px !important; } }
-=======
-    top: 56%; } }
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
 
 @media only screen and (max-width: 1025px) {
   .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
@@ -143,10 +131,6 @@
         bottom: 104px;
         left: 45%; }
   .review .container .row .block-for-slider .select-img {
-<<<<<<< HEAD
-=======
-    margin: -49% 15%;
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
     width: 300px; }
     .review .container .row .block-for-slider .select-img img {
       width: 60%;
@@ -162,7 +146,6 @@
     left: 340px; }
   .block-for-slider .viewport .slick-dots {
     top: 58.8%;
-<<<<<<< HEAD
     left: 220px; }
   .advance .text_advance {
     display: none; }
@@ -170,9 +153,6 @@
     bottom: -23px; }
     .advance footer .border_top {
       display: none; } }
-=======
-    left: 220px; } }
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
 
 @media only screen and (max-width: 992px) {
   .how_work .section_how .container figure img {
@@ -200,7 +180,6 @@
         display: none; }
   .review .container .block-for-slider .slidewrapper .slide .number {
     font-size: 54px;
-<<<<<<< HEAD
     bottom: 40px; }
   .review .container .block-for-slider .slidewrapper .slide .about_txt h3 {
     margin-top: 9%; }
@@ -243,9 +222,6 @@
   .advance footer {
     bottom: 0px;
     z-index: -2; } }
-=======
-    bottom: 40px; } }
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
 
 @media only screen and (max-width: 900px) {
   .container .title_txt h2 {
@@ -254,15 +230,12 @@
     margin-top: 7%; }
   .container .title_txt p {
     font-size: 22px; }
-<<<<<<< HEAD
   .coaches .title_txt h2 {
     font-size: 32px;
     line-height: 33px;
     margin-top: 7%; }
   .coaches .title_txt p {
     font-size: 22px; }
-=======
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
   .how_work .section_how .container figure .text_bottom .some {
     bottom: 170px; }
   .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
@@ -293,7 +266,6 @@
       width: 100%; }
       .how_work .section_how .container figure .text_bottom .tx br {
         display: none; }
-<<<<<<< HEAD
   .coaches .show {
     width: 80% !important; }
   .block-for-slider .viewport .slick-prev {
@@ -310,31 +282,6 @@
     height: 65vh; }
   .advance .title_advance {
     top: 3% !important; } }
-=======
-  .review .container .row .block-for-slider .select-img {
-    margin: -49% 15%;
-    width: 300px; }
-    .review .container .row .block-for-slider .select-img img {
-      width: 60%;
-      padding: 5%; }
-  .review .container .block-for-slider .slidewrapper .slide .about_txt {
-    width: 100%; }
-    .review .container .block-for-slider .slidewrapper .slide .about_txt h3 {
-      margin-top: 15%;
-      font-size: 16px;
-      width: 20%; }
-    .review .container .block-for-slider .slidewrapper .slide .about_txt br {
-      display: none; }
-  .block-for-slider .viewport .slick-prev {
-    top: 60%;
-    left: 500px; }
-  .block-for-slider .viewport .slick-next {
-    top: 60%;
-    left: 640px; }
-  .block-for-slider .viewport .slick-dots {
-    top: 58.8%;
-    left: 520px; } }
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
 
 @media only screen and (max-width: 820px) {
   .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
@@ -373,15 +320,12 @@
     margin-top: 9%; }
   .container .title_txt p {
     font-size: 22px; }
-<<<<<<< HEAD
   .coaches .title_txt h2 {
     font-size: 32px;
     line-height: 33px;
     margin-top: 13%; }
   .coaches .title_txt p {
     font-size: 22px; }
-=======
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
   .how_work .section_how .container .how_icon {
     left: 0;
     margin: 0 auto; }
@@ -421,7 +365,6 @@
       bottom: 60px;
       width: 40%; }
       .how_work .section_how .container figure .text_bottom .tx br {
-<<<<<<< HEAD
         display: none; }
   .review .container .block-for-slider .slidewrapper .slide .number {
     font-size: 62px;
@@ -459,11 +402,6 @@
       margin: 0 auto;
       margin-top: 35px;
       text-align: center; }
-=======
-        display: none; } }
-
-@media only screen and (max-width: 640px) {
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
   .back_img .meditation, .back_img .execut, .back_img .fear, .back_img .breathe, .back_img .health, .back_img .focus, .back_img .breathe_2, .back_img .leader {
     font-size: 8px; }
   section.head .container .row .head_txt {
@@ -526,7 +464,6 @@
       left: 60%;
       bottom: 100px; }
     .how_work .section_how .container figure .text_bottom h3 {
-<<<<<<< HEAD
       position: relative;
       left: 70%;
       width: 100%;
@@ -534,20 +471,11 @@
       font-size: 14px; }
     .how_work .section_how .container figure .text_bottom .tx {
       position: relative;
-=======
-      left: 70%;
-      bottom: 150px;
-      width: 100%;
-      padding-bottom: 6%;
-      font-size: 14px; }
-    .how_work .section_how .container figure .text_bottom .tx {
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
       position: absolute;
       left: 70%;
       bottom: 50px;
       width: 25%; }
       .how_work .section_how .container figure .text_bottom .tx br {
-<<<<<<< HEAD
         display: none; }
   .review .container .block-for-slider .slidewrapper .slide .text .side h4 {
     font-size: 15px; }
@@ -571,11 +499,6 @@
     margin-top: 23%; }
   .coaches .title_txt p {
     font-size: 22px; }
-=======
-        display: none; } }
-
-@media only screen and (max-width: 550px) {
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
   section.head .container .row .head_txt h1 {
     font-size: 36px; }
   section.head .container .row .head_txt .button {
@@ -611,11 +534,7 @@
     line-height: 18px;
     font-size: 12px; }
   .how_work .section_how .container figure img {
-<<<<<<< HEAD
     bottom: 53px;
-=======
-    bottom: 23px;
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
     width: 65%; }
   .how_work .section_how .container figure .number {
     font-size: 32px;
@@ -626,7 +545,6 @@
   .how_work .section_how .container figure .text_bottom {
     right: 0; }
     .how_work .section_how .container figure .text_bottom .some {
-<<<<<<< HEAD
       left: 80%;
       bottom: 100px; }
     .how_work .section_how .container figure .text_bottom h3 {
@@ -704,25 +622,6 @@
     top: 8% !important; } }
 
 @media only screen and (max-width: 479px) {
-=======
-      left: 60%;
-      bottom: 100px; }
-    .how_work .section_how .container figure .text_bottom h3 {
-      left: 70%;
-      bottom: 150px;
-      width: 100%;
-      padding-bottom: 6%;
-      font-size: 14px; }
-    .how_work .section_how .container figure .text_bottom .tx {
-      position: absolute;
-      left: 70%;
-      bottom: 50px;
-      width: 25%; }
-      .how_work .section_how .container figure .text_bottom .tx br {
-        display: none; } }
-
-@media only screen and (max-width: 480px) {
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
   section.head .container .row .head_txt h1 {
     font-size: 32px;
     margin-top: 2%; }
@@ -733,7 +632,6 @@
     left: 0%; }
   .menu .container .logo .circle {
     left: 23px; }
-<<<<<<< HEAD
   .menu .container .logo a {
     left: 55px; }
   .coaches .coaches_sld {
@@ -910,10 +808,6 @@
       left: 140px; }
   footer .container .border_top {
     display: none; } }
-=======
-  .menu .container .logo p {
-    left: 55px; } }
->>>>>>> c0adb22478b5023d4949d2935a5af292a04b249b
 
 @media only screen and (max-width: 320px) {
   section.head .container .row .head_txt span {
