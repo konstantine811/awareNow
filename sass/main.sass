@@ -27,14 +27,17 @@ body
 			border-radius: 50%
 			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
 
-		p
+		a
 			position: relative
+			text-decoration: none
+			color: black
 			left: 150px
 			top: 15px
 			span
 				color: $main_color
-	.menu
+	.menu_item
 		position: relative
+		margin-top: 15px
 		ul
 			li
 				display: inline
@@ -71,27 +74,109 @@ body
 				display: inline-block
 				padding: 3px
 				transform: rotate(-45deg)
-header
+		a
+			text-decoration: none
+			color: black
+	.popup
+		display: none
+		width: 50px
+		height: 50px
+		cursor: pointer
+		position: relative
+		left: 65%
+		z-index: 100
+		&:hover::before
+			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+		&:hover::after
+			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+		&::before, &::after
+			content: " "
+			position: absolute
+			right: 0
+			margin-top: 7%
+			border: 4px solid $main_color
+			border-radius: 20px
+			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+		&::before
+			width: 29px
+		&::after
+			width: 20px
+			top: 16px
+
+@keyframes pulse
+	0%
+		box-shadow: 0 0 0 0 rgba($main_color, 0.4)
+	70%
+		box-shadow: 0 0 0 5px rgba($mobile_bgc, 0.1)
+	100%
+		box-shadow: 0 0 0 0 rgba($mobile_bgc, 0.0)
+
+.mobile_menu
+	display: none
+	background-image: url('../img/aware-bg.png')
+	background-repeat: no-repeat
+	background-size: 100%
+	background-position: 55vw 0%
+	background-color: $mobile_bgc
+	height: 100vh
+	width: 100%
+	a.aware
+		padding: 3% 3%
+		font-size: 16px
+		text-decoration: none
+		color: black
+		display: inline-block
+		span
+			color: $main_color
+	ul
+		li
+			list-style: none
+			padding: 0% 0%
+			width: 100%
+
+			a
+				text-decoration: none
+				color: $white
+				font-size: 24px
+				padding: 2% 3%
+				display: block
+				margin: 0 0
+				transition: background-color ease-in-out 0.3s
+				&:hover
+					background-color: rgba(0,0,0, 0.4)
+					border-bottom: 1px solid rgba($silver, 0.5)
+					border-top: 1px solid rgba($silver, 0.5)
+	.button
+		margin-top: 5%
+		padding: 13px 30px
+	.close_btn
+		position: absolute
+		top: 50px
+		right: 20px
+		width: 30px
+		height: 30px
+		cursor: pointer
+		&:hover::before
+			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+		&:hover::after
+			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+		&::before, &::after
+			content: " "
+			position: absolute
+			right: 0
+			margin-top: 41%
+			border: 2px solid $main_color
+			border-radius: 20px
+			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+			width: 30px
+		&::before
+			transform: rotate(-45deg)
+		&::after
+			transform: rotate(45deg)
+section.head
 	height: 100vh
 	overflow: hidden
 	padding: 22px 0
-	// .popup
-	// 	width: 100%
-	// 	height: 100%
-	// 	cursor: pointer
-	// 	&::before, &::after
-	// 		content: " "
-	// 		position: absolute
-	// 		right: 0
-	// 		margin-top: 7%
-	// 		border: 4px solid $main_color
-	// 		border-radius: 20px
-	// 		box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
-	// 	&::before
-	// 		width: 29px
-	// 	&::after
-	// 		width: 20px
-	// 		top: 16px
 	.back_img
 		position: absolute
 		left: 0
@@ -227,6 +312,7 @@ header
 			margin-top: 50px
 .title_txt
 	position: relative
+	margin-top: 2%
 	margin-left: 20%
 	h2
 		font-size: 54px
@@ -239,14 +325,16 @@ header
 		color: $silver
 		font-style: italic	
 .how_work
-	margin-top: 10%
+	height: 100vh
+	background-color: $white
 	.section_how
 		position: relative
+		height: 76%
 		background-image: url('../img/how-it-works-bg.png')
 		background-size: contain
 		background-repeat: no-repeat
 		padding: 0
-		margin-top: 3%
+		margin-top: 1%
 		.how_icon
 			position: relative
 			display: block
@@ -269,6 +357,10 @@ header
 			width: 100%
 			height: 100%
 			position: relative
+			img
+				position: relative
+				bottom: 92px
+				width: 50%
 			.text
 				font-size: 18px
 				color: $silver
@@ -289,15 +381,20 @@ header
 					top: 5%
 			.text_bottom
 				position: relative
-				left: 63%
+				left: 43%
 				color: $silver
-				margin-top: -14%
 				h3
+					position: absolute
+					bottom: 70px
 					color: black
 					padding-bottom: 5%
+				.tx
+					position: absolute
+					bottom: 0px
 				.some
 					position: absolute
 					left: -10%
+					bottom: 130px
 					font-size: 14px
 					line-height: 16px
 			.slick-prev
@@ -345,32 +442,33 @@ header
 		z-index: 1
 	.white
 		background-color: $white
-		height: 45%
+		height: 558px
 		width: 100%
 		position: absolute
 	.title_txt
 		margin-left: 20%
-		h2
-			margin-top: 10%
 		p
 			margin-bottom: 2%
 	.block-for-slider
 		position: relative
 		z-index: 100
 		overflow: hidden
-		ul
-			li
-				list-style: none
+		height: 84vh
+		bottom: 90px
+		.slidewrapper
+			.slide
 				overflow: hidden
-				img
-					width: 50%
+				.slide_img
 					position: relative
-					left: 51%
-					bottom: 400px
-					z-index: 2
+					img
+						width: 50%
+						position: relative
+						left: 51%
+						bottom: 370px
+						z-index: 2
 				.about_txt
 					position: relative
-					top: -150px
+					bottom: 100px
 					h3
 						margin-top: 50px
 						font-size: 25px
@@ -387,16 +485,16 @@ header
 						width: 30%
 				.number
 					position: relative
-					left: 49%
-					bottom: 60px
-					font-size: 82px
+					left: 53%
+					bottom: 20px
+					font-size: 102px
 					color: $silver_txt
 					font-weight: 600
 				.side
 					position: relative
 					transform: rotate(90deg)
 					width: 20%
-					top: 233px
+					top: 293px
 					right: -4%
 					img
 						width: 18px
@@ -413,11 +511,8 @@ header
 		.select-img
 			width: 530px
 			cursor: pointer
-			bottom: 48%
-			left: 9%
 			position: absolute
-			display: block
-			margin: 0 auto
+			margin: -40% 18%
 			.slick-slide
 				img
 					margin: 0 auto
@@ -437,8 +532,8 @@ header
 		background-image: url('../img/left.png')
 		background-repeat: no-repeat
 		background-size: contain
-		top: 60%
-		left: 278px
+		top: 55%
+		left: 508px
 		cursor: pointer
 		z-index: 100
 		position: absolute
@@ -453,8 +548,8 @@ header
 			font-weight: 600
 	.slick-next
 		position: absolute
-		top: 60%
-		left: 477px
+		top: 55%
+		left: 777px
 		z-index: 100
 		background-image: url('../img/right.png')
 		background-repeat: no-repeat
@@ -476,8 +571,8 @@ header
 	.slick-dots 
 		position: absolute
 		display: inline-flex
-		top: 58.7%
-		left: 329px
+		top: 54%
+		left: 600px
 	.slick-dots li button:before
 		width: 12.2px
 		height: 12px
@@ -491,7 +586,7 @@ header
 
 
 .coaches
-	height: 100%
+	height: 100vh
 	position: relative
 	width: 100%
 	background-image: url('../img/Coach _bg_text.png')
@@ -548,10 +643,10 @@ header
 			position: relative
 			img
 				position: absolute
-				width: 140px
-				height: 220px
 				bottom: 0px
-				right: 80px
+				width: 28%
+				left: 30%
+				border-radius: 10px
 	.slick_slide
 		outline: none
 		text-decoration: none
@@ -642,7 +737,7 @@ header
 
 .advance
 	position: relative
-	height: 100%
+	height: 100vh
 	width: 100%
 	overflow: hidden
 	.Abmin-all
@@ -650,40 +745,27 @@ header
 		height: 100%
 		transform: rotate(-90deg) scaleY(2.4)
 		left: 40%
-		top: -10%
+		top: 10%
 	.back
 		position: absolute
 		left: 33%
+		top: 10%
 	.title_advance
 		font-size: 22px
-		color: $black_txt
+		color: $silver
 		font-family: Lato
 		font-style: regular
 		font-weight: 300
 		position: relative
 		left: 45%
-	.logo
-		position: relative
-		display: inline-block
-		img
-			position: relative
-			left: 402px
-			top: -40px
-			margin-bottom: -43px
-		.circle
-			position: absolute
-			top: -18%
-			left: 424px
-			width: 4px
-			border: 4px solid $main_color
-			border-radius: 50%
-			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+		top: 8%
 	.column_one
 		position: relative
 		width: 100%
 		height: 100%
 		color: $black_txt
 		left: 45%
+		margin-top: 14%
 		h3
 			font-size: 24px
 		.number
@@ -714,7 +796,7 @@ header
 			border-radius: 13px
 			left: 20%
 			overflow: hidden
-			margin-top: 10%
+			margin-top: 20%
 			h5
 				font-size: 28px
 				font-weight: 600
@@ -780,7 +862,7 @@ header
 	.shape_back
 		width: 130%
 		right: 15%
-		bottom: 1%
+		bottom: 0%
 		height: 100%
 		position: relative
 		z-index: 10
@@ -789,32 +871,20 @@ header
 			height: 100%
 			width: 100vw
 			position: absolute
-			animation: an 5s ease-in infinite
+			bottom: 0
 		.two
 			height: 100%
-			width: 100vw
-			top: 0px
+			width: 300%
+			bottom: -10%
 			position: absolute
-			left: -30%
-			animation: an1 5s ease-in-out infinite
 		.three
 			height: 100%
-			width: 50vw
-			top: 13%
+			width: 200%
+			bottom: -9%
 			position: absolute
 			left: -30%
-			animation: an 5s ease-in-out infinite
 
-@keyframes an
-	0%, 100%
-		transform: translate(-100px)
-	50%
-		transform: translate(0px)
-@keyframes an1
-	0%, 100%
-		transform: translate(200px)
-	50%
-		transform: translate(0px)
+
 
 
 
@@ -848,7 +918,7 @@ form
 
 .text_advance
 	width: 50%
-	margin: 2% auto
+	margin: 16% auto
 	h3
 		font-size: 14px
 		color: $black_txt
@@ -857,44 +927,73 @@ form
 		font-size: 12px
 		line-height: 24px
 		color: $silver
+	.logo
+		position: relative
+		display: inline-block
+		img
+			position: relative
+			left: -11px
+			top: -69px
+			margin-bottom: -43px
+		.circle
+			position: absolute
+			top: -34.4px
+			left: 11px
+			width: 4px
+			border: 4px solid $main_color
+			border-radius: 50%
+			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
 		
 
 footer
+	position: absolute
+	bottom: 0
+	display: block
+	width: 100%
+	z-index: 100
 	.border_top
 		border-top: 1px solid $silver
 		width: 80%
 		height: 100%
 		position: relative
-		margin: 5% auto
+		margin: 0% auto
+		margin-top: 10%
 	.logo
 		position: relative
 		left: 26%
 		img
 			position: relative
-			margin-bottom: 70px
+			margin-top: 4%
 		.circle
 			position: absolute
+			margin-top: 4%
 			top: 34px
 			left: 22px
 			border: 4px solid $main_color
 			border-radius: 50%
 			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
-		p
+		a
 			position: relative
+			text-decoration: none
+			color: black
+			display: block
 			left: 62px
-			bottom: 112px
+			bottom: 40px
 			span
 				color: $main_color
 	.social
-		margin-top: 28px
 		color: $silver
 		font-size: 14px
 		position: relative
 		left: 30%
+		margin-top: 50px
 		i
 			padding: 0 20px
+		a
+			text-decoration: none
+			color: $silver
 	.link
-		margin-top: 28px
+		margin-top: 50px
 		color: $silver
 		font-size: 14px
 		display: flex
@@ -906,4 +1005,6 @@ footer
 			text-decoration: none
 			color: $silver
 
-			
+
+
+
