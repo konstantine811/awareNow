@@ -23,7 +23,7 @@ $ex_small: 320px
 		@media only screen and (min-width: $ex_small + 1) and (max-width: $small - 1)
 			@content
 	@else if $media == table-screens
-		@media only screen and (min-width: $small + 1) and (max-width: $table)
+		@media only screen and (min-width: $small) and (max-width: $table)
 			@content
 	@else if $media == medium-table-screens
 		@media only screen and (min-width: $table + 1) and (max-width: $medium-table)
