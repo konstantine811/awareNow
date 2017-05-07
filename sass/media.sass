@@ -2,15 +2,77 @@
 @import "../libs/sass-mediaqueries/media-queries"
 @import '_variables'
 @include max-screen (1840px)
-	
+	.review .container .row .block-for-slider .select-img
+		margin: -40% 14%
+	.block-for-slider .viewport
+		.slick-prev
+			left: 300px
+			top: 58%
+		.slick-next
+			left: 450px
+			top: 58%
+		.slick-dots 
+			left: 330px
+			top: 57%
 @include max-screen (1367px)
+	.how_work 
+		.section_how .container
+			.privat_chat, .secure_mess, .ease_shedul
+				padding-top: 10%
+			figure
+				margin-top: 3%
+				.text_bottom
+					h3
+						bottom: 128px
+					.tx
+						bottom: 50px
+	.review .container .row .block-for-slider .select-img
+		margin: -40% 8%
+	.block-for-slider .viewport
+		.slick-prev
+			left: 300px
+			top: 63%
+		.slick-next
+			left: 450px
+			top: 63%
+		.slick-dots 
+			left: 330px
+			top: 62%
+	.coaches 
+		.border_bottom
+			bottom: 150px !important
+	.coaches .show .text 
+		width: 100% !important
+		line-height: 20px !important
+	.coaches .show
+		bottom: 70px
+		position: relative
+	.coaches
+		.slick-prev
+			top: 300px !important
+		.slick-next
+			top: 300px !important
+		.slick-dots
+			top: 290px !important
 
 
-
+@include max-screen(1367px)
+	.review .container .row .block-for-slider .select-img
+		position: relative
+		bottom: 100px
+	.block-for-slider .viewport
+		.slick-prev
+			left: 300px
+			top: 53%
+		.slick-next
+			left: 450px
+			top: 53%
+		.slick-dots 
+			top: 52%
+			left: 330px
 
 @include max-screen(1225px)
 	nav.menu
-		overflow: hidden
 		nav.menu_item
 			ul
 				display: none
@@ -18,241 +80,880 @@
 			display: inline-block !important
 		.button_item
 			display: none
-	header.head .container
-		article.text_column_3
-			h1
-				font-size: 62px
+	.back_img
+		.meditation, .execut, .fear, .breathe, .health, .focus, .breathe_2, .leader
+			font-size: 12px 
+	.review .container .row .block-for-slider .select-img
+		left: 10%
+		width: 300px
+		img
+			width: 60%
+			padding: 5%
+	.review .container .block-for-slider .slidewrapper .slide
+		.number
+			bottom: 40px
+	.block-for-slider .viewport
+		.slick-prev
+			top: 57%
+		.slick-next
+			top: 57%
+		.slick-dots 
+			top: 56%
+	.coaches
+		.coaches_sld
+			.slide
+				p
+					width: 50%
+				.photo_slide
+					img
+						left: 50%
+			.slick-prev
+				top: 125% !important
+			.slick-next
+				top: 125% !important
+			.slick-dots 
+				top: 120% !important
+		.shwow
+		p.text
+			width: 100% !important
+			line-height: 24px !important
+	.coaches .show
+		bottom: 0px
+		position: relative
+	.coaches 
+		.border_bottom
+			bottom: 40px !important
 
 @include max-screen(1025px)
-	
+	.how_work 
+		.section_how .container
+			.privat_chat, .secure_mess, .ease_shedul
+				font-size: 18px
+			figure
+				height: 100vh
+				.slick-list
+					height: 100vh
+				img
+					width: 90%
+				.number
+					font-size: 62px
+				.text
+					font-size: 16px
+				.text_bottom
+					left: 0
+					font-size: 16px
+					h3
+						bottom: 0px
+						padding-bottom: 1%
+						left: 57%
+						bottom: 140px
+					.tx
+						bottom: 20px
+						right: 0
+					.some
+						bottom: 104px
+						left: 45%
+	.review .container .row .block-for-slider .select-img
+		width: 300px
+		img
+			width: 60%
+			padding: 5%
+	.review .container .block-for-slider .slidewrapper .slide
+		.number
+			font-size: 62px
+			bottom: 60px
+	.block-for-slider .viewport
+		.slick-prev
+			top: 60%
+			left: 200px
+		.slick-next
+			top: 60%
+			left: 340px
+		.slick-dots 
+			top: 58.8%
+			left: 220px
+	.advance
+		.text_advance
+			display: none 
+	.advance
+		footer
+			bottom: -23px
+			.border_top
+				display: none
+
 
 
 @include max-screen(992px)
-	header.head .container
-		article.text_column_3
-			h1
-				font-size: 42px
-	footer .container
-		.social
-			margin-left: 0
-		.link
-			margin-right: 0
-			position: relative
-			right: 5vw
-			text-align: left
-
+	.how_work 
+		.section_how .container
+			.privat_chat, .secure_mess, .ease_shedul
+			figure
+				img
+					bottom: 73px
+					width: 65%
+				.number
+					font-size: 54px
+					left: 40%
+				.text_bottom
+					left: 0
+					.some
+						left: 60%
+						bottom: 170px
+					h3
+						left: 70%
+						bottom: 250px
+						width: 100%
+						padding-bottom: 0
+					.tx
+						position: absolute
+						right: 0
+						bottom: 30px
+						width: 30%
+						br
+							display: none
+	.review .container .block-for-slider .slidewrapper .slide
+		.number
+			font-size: 54px
+			bottom: 40px
+		.about_txt
+			h3
+				margin-top: 9%
+			p
+				margin-top: 1%
+			br
+				display: none
+		.slide_img
+			img
+				width: 40%
+				bottom: 200px
+	.coaches 
+		.border_bottom
+			bottom: 40px !important
+	.coaches .coaches_sld
+		width: 100% !important
+		left: 4%
+	.review .container .row .block-for-slider .select-img
+		top: 0
+		width: 300px
+		img
+			width: 60%
+			padding: 5%
+	.review .container .block-for-slider .slidewrapper .slide
+		.number
+			font-size: 62px
+			top: 0px
+		.side
+			top: 241px
+	.block-for-slider .viewport
+		.slick-prev
+			top: 60%
+			left: 230px
+		.slick-next
+			top: 60%
+			left: 380px
+		.slick-dots 
+			top: 58.8%
+			left: 260px
+	.advance .container
+		.slide_search
+			.window
+				height: 65vh
+	.advance .title_advance
+		top: 3% !important
+	.advance
+		footer
+			bottom: 0px
+			z-index: -2
 
 @include max-screen(900px)
-	
+	.container .title_txt
+		h2
+			font-size: 32px
+			line-height: 33px
+			margin-top: 7%
+		p
+			font-size: 22px
+	.coaches .title_txt
+		h2
+			font-size: 32px
+			line-height: 33px
+			margin-top: 7%
+		p
+			font-size: 22px
+	.how_work
+		.section_how .container
+			.privat_chat, .secure_mess, .ease_shedul
+			figure
+				.text_bottom
+					.some
+						bottom: 170px
+	.how_work 
+		.section_how .container
+			.privat_chat, .secure_mess, .ease_shedul
+				font-size: 16px
+			figure
+				.slide
+					p
+						line-height: 18px
+				img
+					bottom: 73px
+					width: 85%
+				.number
+					font-size: 54px
+					left: 40%
+					bottom: 60px
+				.text_bottom
+					left: 0
+					.some
+						left: 80%
+						bottom: 170px
+					h3
+						left: 0%
+						bottom: 60px
+						width: 100%
+						padding-bottom: 0
+					.tx
+						position: absolute
+						left: 0
+						bottom: 20px
+						width: 100%
+						br
+							display: none
 
+	.coaches
+		.show
+			width: 80% !important
+	.block-for-slider .viewport
+		.slick-prev
+			top: 70%
+			left: 230px
+		.slick-next
+			top: 70%
+			left: 280px
+	.review .container .row .block-for-slider .select-img
+		width: 200px
+
+
+	.advance .container
+		.column_one
+			left: 36%
+		.slide_search
+			.window
+				height: 65vh
+	.advance .title_advance
+		top: 3% !important
 
 @include max-screen(820px)
+	.how_work 
+		.section_how .container
+			.privat_chat, .secure_mess, .ease_shedul
+				font-size: 16px
+			figure
+				.slide
+					p
+						line-height: 18px
+				img
+					bottom: 73px
+					width: 85%
+				.number
+					font-size: 54px
+					left: 40%
+					bottom: 60px
+				.text_bottom
+					left: 0
+					.some
+						left: 80%
+						bottom: 170px
+					h3
+						left: 0%
+						bottom: 80px
+						width: 100%
+						padding-bottom: 0
+					.tx
+						position: absolute
+						left: 0
+						bottom: 20px
+						width: 100%
+						br
+							display: none
 
 @include max-screen(768px)
-	header.head .container
-		article.text_column_3
-			top: 100px
-			margin-top: 0
-		.column_2
-			top: 150px
-			left: 10%
-		.social
-			position: absolute
-			top: 38vh
-			margin-top: 320px
-			left: 5%
-			width: 100%
-			&:after
-				display: none
-		.rank
-			position: absolute
-			top: 38vh
-			left: 30%
-			margin-top: 350px
-	footer .container
-		.table-none
-			display: none
-		.social
-			margin-left: 18%
-		.link
-			margin-left: 20%
+	.container .title_txt
+		h2
+			font-size: 32px
+			line-height: 33px
+			margin-top: 9%
+		p
+			font-size: 22px
+	.coaches .title_txt
+		h2
+			font-size: 32px
+			line-height: 33px
+			margin-top: 13%
+		p
+			font-size: 22px
+	.how_work
+		.section_how .container
+			.how_icon
+				left: 0
+				margin: 0 auto
+				.privat_chat, .secure_mess, .ease_shedul
+					font-size: 14px
+					display: inline-block
+					padding: 0
+					margin: 0 1%
+					p
+						width: 100%
+						display: inline
+						position: relative
+					br
+						display: none
 
-	
+			figure
+				.slide
+					p
+						line-height: 18px
+				img
+					bottom: 73px
+					width: 65%
+				.number
+					font-size: 54px
+					left: 40%
+					bottom: 60px
+				.text_bottom
+					right: 0
+					.some
+						left: 50%
+						bottom: 120px
+					h3
+						left: 60%
+						bottom: 160px
+						width: 100%
+						padding-bottom: 0
+					.tx
+						position: absolute
+						left: 60%
+						bottom: 60px
+						width: 40%
+						br
+							display: none
+	.review .container .row .block-for-slider .select-img
+		img
+	.review .container .block-for-slider .slidewrapper .slide
+		.number
+			font-size: 62px
+			top: 90px
+		.side
+			top: 241px
+	.block-for-slider .viewport
+		.slick-prev
+			left: 24%
+			top: 63% 
+		.slick-next
+			left: 33%
+			top: 63% 
+	.advance .container
+		.column_one
+			left: 6%
+		.slide_search
+			.window
+				height: 65vh
+	.advance .title_advance
+		top: 3% !important
+	footer .container
+		.social
+			margin-top: 22px
+			i
+				padding: 0 4px
+		.link
+			margin-top: 22px
+		.row
+			.col-4:nth-child(2)
+				display: none !important
 
 @include max-screen(700px)
-	footer .container
-		.link
-			margin-left: 12%
+	.coaches
+		.show
+			width: 50% !important
+			margin: 0 auto
+			p
+				display: none
+			.button
+				margin: 0 auto
+				margin-top: 35px
+				text-align: center
+	.back_img
+		.meditation, .execut, .fear, .breathe, .health, .focus, .breathe_2, .leader
+			font-size: 8px
+	section.head .container .row .head_txt
+		margin: 0 auto
+		width: 100%
+		text-align: center
+		img
+			margin-top: 10%
+		h1
+			width: 100%
+			font-size: 42px
+			color: $black_txt
+		p
+			width: 70%
+			margin: 5% auto
+			color: $black_txt
+	nav.menu
+		.mobile_menu
+			.close_btn
+				top: 20px
+				right: 0px
+	.container .title_txt
+		margin-left: 49%
+		h2
+			font-size: 22px
+			line-height: 33px
+			margin-top: 9%
+		p
+			font-size: 16px
+	.how_work
+		.section_how .container
+			.how_icon
+				left: 0
+				margin: 0 auto
+				.privat_chat, .secure_mess, .ease_shedul
+					font-size: 12px
+					display: inline-block
+					padding: 0
+					margin: 0 1%
+					img
+						width: 15%
+					p
+						width: 100%
+						display: inline
+						position: relative
+						padding: 0%
+					br
+						display: none
+			figure
+				.slide
+					p
+						line-height: 18px
+						font-size: 12px
+				img
+					bottom: 23px
+					width: 65%
+				.number
+					font-size: 32px
+					left: 40%
+					bottom: 60px
+					span
+						font-size: 16px
+				.text_bottom
+					right: 0
+					.some
+						left: 60%
+						bottom: 100px
+					h3
+						position: relative
+						left: 70%
+						width: 100%
+						padding-bottom: 1%
+						font-size: 14px
+					.tx
+						position: relative
+						position: absolute
+						left: 70%
+						bottom: 50px
+						width: 25%
+						br
+							display: none
+	.review .container .block-for-slider .slidewrapper .slide
+		.text
+			.side
+				h4
+					font-size: 15px
+				span
+					font-size: 12px
+	.review .container .block-for-slider
+		bottom: 30px
+	.block-for-slider .viewport
+		.slick-prev
+			left: 28%
+			top: 71% 
+		.slick-next
+			left: 38%
+			top: 71% 
+	.advance .title_advance
+		font-size: 18px !important
 	
 @include max-screen(550px)
-	header.head
-		background-image: none !important
-		.background_head
-			background-size: cover !important
-	header.head .container
-		article.text_column_3
-			h1
-				font-size: 48px
-				width: 100vw
-				position: relative
-				right: 60px
-	footer .container
-		.social
-			margin-left: 15%
-			i
-				padding-right: 5%
-		.link
-			margin-left: 0%
-			margin-right: 50%
-			position: relative
-			span
-				padding-right: 15%
 
-	
-@include max-screen(479px)
-	header.head
-		padding-bottom: 10px !important
-	header.head .container
-		.social
-			display: none
-		.rank
-			top: 40vh
-			margin-top: 200px
-			padding-top: 30vw
-			margin-left: 20%
-			.bgc_number
-				position: relative
-				font-size: 82px
-			.check_rank
-				position: absolute
-				left: 200%
-				top: 20px
-				margin-top: 30vw
-		.column_2
-			margin-top: 30%
-			left: 0
-			top: 0
-			margin-left: 5%
-			h2
-				display: block
-				margin-bottom: 5%
-			.coaches
-				display: none			
-		article.text_column_3
-			left: 0
-			top: 0
-			position: relative
-			margin-left: 5%
-			margin-right: 5%
-			margin-top: 200px
-			p.about
-				width: 100%
-				margin-top: 0
-				&:before
-					display: none
-				.side_logo
-					transform: rotate(0deg) 
-					left: 0
-					top: -80px
-					&:before
-						display: none
-			&:after
-				display: none
-			h1
-				display: none
-			.social
-				display: block
-		.phone-none
-			display: none
-	section.blog
+	.coaches .title_txt
 		h2
-			font-size: 48px !important
-			margin-left: 7%
-			left: 0 !important
-		.section_first
-			width: 100% !important
-			.recent
-				h3
-					display: none
-				article.blog_txt
-					padding: 8% 0
-					margin: 0 5%
-					.info_data
-						display: block
-						margin: 0
-						height: 50px
-					h4
-						font-size: 18px
-						line-height: 32px
-						margin-top: 2%
+			font-size: 32px
+			line-height: 33px
+			margin-top: 23%
+		p
+			font-size: 22px
+	section.head .container .row .head_txt
+		h1
+			font-size: 36px
+		.button
+			margin-top: 0px
+	.menu .container
+		.popup
+			left: 65% 
+	.container .title_txt
+		margin-left: 49%
+		h2
+			font-size: 22px
+			line-height: 33px
+			margin-top: 9%
+		p
+			font-size: 16px
+	.how_work
+		.section_how .container
+			.how_icon
+				left: 0
+				margin: 0 auto
+				.privat_chat, .secure_mess, .ease_shedul
+					font-size: 12px
+					display: inline-block
+					padding: 0
+					margin: 0 1%
+					img
+						width: 15%
 					p
-						font-size: 14px
-						line-height: 32px
-					a.read_more
+						width: 100%
+						display: inline
+						position: relative
+						padding: 0%
+					br
 						display: none
-		.phone_none
+			figure
+				.slide
+					p
+						line-height: 18px
+						font-size: 12px
+				img
+					bottom: 53px
+					width: 65%
+				.number
+					font-size: 32px
+					left: 40%
+					bottom: 60px
+					span
+						font-size: 16px
+				.text_bottom
+					right: 0
+					.some
+						left: 80%
+						bottom: 100px
+					h3
+						position: relative
+						left: 0%
+						width: 100%
+						bottom: 0
+						padding-bottom: 0%
+						font-size: 14px
+					.tx
+						position: relative
+						left: 0
+						bottom: 0px
+						width: 100%
+						br
+							display: none
+
+	.coaches .border_bottom
+		display: none !important
+	.coaches
+		.coaches_sld
+			left: 15%
+			.slide
+				p
+					width: 30%
+				.photo_slide
+					img
+						width: 20%
+						left: 40%
+						bottom: 0px
+			.slick-prev
+				top: 125%
+				left: 50px
+			.slick-next
+				top: 125%
+				left: 300px
+			.slick-dots 
+				top: 120%
+				left: 100px
+	.review .container .block-for-slider .slidewrapper .slide
+		.slide_img
+			img
+				display: none
+		.side
+			top: 175px
+	.review .container .block-for-slider .slidewrapper .slide
+		.number
+			text-align: right
+			left: 0
+			top: 30px
+		.about_txt
+			p
+				width: 70%
+	.review .container .row .block-for-slider .select-img
+		position: relative
+		margin: 0 auto
+		top: -20%
+		img
+			width: 300px
+	.block-for-slider .viewport
+		.slick-prev
+			left: 40%
+			top: 100%
+		.slick-next
+			left: 55%
+			top: 100%
+	.review .container
+		.title_txt
+			margin-top: 14%
+	.advance .container
+		.column_one
 			display: none
-		.side_bar.phone_none
+	.advance .container
+		.slide_search
+			.window
+				position: relative
+				left: -50%
+				top: 40px
+	.advance
+		form
+			input
+				bottom: -60px
+				left: 0
+			.shape
+				position: absolute
+				bottom: -50px
+				left: 0
+				z-index: 1000
+	.advance .title_advance
+		top: 8% !important
+@include max-screen(479px)
+	section.head .container .row .head_txt
+		h1
+			font-size: 32px
+			margin-top: 2%
+		img
+			margin-top: 15%
+			width: 60%
+	.menu .container
+		.logo
+			img
+				left: 0%
+			.circle
+				left: 23px
+			a
+				left: 55px
+	.coaches
+		.coaches_sld
+			left: 15%
+			.slide
+				p
+					width: 30%
+				.photo_slide
+					img
+						width: 20%
+						left: 40%
+						bottom: 0px
+			.slick-prev
+				top: 125%
+				left: 50px
+			.slick-next
+				top: 125%
+				left: 200px
+	.how_work
+		.section_how .container
+			.how_icon
+				left: 0
+				margin: 0 auto
+				.privat_chat, .secure_mess, .ease_shedul
+					font-size: 12px
+					display: inline-block
+					margin: 0 auto
+					width: 20%
+					img
+						width: 15%
+					p
+						width: 100%
+						display: inline
+						position: relative
+						padding: 0%
+					br
+						display: none
+			figure
+				height: 110vh
+				bottom: 10vh
+				.slide
+					p.text
+						top: 30vh
+						position: relative
+						left: 0
+						right: 0
+						margin: 0
+						br
+							display: none
+					margin-top: 10vh
+					p
+						line-height: 18px
+						font-size: 12px
+				img
+					bottom: 53px
+					width: 85%
+				.number
+					font-size: 32px
+					left: 80%
+					bottom: 10px
+					span
+						font-size: 16px
+				.text_bottom
+					right: 0
+					.some
+						left: 80%
+						bottom: 190px
+					h3
+						position: relative
+						left: 0%
+						width: 100%
+						bottom: 0px
+						padding-bottom: 0%
+						font-size: 14px
+					.tx
+						position: relative
+						left: 0
+						bottom: 0px
+						width: 100%
+						br
+							display: none
+				.slick-prev
+					top: 40px
+				.slick-next
+					top: 40px
+	.review .container .row .block-for-slider .select-img
+		position: relative
+		margin: 0 
+		top: -13%
+		left: 23%
+		img
+			width: 300px
+	.review .container .block-for-slider .slidewrapper .slide .side	
+		width: 50%
+		right: 15%		
+	.advance .container
+		.column_one
 			display: none
-		.button_red.button_post_none
-			display: none
-
-	footer .container
-		.social
-			margin-left: 8%
-			i
-				padding-right: 15%
-		.link
-			margin-left: 10%
-			margin-right: 0
-			position: relative
-			margin-top: -15%
-			span
-				padding-right: 15%
-
-			
-
-
+	.advance .container
+		.slide_search
+			.window
+				position: relative
+				left: 10%
+				top: 40px
+	.advance
+		form
+			input
+				bottom: -60px
+				left: 25%
+			.shape
+				position: absolute
+				bottom: -50px
+				left: 24vw
+				z-index: 1000
+	.advance .title_advance
+		top: 12% !important
+		left: 30% !important
+	footer .container .link
+		margin-left: 32vw
 
 
 @include max-screen(400px)
-
+	.how_work
+		.section_how .container
+			.how_icon
+				left: 0
+				margin: 0 auto
+				.privat_chat, .secure_mess, .ease_shedul
+					font-size: 12px
+					display: inline-block
+					margin: 0 auto
+					width: 25%
+			figure
+				.number
+					bottom: 80px
+					left: 75%
+				.slick-prev
+					left: 60px
+					top: 10%
+				.slick-next
+					top: 10%
+					left: 100px
+				.text_bottom
+					right: 0
+					.some
+						left: 80%
+						bottom: 190px
+					h3
+						position: relative
+						left: 0%
+						width: 100%
+						bottom: 0px
+						padding-bottom: 0%
+						font-size: 14px
+					.tx
+						position: relative
+						left: 0
+						bottom: 0px
+						width: 100%
+	.advance .container
+		.slide_search
+			.window
+				position: relative
+				left: 0%
+				top: 40px
+	.advance
+		form
+			input
+				bottom: -60px
+				left: 15%
+			.shape
+				position: absolute
+				bottom: -50px
+				left: 14vw
+				z-index: 1000
 
 @include max-screen(360px)
-	footer .container
-		.social
-			margin-left: 7%
-			i
-				padding-right: 10%
-		.link
-			margin-left: 8%
-			position: relative
-			margin-top: -15%
-			span
-				padding-right: 10%
-	
+	.coaches
+		.coaches_sld
+			left: 15%
+			.slide
+				p
+					width: 30%
+				.photo_slide
+					img
+						width: 20%
+						left: 40%
+						bottom: 0px
+			.slick-prev
+				top: 115%
+				left: 50px
+			.slick-next
+				top: 115%
+				left: 140px
+	footer .container .border_top
+		display: none
 
 @include max-screen(320px)
-	footer .container
-		.social
-			margin-left: 7%
-			margin-top: 60px
-			i
-				padding-right: 3%
-		.link
-			margin-left: 8%
-			position: relative
-			margin-top: -22%
-			span
-				padding-right: 3%
-	header.head .container
-		article.text_column_3
-			.rank
-				.check_rank
-					position: absolute
-					right: 20%
-					top: 10%
-	
+	section.head .container .row .head_txt
+		span
+			font-size: 12px
+		.button
+			padding: 12px 32px
+
+
 
 @include min-screen(320px)
 @include min-screen(480px)
