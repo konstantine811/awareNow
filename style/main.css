@@ -19,6 +19,13 @@
   font-weight: 300;
   font-style: italic; }
 
+@font-face {
+  font-family: "SF_NS";
+  src: url("../fonts/SF_NS/SFUIDisplay-Regular.eot");
+  src: url("../fonts/SF_NS/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SF_NS/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SF_NS/SFUIDisplay-Regular.ttf") format("truetype"), url("../fonts/SF_NS/SFUIDisplay-Regular.svg") format("svg");
+  font-weight: 300;
+  font-style: regular; }
+
 * {
   margin: 0;
   padding: 0;
@@ -976,7 +983,7 @@ section.head {
       color: #7C8F9E; }
       .how_work .section_how .privat_chat p, .how_work .section_how .secure_mess p, .how_work .section_how .ease_shedul p {
         padding-top: 5%; }
-    .how_work .section_how .privat_chat {
+    .how_work .section_how .active {
       color: black; }
     .how_work .section_how figure {
       margin-top: 6%;
@@ -998,7 +1005,7 @@ section.head {
       .how_work .section_how figure .number {
         position: relative;
         bottom: 93px;
-        right: 50%;
+        left: 50%;
         color: #C7D0D6;
         font-size: 84px;
         font-weight: 600; }
@@ -1219,7 +1226,7 @@ section.head {
 .slick-slide {
   outline: none; }
 
-.coaches {
+section.coaches {
   height: 100vh;
   position: relative;
   width: 100%;
@@ -1229,14 +1236,14 @@ section.head {
   background-size: 80%;
   background-position: 50% 20%;
   z-index: 100; }
-  .coaches .coaches_sld {
+  section.coaches .coaches_sld {
     width: 70%;
     margin: 0 auto;
     z-index: 1; }
-    .coaches .coaches_sld h4 {
+    section.coaches .coaches_sld h4 {
       color: #32495B;
       margin-bottom: 3%; }
-    .coaches .coaches_sld .button {
+    section.coaches .coaches_sld .button {
       background-color: #F82140;
       display: inline;
       color: #FFFFFF;
@@ -1248,22 +1255,22 @@ section.head {
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       cursor: pointer; }
-      .coaches .coaches_sld .button:hover {
+      section.coaches .coaches_sld .button:hover {
         -webkit-box-shadow: 0px 1px 1px 1px #F82140;
                 box-shadow: 0px 1px 1px 1px #F82140; }
-    .coaches .coaches_sld p {
+    section.coaches .coaches_sld p {
       color: #7C8F9E;
       font-size: 14px;
       width: 16%;
       margin: 2% 0; }
-    .coaches .coaches_sld .rank h5 {
+    section.coaches .coaches_sld .rank h5 {
       font-weight: 600;
       margin: 1% 0; }
-    .coaches .coaches_sld .rank .check_rank input {
+    section.coaches .coaches_sld .rank .check_rank input {
       display: none; }
-    .coaches .coaches_sld .rank .check_rank input + label {
+    section.coaches .coaches_sld .rank .check_rank input + label {
       cursor: pointer; }
-    .coaches .coaches_sld .rank .check_rank label {
+    section.coaches .coaches_sld .rank .check_rank label {
       position: relative;
       width: 10px;
       display: inline-block;
@@ -1271,32 +1278,32 @@ section.head {
       border: 3px solid #7C8F9E;
       -webkit-border-radius: 50%;
               border-radius: 50%; }
-    .coaches .coaches_sld .rank .check_rank p {
+    section.coaches .coaches_sld .rank .check_rank p {
       color: #10BCBF;
       font-size: 10px;
       font-weight: 600;
       position: relative;
       bottom: 0px; }
-    .coaches .coaches_sld .photo_slide {
+    section.coaches .coaches_sld .photo_slide {
       position: relative; }
-      .coaches .coaches_sld .photo_slide img {
+      section.coaches .coaches_sld .photo_slide img {
         position: absolute;
         bottom: 0px;
         width: 28%;
         left: 30%;
         -webkit-border-radius: 10px;
                 border-radius: 10px; }
-  .coaches .slick_slide {
+  section.coaches .slick_slide {
     outline: none;
     text-decoration: none; }
-  .coaches .slick-prev {
+  section.coaches .slick-prev {
     background-image: url("../img/left.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: 340px;
     left: 150px;
     cursor: pointer; }
-    .coaches .slick-prev::before {
+    section.coaches .slick-prev::before {
       font-family: Lato;
       font-size: 14px;
       color: black;
@@ -1305,7 +1312,7 @@ section.head {
       right: 40px;
       top: 0;
       font-weight: 600; }
-  .coaches .slick-next {
+  section.coaches .slick-next {
     position: absolute;
     top: 340px;
     left: 390px;
@@ -1313,7 +1320,7 @@ section.head {
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer; }
-    .coaches .slick-next::before {
+    section.coaches .slick-next::before {
       font-family: Lato;
       font-size: 14px;
       color: black;
@@ -1322,12 +1329,12 @@ section.head {
       left: 40px;
       top: 0;
       font-weight: 600; }
-  .coaches .slick-dots li.slick-active button:before {
+  section.coaches .slick-dots li.slick-active button:before {
     color: #F82140;
     border: 1px solid #7C8F9E;
     -webkit-border-radius: 50%;
             border-radius: 50%; }
-  .coaches .slick-dots {
+  section.coaches .slick-dots {
     position: absolute;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1335,20 +1342,20 @@ section.head {
     display: inline-flex;
     top: 329px;
     left: 196px; }
-  .coaches .slick-dots li button:before {
+  section.coaches .slick-dots li button:before {
     width: 12.2px;
     height: 12px;
     line-height: 13px;
     -webkit-transition: opacity 0.4s ease-in-out;
     transition: opacity 0.4s ease-in-out; }
-  .coaches .show {
+  section.coaches .show {
     margin: 10% auto;
     width: 60%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    .coaches .show .button {
+    section.coaches .show .button {
       display: inline;
       min-width: 210px;
       max-height: 50px;
@@ -1367,18 +1374,18 @@ section.head {
       -webkit-transition: all 0.7s ease;
       transition: all 0.7s ease;
       cursor: pointer; }
-      .coaches .show .button:hover {
+      section.coaches .show .button:hover {
         -webkit-transform: translateY(-10px) translateX(-5px);
             -ms-transform: translateY(-10px) translateX(-5px);
                 transform: translateY(-10px) translateX(-5px);
         -webkit-box-shadow: 0px 14px 24px 2px #F82140;
                 box-shadow: 0px 14px 24px 2px #F82140; }
-    .coaches .show .text {
+    section.coaches .show .text {
       width: 50%;
       margin: 0 auto;
       line-height: 32px;
       color: #32495B; }
-  .coaches .border_bottom {
+  section.coaches .border_bottom {
     position: relative;
     display: block;
     bottom: 0;

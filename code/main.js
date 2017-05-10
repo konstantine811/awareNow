@@ -1,8 +1,8 @@
 /*
 * @Author: Abrams
 * @Date:   2017-04-28 22:36:59
-* @Last Modified by:   Abrams
-* @Last Modified time: 2017-05-04 22:45:57
+* @Last Modified by:   Admin
+* @Last Modified time: 2017-05-10 18:03:57
 */
 
 'use strict';
@@ -10,9 +10,9 @@
 
 
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
-$('.coaches_sld').slick({
+jQuery('.coaches_sld').slick({
 	dots: true,
 	 slidesToShow: 3,
   slidesToScroll: 1,
@@ -41,19 +41,20 @@ $('.coaches_sld').slick({
     ]
 });
 
-$('.window_slide').slick({
+jQuery('.window_slide').slick({
 	slidesToShow: 1,
   	slidesToScroll: 1,
   	cssEase: 'ease-in',
 });
 
-$('figure.one').slick({
+jQuery('figure.one').slick({
 	slidesToShow: 1,
   	slidesToScroll: 1,
   	cssEase: 'ease-in-out',
 });
 
- $('.viewport').slick({
+
+ jQuery('.viewport').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   cssEase: 'ease-in-out',
@@ -71,7 +72,7 @@ $('figure.one').slick({
     },
     ]
 });
-$('.select-img').slick({
+jQuery('.select-img').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   asNavFor: '.viewport',
@@ -83,7 +84,7 @@ $('.select-img').slick({
 
 
 
-$(".main").onepage_scroll({
+jQuery(".main").onepage_scroll({
    sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
    easing: "cubic-bezier(0.600, 0.280, 0.735, 0.045)",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
                                     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
@@ -100,14 +101,14 @@ $(".main").onepage_scroll({
    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
 });
 
-$(".main").moveTo(1);
+jQuery(".main").moveTo(1);
 
 
-$('.popup').click(function() {
-	$('.mobile_menu').fadeIn(500);
+jQuery('.popup').click(function() {
+	jQuery('.mobile_menu').fadeIn(500);
 })
-$('.close_btn, ul li').click(function() {
-	$('.mobile_menu').fadeOut(500);
+jQuery('.close_btn, ul li').click(function() {
+	jQuery('.mobile_menu').fadeOut(500);
 })
 
 });
