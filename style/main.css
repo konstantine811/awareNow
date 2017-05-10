@@ -991,6 +991,8 @@ section.head {
       width: 100%;
       height: 100%;
       position: relative; }
+      .how_work .section_how figure i {
+        display: none; }
       .how_work .section_how figure img {
         position: relative;
         bottom: 92px;
@@ -1415,6 +1417,8 @@ section.coaches {
       font-size: 28px;
       font-weight: 600;
       position: relative; }
+      .advance .back_link_wave .link .slick-list {
+        overflow: visible; }
       .advance .back_link_wave .link a {
         text-decoration: none;
         color: #32495B;
@@ -1422,11 +1426,11 @@ section.coaches {
         display: inline-block;
         z-index: 102; }
       .advance .back_link_wave .link .focus {
-        bottom: -20px;
+        bottom: 0px;
         left: 10%; }
       .advance .back_link_wave .link .stressrelief {
         left: 18%;
-        top: 0px;
+        bottom: 100px;
         margin-top: -5vw; }
       .advance .back_link_wave .link .breathe {
         left: 27%;

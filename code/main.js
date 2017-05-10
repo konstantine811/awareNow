@@ -2,7 +2,7 @@
 * @Author: Abrams
 * @Date:   2017-04-28 22:36:59
 * @Last Modified by:   Admin
-* @Last Modified time: 2017-05-10 18:03:57
+* @Last Modified time: 2017-05-10 19:07:03
 */
 
 'use strict';
@@ -45,6 +45,19 @@ jQuery('.window_slide').slick({
 	slidesToShow: 1,
   	slidesToScroll: 1,
   	cssEase: 'ease-in',
+    asNavFor: 'section.advance .link'
+});
+
+jQuery('section.advance .link').slick({
+  slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: false,
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    cssEase: 'ease-in',
+    asNavFor: '.window_slide'
 });
 
 jQuery('figure.one').slick({
@@ -52,6 +65,7 @@ jQuery('figure.one').slick({
   	slidesToScroll: 1,
   	cssEase: 'ease-in-out',
 });
+
 
 
  jQuery('.viewport').slick({
@@ -81,6 +95,9 @@ jQuery('.select-img').slick({
   centerMode: false,
   focusOnSelect: true
 });
+
+
+
 
 
 
