@@ -101,7 +101,9 @@
     bottom: 0px;
     position: relative; }
   .coaches .border_bottom {
-    bottom: 40px !important; } }
+    bottom: 40px !important; }
+  header.head .container article.text_column_3 h1 {
+    font-size: 62px; } }
 
 @media only screen and (max-width: 1025px) {
   .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
@@ -150,9 +152,9 @@
   .advance .text_advance {
     display: none; }
   .advance footer {
-    bottom: -23px; }
+    bottom: -23px !important; }
     .advance footer .border_top {
-      display: none; } }
+      display: none !important; } }
 
 @media only screen and (max-width: 992px) {
   .how_work .section_how .container figure img {
@@ -220,8 +222,17 @@
   .advance .title_advance {
     top: 3% !important; }
   .advance footer {
-    bottom: 0px;
-    z-index: -2; } }
+    bottom: 0px !important;
+    z-index: -2 !important; }
+  header.head .container article.text_column_3 h1 {
+    font-size: 42px; }
+  footer.footer_blog .container .social {
+    margin-left: 0; }
+  footer.footer_blog .container .link {
+    margin-right: 0;
+    position: relative;
+    right: 5vw;
+    text-align: left; } }
 
 @media only screen and (max-width: 900px) {
   .container .title_txt h2 {
@@ -383,14 +394,39 @@
     height: 65vh; }
   .advance .title_advance {
     top: 3% !important; }
-  footer .container .social {
-    margin-top: 22px; }
-    footer .container .social i {
-      padding: 0 4px; }
-  footer .container .link {
-    margin-top: 22px; }
-  footer .container .row .col-4:nth-child(2) {
-    display: none !important; } }
+  .advance footer .container .social {
+    margin-top: 22px !important; }
+    .advance footer .container .social i {
+      padding: 0 4px !important; }
+  .advance footer .container .link {
+    margin-top: 22px !important; }
+  .advance footer .container .row .col-4:nth-child(2) {
+    display: none !important; }
+  header.head .container article.text_column_3 {
+    top: 100px;
+    margin-top: 0; }
+  header.head .container .column_2 {
+    top: 150px;
+    left: 10%; }
+  header.head .container .social {
+    position: absolute;
+    top: 38vh;
+    margin-top: 320px;
+    left: 5%;
+    width: 100%; }
+    header.head .container .social:after {
+      display: none; }
+  header.head .container .rank {
+    position: absolute;
+    top: 38vh;
+    left: 30%;
+    margin-top: 350px; }
+  footer.footer_blog .container .table-none {
+    display: none; }
+  footer.footer_blog .container .social {
+    margin-left: 18%; }
+  footer.footer_blog .container .link {
+    margin-left: 20%; } }
 
 @media only screen and (max-width: 700px) {
   .coaches .show {
@@ -490,7 +526,9 @@
     left: 38%;
     top: 71%; }
   .advance .title_advance {
-    font-size: 18px !important; } }
+    font-size: 18px !important; }
+  footer.footer_blog .container .link {
+    margin-left: 12%; } }
 
 @media only screen and (max-width: 550px) {
   .coaches .title_txt h2 {
@@ -619,7 +657,26 @@
     left: 0;
     z-index: 1000; }
   .advance .title_advance {
-    top: 8% !important; } }
+    top: 8% !important; }
+  header.head {
+    background-image: none !important; }
+    header.head .background_head {
+      background-size: cover !important; }
+  header.head .container article.text_column_3 h1 {
+    font-size: 48px;
+    width: 100vw;
+    position: relative;
+    right: 60px; }
+  footer.footer_blog .container .social {
+    margin-left: 15%; }
+    footer.footer_blog .container .social i {
+      padding-right: 5%; }
+  footer.footer_blog .container .link {
+    margin-left: 0%;
+    margin-right: 50%;
+    position: relative; }
+    footer.footer_blog .container .link span {
+      padding-right: 15%; } }
 
 @media only screen and (max-width: 479px) {
   section.head .container .row .head_txt h1 {
@@ -628,12 +685,6 @@
   section.head .container .row .head_txt img {
     margin-top: 15%;
     width: 60%; }
-  .menu .container .logo img {
-    left: 0%; }
-  .menu .container .logo .circle {
-    left: 23px; }
-  .menu .container .logo a {
-    left: 55px; }
   .coaches .coaches_sld {
     left: 15%; }
     .coaches .coaches_sld .slide p {
@@ -740,8 +791,104 @@
   .advance .title_advance {
     top: 12% !important;
     left: 30% !important; }
-  footer .container .link {
-    margin-left: 32vw; } }
+  .advance footer .container .link {
+    margin-left: 32vw !important; }
+  header.head {
+    padding-bottom: 10px !important; }
+  header.head .container .social {
+    display: none; }
+  header.head .container .rank {
+    top: 40vh;
+    margin-top: 200px;
+    padding-top: 30vw;
+    margin-left: 20%; }
+    header.head .container .rank .bgc_number {
+      position: relative;
+      font-size: 82px; }
+    header.head .container .rank .check_rank {
+      position: absolute;
+      left: 200%;
+      top: 20px;
+      margin-top: 30vw; }
+  header.head .container .column_2 {
+    margin-top: 30%;
+    left: 0;
+    top: 0;
+    margin-left: 5%; }
+    header.head .container .column_2 h2 {
+      display: block;
+      margin-bottom: 5%; }
+    header.head .container .column_2 .coaches {
+      display: none; }
+  header.head .container article.text_column_3 {
+    left: 0;
+    top: 0;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 200px; }
+    header.head .container article.text_column_3 p.about {
+      width: 100%;
+      margin-top: 0; }
+      header.head .container article.text_column_3 p.about:before {
+        display: none; }
+      header.head .container article.text_column_3 p.about .side_logo {
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        left: 0;
+        top: -80px; }
+        header.head .container article.text_column_3 p.about .side_logo:before {
+          display: none; }
+    header.head .container article.text_column_3:after {
+      display: none; }
+    header.head .container article.text_column_3 h1 {
+      display: none; }
+    header.head .container article.text_column_3 .social {
+      display: block; }
+  header.head .container .phone-none {
+    display: none; }
+  section.blog h2 {
+    font-size: 48px !important;
+    margin-left: 7%;
+    left: 0 !important; }
+  section.blog .section_first {
+    width: 100% !important; }
+    section.blog .section_first .recent h3 {
+      display: none; }
+    section.blog .section_first .recent article.blog_txt {
+      padding: 8% 0;
+      margin: 0 5%; }
+      section.blog .section_first .recent article.blog_txt .info_data {
+        display: block;
+        margin: 0;
+        height: 50px; }
+      section.blog .section_first .recent article.blog_txt h4 {
+        font-size: 18px;
+        line-height: 32px;
+        margin-top: 2%; }
+      section.blog .section_first .recent article.blog_txt p {
+        font-size: 14px;
+        line-height: 32px; }
+      section.blog .section_first .recent article.blog_txt a.read_more {
+        display: none; }
+  section.blog .phone_none {
+    display: none; }
+  section.blog .side_bar.phone_none {
+    display: none; }
+  section.blog .button_red.button_post_none {
+    display: none; }
+  footer.footer_blog .container .social {
+    margin-left: 8%; }
+    footer.footer_blog .container .social i {
+      padding-right: 15%; }
+  footer.footer_blog .container .link {
+    margin-left: 10%;
+    margin-right: 0;
+    position: relative;
+    margin-top: -15%; }
+    footer.footer_blog .container .link span {
+      padding-right: 15%; } }
 
 @media only screen and (max-width: 400px) {
   .how_work .section_how .container .how_icon {
@@ -806,11 +953,36 @@
     .coaches .coaches_sld .slick-next {
       top: 115%;
       left: 140px; }
-  footer .container .border_top {
-    display: none; } }
+  .advance footer .container .border_top {
+    display: none !important; }
+  footer.footer_blog .container .social {
+    margin-left: 7%; }
+    footer.footer_blog .container .social i {
+      padding-right: 10%; }
+  footer.footer_blog .container .link {
+    margin-left: 8%;
+    position: relative;
+    margin-top: -15%; }
+    footer.footer_blog .container .link span {
+      padding-right: 10%; } }
 
 @media only screen and (max-width: 320px) {
   section.head .container .row .head_txt span {
     font-size: 12px; }
   section.head .container .row .head_txt .button {
-    padding: 12px 32px; } }
+    padding: 12px 32px; }
+  footer.footer_blog .container .social {
+    margin-left: 7%;
+    margin-top: 60px; }
+    footer.footer_blog .container .social i {
+      padding-right: 3%; }
+  footer.footer_blog .container .link {
+    margin-left: 8%;
+    position: relative;
+    margin-top: -22%; }
+    footer.footer_blog .container .link span {
+      padding-right: 3%; }
+  header.head .container article.text_column_3 .rank .check_rank {
+    position: absolute;
+    right: 20%;
+    top: 10%; } }

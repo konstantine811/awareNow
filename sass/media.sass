@@ -124,6 +124,12 @@
 		.border_bottom
 			bottom: 40px !important
 
+	//blog 
+	header.head .container
+		article.text_column_3
+			h1
+				font-size: 62px
+
 @include max-screen(1025px)
 	.how_work 
 		.section_how .container
@@ -177,9 +183,9 @@
 			display: none 
 	.advance
 		footer
-			bottom: -23px
+			bottom: -23px !important
 			.border_top
-				display: none
+				display: none !important
 
 
 
@@ -262,8 +268,22 @@
 		top: 3% !important
 	.advance
 		footer
-			bottom: 0px
-			z-index: -2
+			bottom: 0px !important
+			z-index: -2 !important
+
+	//blog
+	header.head .container
+		article.text_column_3
+			h1
+				font-size: 42px
+	footer.footer_blog .container
+		.social
+			margin-left: 0
+		.link
+			margin-right: 0
+			position: relative
+			right: 5vw
+			text-align: left
 
 @include max-screen(900px)
 	.container .title_txt
@@ -460,16 +480,46 @@
 				height: 65vh
 	.advance .title_advance
 		top: 3% !important
-	footer .container
+	.advance
+		footer .container
+			.social
+				margin-top: 22px !important
+				i
+					padding: 0 4px !important
+			.link
+				margin-top: 22px !important
+			.row
+				.col-4:nth-child(2)
+					display: none !important
+	
+	//blog
+	header.head .container
+		article.text_column_3
+			top: 100px
+			margin-top: 0
+		.column_2
+			top: 150px
+			left: 10%
 		.social
-			margin-top: 22px
-			i
-				padding: 0 4px
+			position: absolute
+			top: 38vh
+			margin-top: 320px
+			left: 5%
+			width: 100%
+			&:after
+				display: none
+		.rank
+			position: absolute
+			top: 38vh
+			left: 30%
+			margin-top: 350px
+	footer.footer_blog .container
+		.table-none
+			display: none
+		.social
+			margin-left: 18%
 		.link
-			margin-top: 22px
-		.row
-			.col-4:nth-child(2)
-				display: none !important
+			margin-left: 20%
 
 @include max-screen(700px)
 	.coaches
@@ -582,6 +632,11 @@
 			top: 71% 
 	.advance .title_advance
 		font-size: 18px !important
+
+	//blog
+	footer.footer_blog .container
+		.link
+			margin-left: 12%
 	
 @include max-screen(550px)
 
@@ -734,6 +789,30 @@
 				z-index: 1000
 	.advance .title_advance
 		top: 8% !important
+
+	//blog
+	header.head
+		background-image: none !important
+		.background_head
+			background-size: cover !important
+	header.head .container
+		article.text_column_3
+			h1
+				font-size: 48px
+				width: 100vw
+				position: relative
+				right: 60px
+	footer.footer_blog .container
+		.social
+			margin-left: 15%
+			i
+				padding-right: 5%
+		.link
+			margin-left: 0%
+			margin-right: 50%
+			position: relative
+			span
+				padding-right: 15%
 @include max-screen(479px)
 	section.head .container .row .head_txt
 		h1
@@ -742,14 +821,6 @@
 		img
 			margin-top: 15%
 			width: 60%
-	.menu .container
-		.logo
-			img
-				left: 0%
-			.circle
-				left: 23px
-			a
-				left: 55px
 	.coaches
 		.coaches_sld
 			left: 15%
@@ -866,8 +937,111 @@
 	.advance .title_advance
 		top: 12% !important
 		left: 30% !important
-	footer .container .link
-		margin-left: 32vw
+	.advance footer .container .link
+		margin-left: 32vw !important
+
+	//blog
+	//
+	header.head
+		padding-bottom: 10px !important
+	header.head .container
+		.social
+			display: none
+		.rank
+			top: 40vh
+			margin-top: 200px
+			padding-top: 30vw
+			margin-left: 20%
+			.bgc_number
+				position: relative
+				font-size: 82px
+			.check_rank
+				position: absolute
+				left: 200%
+				top: 20px
+				margin-top: 30vw
+		.column_2
+			margin-top: 30%
+			left: 0
+			top: 0
+			margin-left: 5%
+			h2
+				display: block
+				margin-bottom: 5%
+			.coaches
+				display: none			
+		article.text_column_3
+			left: 0
+			top: 0
+			position: relative
+			margin-left: 5%
+			margin-right: 5%
+			margin-top: 200px
+			p.about
+				width: 100%
+				margin-top: 0
+				&:before
+					display: none
+				.side_logo
+					transform: rotate(0deg) 
+					left: 0
+					top: -80px
+					&:before
+						display: none
+			&:after
+				display: none
+			h1
+				display: none
+			.social
+				display: block
+		.phone-none
+			display: none
+	section.blog
+		h2
+			font-size: 48px !important
+			margin-left: 7%
+			left: 0 !important
+		.section_first
+			width: 100% !important
+			.recent
+				h3
+					display: none
+				article.blog_txt
+					padding: 8% 0
+					margin: 0 5%
+					.info_data
+						display: block
+						margin: 0
+						height: 50px
+					h4
+						font-size: 18px
+						line-height: 32px
+						margin-top: 2%
+					p
+						font-size: 14px
+						line-height: 32px
+					a.read_more
+						display: none
+		.phone_none
+			display: none
+		.side_bar.phone_none
+			display: none
+		.button_red.button_post_none
+			display: none
+
+	footer.footer_blog .container
+		.social
+			margin-left: 8%
+			i
+				padding-right: 15%
+		.link
+			margin-left: 10%
+			margin-right: 0
+			position: relative
+			margin-top: -15%
+			span
+				padding-right: 15%
+
 
 
 @include max-screen(400px)
@@ -943,8 +1117,22 @@
 			.slick-next
 				top: 115%
 				left: 140px
-	footer .container .border_top
-		display: none
+	.advance footer .container .border_top
+		display: none !important
+
+	//blog
+	footer.footer_blog .container
+		.social
+			margin-left: 7%
+			i
+				padding-right: 10%
+		.link
+			margin-left: 8%
+			position: relative
+			margin-top: -15%
+			span
+				padding-right: 10%
+	
 
 @include max-screen(320px)
 	section.head .container .row .head_txt
@@ -952,6 +1140,27 @@
 			font-size: 12px
 		.button
 			padding: 12px 32px
+	//blog
+	
+	footer.footer_blog .container
+		.social
+			margin-left: 7%
+			margin-top: 60px
+			i
+				padding-right: 3%
+		.link
+			margin-left: 8%
+			position: relative
+			margin-top: -22%
+			span
+				padding-right: 3%
+	header.head .container
+		article.text_column_3
+			.rank
+				.check_rank
+					position: absolute
+					right: 20%
+					top: 10%
 
 
 
