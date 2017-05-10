@@ -292,7 +292,9 @@
   .advance .container .slide_search .window {
     height: 65vh; }
   .advance .title_advance {
-    top: 3% !important; } }
+    top: 3% !important; }
+  section.advance .back_link_wave {
+    display: none; } }
 
 @media only screen and (max-width: 820px) {
   .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
