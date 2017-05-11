@@ -1424,29 +1424,29 @@ section.coaches {
         color: #32495B;
         position: absolute;
         display: inline-block;
-        z-index: 102; }
-      .advance .back_link_wave .link .focus {
+        -webkit-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out; }
+      .advance .back_link_wave .link .style0 {
         bottom: 0px;
-        left: 10%; }
-      .advance .back_link_wave .link .stressrelief {
-        left: 18%;
-        bottom: 100px;
+        left: 3%; }
+      .advance .back_link_wave .link .style1 {
+        left: 1%;
+        bottom: 0px;
         margin-top: -5vw; }
-      .advance .back_link_wave .link .breathe {
-        left: 27%;
+      .advance .back_link_wave .link .style2 {
+        left: 3.8%;
         top: -30px;
         margin-top: -13vw; }
-      .advance .back_link_wave .link .fear {
-        left: 35%;
-        top: -20px;
+      .advance .back_link_wave .link .style3 {
+        left: 6%;
+        top: -50px;
         margin-top: -5vw; }
-      .advance .back_link_wave .link .healthbody {
-        right: 19%;
-        top: -20px;
-        margin-top: -15vw; }
-      .advance .back_link_wave .link .executiveskills {
-        right: 10%;
-        top: 16px;
+      .advance .back_link_wave .link .style5 {
+        left: 18%;
+        bottom: 300px; }
+      .advance .back_link_wave .link .style6 {
+        left: 17%;
+        top: 15px;
         margin-top: -5vw; }
   .advance .back {
     position: absolute;
@@ -1646,7 +1646,7 @@ section.coaches {
       .advance footer .social a {
         text-decoration: none;
         color: #7C8F9E; }
-    .advance footer .link {
+    .advance footer .link_email {
       margin-top: 50px;
       color: #7C8F9E;
       font-size: 14px;
@@ -1659,9 +1659,9 @@ section.coaches {
           -ms-flex-pack: center;
               justify-content: center;
       margin-left: -3vw; }
-      .advance footer .link span {
+      .advance footer .link_email span {
         padding: 0 4%; }
-      .advance footer .link a {
+      .advance footer .link_email a {
         text-decoration: none;
         color: #7C8F9E; }
 
@@ -1723,3 +1723,24 @@ form {
               border-radius: 50%;
       -webkit-box-shadow: 0 0 11px 0 rgba(16, 188, 191, 0.8);
               box-shadow: 0 0 11px 0 rgba(16, 188, 191, 0.8); }
+
+/*my style*/
+.dn {
+  display: none; }
+
+.advance .back_link_wave {
+  position: relative;
+  bottom: 0; }
+  .advance .back_link_wave .link a {
+    position: relative;
+    z-index: -40; }
+  .advance .back_link_wave .link .style8, .advance .back_link_wave .link .style4, .advance .back_link_wave .link .style7 {
+    display: none !important; }
+  .advance .back_link_wave .link .slide {
+    display: block; }
+
+.ab {
+  width: 100%;
+  position: absolute;
+  bottom: 214px;
+  z-index: -1; }

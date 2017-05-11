@@ -400,7 +400,7 @@
     margin-top: 22px !important; }
     .advance footer .container .social i {
       padding: 0 4px !important; }
-  .advance footer .container .link {
+  .advance footer .container .link_email {
     margin-top: 22px !important; }
   .advance footer .container .row .col-4:nth-child(2) {
     display: none !important; }
@@ -793,7 +793,7 @@
   .advance .title_advance {
     top: 12% !important;
     left: 30% !important; }
-  .advance footer .container .link {
+  .advance footer .container .link_email {
     margin-left: 32vw !important; }
   header.head {
     padding-bottom: 10px !important; }

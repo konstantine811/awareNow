@@ -1143,29 +1143,28 @@ section.coaches
 				color: $black_txt
 				position: absolute
 				display: inline-block
-				z-index: 102
-			.focus
+				transition: all 0.7s ease-in-out
+			.style0
 				bottom: 0px
-				left: 10%
-			.stressrelief
-				left: 18%
-				bottom: 100px
+				left: 3%
+			.style1
+				left: 1%
+				bottom: 0px
 				margin-top: -5vw
-			.breathe
-				left: 27%
+			.style2
+				left: 3.8%
 				top: -30px
 				margin-top: -13vw
-			.fear
-				left: 35%
-				top: -20px
+			.style3
+				left: 6%
+				top: -50px
 				margin-top: -5vw
-			.healthbody
-				right: 19%
-				top: -20px
-				margin-top: -15vw
-			.executiveskills
-				right: 10%
-				top: 16px
+			.style5
+				left: 18%
+				bottom: 300px
+			.style6
+				left: 17%
+				top: 15px
 				margin-top: -5vw
 
 	.back
@@ -1352,7 +1351,7 @@ section.coaches
 			a
 				text-decoration: none
 				color: $silver
-		.link
+		.link_email
 			margin-top: 50px
 			color: $silver
 			font-size: 14px
@@ -1425,4 +1424,28 @@ form
 			border-radius: 50%
 			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
 		
-	
+/*my style*/
+
+.dn
+	display: none
+
+.advance
+	.back_link_wave
+		position: relative
+		bottom: 0
+		.link 
+			a
+				position: relative
+				z-index: -40
+			.style8, .style4, .style7
+				display: none !important
+			.slide
+				display: block
+.ab
+	width: 100%
+	position: absolute
+	bottom: 214px
+	z-index: -1
+
+		
+

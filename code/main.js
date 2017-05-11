@@ -2,7 +2,7 @@
 * @Author: Abrams
 * @Date:   2017-04-28 22:36:59
 * @Last Modified by:   Admin
-* @Last Modified time: 2017-05-10 19:07:03
+* @Last Modified time: 2017-05-11 16:30:47
 */
 
 'use strict';
@@ -13,8 +13,8 @@
 jQuery(document).ready(function() {
 
 jQuery('.coaches_sld').slick({
-	dots: true,
-	 slidesToShow: 3,
+  dots: true,
+   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
    {
@@ -42,28 +42,58 @@ jQuery('.coaches_sld').slick({
 });
 
 jQuery('.window_slide').slick({
-	slidesToShow: 1,
-  	slidesToScroll: 1,
-  	cssEase: 'ease-in',
+  slidesToShow: 1,
+    slidesToScroll: 1,
+    cssEase: 'ease-in',
     asNavFor: 'section.advance .link'
 });
 
 jQuery('section.advance .link').slick({
-  slidesToShow: 6,
+    slidesToShow: 8,
     slidesToScroll: 1,
+    draggable: 'false',
+    swipe: false,
+    touchMove: false,
+    draggable: false,
+    accessibility: false,
     arrows: false,
     fade: false,
     dots: false,
-    centerMode: false,
+    swipeToSlide: false,
+    centerMode: true,
     focusOnSelect: true,
     cssEase: 'ease-in',
     asNavFor: '.window_slide'
 });
+/*Мой код*/
+$('section.advance .link .slick-slide[aria-hidden="true"]').css("opacity","0");
 
+var arrLinks =  $('section.advance .link .slick-slide[aria-hidden="false"]');
+for(var i = 0; i < arrLinks.length; i++){
+  $('section.advance .link .slick-slide[aria-hidden="true"]').css("opacity","0");
+  arrLinks.eq(i).addClass("style"+i);
+}
+$('.advance .slick-arrow').click(function() {
+  var allLinks = $('section.advance .link .slick-slide');
+  for (var i = 0; i < allLinks.length; i++) {
+    $('section.advance .link .slick-slide').css("opacity","1");
+    allLinks.eq(i).removeClass("style0 style1 style2 style3 style4 style5 style6 style7 style8");
+  }
+});
+$('.advance .slick-arrow').mouseup(function(){
+  setTimeout(function(){
+    var arrLinks =  $('section.advance .link .slick-slide[aria-hidden="false"]');
+    for(var i = 0; i < arrLinks.length; i++){
+      $('section.advance .link .slick-slide[aria-hidden="true"]').css("opacity","0");
+      arrLinks.eq(i).addClass("style"+i);
+    }
+  }, 100);
+});
+/*-end-*/
 jQuery('figure.one').slick({
-	slidesToShow: 1,
-  	slidesToScroll: 1,
-  	cssEase: 'ease-in-out',
+  slidesToShow: 1,
+    slidesToScroll: 1,
+    cssEase: 'ease-in-out',
 });
 
 
@@ -115,18 +145,17 @@ jQuery(".main").onepage_scroll({
    responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
                                     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
                                     // the browser's width is less than 600, the fallback will kick in.
-   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 });
 
-jQuery(".main").moveTo(1);
+jQuery(".main").moveTo(5);
 
 
 jQuery('.popup').click(function() {
-	jQuery('.mobile_menu').fadeIn(500);
+  jQuery('.mobile_menu').fadeIn(500);
 })
 jQuery('.close_btn, ul li').click(function() {
-	jQuery('.mobile_menu').fadeOut(500);
+  jQuery('.mobile_menu').fadeOut(500);
 })
 
 });
-
