@@ -2,7 +2,7 @@
 * @Author: Abrams
 * @Date:   2017-04-28 22:36:59
 * @Last Modified by:   Admin
-* @Last Modified time: 2017-05-11 16:30:47
+* @Last Modified time: 2017-05-11 18:26:51
 */
 
 'use strict';
@@ -148,7 +148,7 @@ jQuery(".main").onepage_scroll({
    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 });
 
-jQuery(".main").moveTo(5);
+jQuery(".main").moveTo(1);
 
 
 jQuery('.popup').click(function() {
