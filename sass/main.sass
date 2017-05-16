@@ -33,7 +33,7 @@ body
 		font-size: 14px
 		margin-top: 6px
 		position: relative
-		right: 150px
+		right: 40px
 		&:hover
 			background-color: $white
 			i
@@ -62,7 +62,7 @@ body
 			color: black
 	.login
 		position: relative
-		right: 170px
+		right: 60px
 	.popup
 		display: none
 		width: 50px
@@ -612,7 +612,7 @@ section.head
 		.wave_1
 			box-sizing: border-box
 			position: absolute
-			top: 55%
+			top: 55px
 			z-index: 2
 			img
 				width: 100vw
@@ -737,10 +737,18 @@ section.head
 			left: 65%
 			font-size: 24px
 		.privat_chat, .secure_mess, .ease_shedul
-			line-height: 16px
-			padding-top: 20%
+			line-height: 18px
 			font-weight: 600
 			color: $silver
+			position: relative
+		.privat_chat
+			margin-top: 20%
+		.secure_mess
+			margin-top: 20vh
+			top: -100px
+		.ease_shedul
+			margin-top: 20vh
+			top: -200px
 			p
 				padding-top: 5%
 		.active
@@ -868,7 +876,8 @@ section.head
 						width: 48%
 						position: relative
 						left: 52%
-						bottom: 380px
+						margin-top: 20vh
+						bottom: 580px
 						z-index: 2
 				.text
 					position: relative
@@ -1018,7 +1027,7 @@ section.coaches
 	background-position: 50% 20%
 	z-index: 100
 	.coaches_sld
-		width: 60%
+		width: 72%
 		margin: 0 auto
 		margin-top: 3%
 		z-index: 100
@@ -1075,7 +1084,7 @@ section.coaches
 			img
 				position: absolute
 				bottom: 0px
-				width: 38%
+				width: 32%
 				left: 70px
 				margin-left: 3vw
 				border-radius: 10px
@@ -1087,7 +1096,7 @@ section.coaches
 		background-repeat: no-repeat
 		background-size: contain
 		margin-top: 7vw
-		top: 254px
+		top: 274px
 		left: 150px
 		cursor: pointer
 		&::before
@@ -1102,7 +1111,7 @@ section.coaches
 	.slick-next
 		position: absolute
 		margin-top: 7vw
-		top: 254px
+		top: 274px
 		left: 390px
 		background-image: url('../img/right.png')
 		background-repeat: no-repeat
@@ -1125,7 +1134,7 @@ section.coaches
 		position: absolute
 		display: inline-flex
 		margin-top: 7vw
-		top: 244px
+		top: 264px
 		left: 196px
 	.slick-dots li button:before
 		width: 12.2px
@@ -1133,17 +1142,12 @@ section.coaches
 		line-height: 13px
 		transition: opacity 0.4s ease-in-out
 	.show
-		margin: 0 auto
-		width: 60%
-		display: flex
-		height: 25%
-		align-items: flex-end
+		position: absolute
+		bottom: 10%
+		width: 100vw
 		.button
-			align-self: center
-			margin-top: 110px
 			min-width: 210px
 			max-height: 50px
-			margin-right: 50px
 			background: linear-gradient(0deg, #E90B74 0%, #FF0B0B 100%)
 			color: $white
 			display: inline-block
@@ -1153,36 +1157,40 @@ section.coaches
 			box-shadow: 0 9px 24px 0 $red
 			transition: all 0.7s ease
 			cursor: pointer
+			position: absolute
+			left: 45vw
+			margin-left: -290px
+			text-align: center
 			&:hover
 				transform: translateY(-10px) translateX(-5px)
 				box-shadow: 0px 14px 24px 2px $red
 		.text
-			width: 50%
+			width: 30%
 			margin: 0 auto
+			position: relative
+			left: 10vw
 			line-height: 32px
 			color: $black_txt
+			bottom: 0
 	.border_bottom
-		position: relative
-		display: block
-		bottom: 0
-		margin: 0 auto
-		margin-top: 4vw
+		position: absolute
+		bottom: 30px
 		height: 4px
 		width: 40%
+		left: 30vw
 		border-radius: 50px
 		box-shadow: 0 3px 9px 0 #82D3D4
 		background: linear-gradient(180deg, #48CEDB 0%, #0281A9 100%)
 
 .advance
 	position: relative
-	height: 100vh
+	height: 100%
 	width: 100%
 	overflow: hidden
 	background-color: $bgc
 	z-index: 100
 	.back_link_wave
-		position: absolute
-		bottom: 15vh
+		position: relative
 		.link
 			font-size: 28px
 			font-weight: 600
@@ -1197,40 +1205,43 @@ section.coaches
 				transition: all 0.7s ease-in-out
 			.style0
 				bottom: 0px
-				left: 3%
+				left: 140px
 			.style1
-				left: 1%
+				left: 70px
 				bottom: 0px
-				margin-top: -5vw
+				margin-top: 0
+				top: -100px
 			.style2
-				left: 3.8%
-				top: -30px
-				margin-top: -13vw
+				left: -21px
+				top: 0
+				margin-top: 0
+				top: -270px
 			.style3
-				left: 6%
-				top: -50px
-				margin-top: -5vw
+				left: -95px
+				top: -24px
+				margin-top: 0
 			.style5
-				left: 18%
-				bottom: 300px
+				left: 205px
+				bottom: 293px
+				margin-top: 0
 			.style6
-				left: 17%
-				top: 15px
-				margin-top: -5vw
+				left: 125px
+				top: -85px
+				margin-top: 0
 
 	.back
 		position: absolute
 		left: 33%
 		top: 10%
 	.title_advance
-		font-size: 22px
+		font-size: 40px
 		color: $silver
 		font-family: Lato
-		font-style: regular
-		font-weight: 300
+		font-weight: 600
 		position: relative
-		left: 45%
-		top: 8%
+		left: 75vw
+		margin-left: -620px
+		top: 65px
 	.column_one
 		position: relative
 		width: 100%
@@ -1239,15 +1250,15 @@ section.coaches
 		left: 45%
 		margin-top: 14%
 		h3
-			font-size: 24px
+			font-size: 28px
 		.number
 			span:nth-child(1)
-				font-size: 102px
+				font-size: 153px
 				font-weight: 300
 			span:nth-child(2)
 				position: absolute
-				top: 60px
-				left: 130px
+				top: 78px
+				left: 210px
 				background: linear-gradient(0deg, #48CEDB 0%, #0281A9 100%)
 				box-shadow: 0 0 15px 0 #82D3D4
 				border-radius: 23.5px
@@ -1261,22 +1272,28 @@ section.coaches
 		position: relative
 		.window
 			position: relative
-			width: 350px
-			height: 450px
+			width: 70%
+			height: 60vh
 			padding: 0px 40px
 			background-color: $white
 			border-radius: 13px
-			left: 20%
+			left: 10%
 			overflow: hidden
-			margin-top: 20%
+			margin-top: 150px
+			background-image: url('../img/waves@2x.png')
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center bottom
+			z-index: 100
 			h5
-				font-size: 28px
+				font-size: 48px
 				font-weight: 600
 				margin: 10% 0
+				color: $black_txt
 			p
-				font-size: 12px
+				font-size: 14px
 				width: 100%
-				line-height: 24px
+				line-height: 32px
 				color: $black_txt
 			.slide
 				padding: 40px 20px
@@ -1285,7 +1302,7 @@ section.coaches
 				background-image: url('../img/left.png')
 				background-repeat: no-repeat
 				background-size: contain
-				top: 360px
+				top: 460px
 				left: 60px
 				cursor: pointer
 				z-index: 100
@@ -1300,7 +1317,7 @@ section.coaches
 					font-weight: 600
 			.slick-next
 				position: absolute
-				top: 360px
+				top: 460px
 				left: 120px
 				background-image: url('../img/right.png')
 				background-repeat: no-repeat
@@ -1331,53 +1348,27 @@ section.coaches
 				&:hover
 					transform: translateY(-10px) translateX(-5px)
 					box-shadow: 0px 14px 24px 2px $red	
-	.shape_back
-		width: 130%
-		right: 15%
-		bottom: 0%
-		height: 100%
-		position: relative
-		z-index: 10
-		display: block
-		.one
-			height: 100%
-			width: 100vw
-			position: absolute
-			bottom: 0
-		.two
-			height: 100%
-			width: 300%
-			bottom: -10%
-			position: absolute
-		.three
-			height: 100%
-			width: 200%
-			bottom: -9%
-			position: absolute
-			left: -30%
+
 	footer
 		position: absolute
 		bottom: 0
-		display: block
-		width: 100%
-		z-index: 100
+		height: 12%
+		left: 10%
+		width: 80%
+		z-index: 90
 		.border_top
-			border-top: 1px solid $silver
-			width: 80%
+			border-top: 2px solid rgba($silver, 0.4)
+			width: 100%
 			height: 100%
-			position: relative
-			margin: 0% auto
-			margin-top: 10%
 		.logo
 			position: relative
-			left: 26%
+			right: 5%
 			img
 				position: relative
-				margin-top: 4%
+				margin-top: 29px
 			.circle
 				position: absolute
-				margin-top: 4%
-				top: 34px
+				top: 64px
 				left: 22px
 				border: 4px solid $main_color
 				border-radius: 50%
@@ -1392,23 +1383,25 @@ section.coaches
 				span
 					color: $blue_txt
 		.social
-			color: $silver
-			font-size: 14px
+			color: $silvet_head_txt
+			font-size: 16px
 			position: relative
-			left: 30%
-			margin-top: 50px
+			left: 20%
+			font-weight: 600
+			margin-top: 60px
 			i
-				padding: 0 20px
+				padding: 0 30px
 			a
 				text-decoration: none
-				color: $silver
+				color: $silvet_head_txt
 		.link_email
-			margin-top: 50px
+			margin-top: 60px
 			color: $silver
-			font-size: 14px
-			display: flex
-			justify-content: center
-			margin-left: -3vw
+			font-size: 16px
+			font-weight: 600
+			position: relative
+			text-align: right
+			left: 2%
 			span
 				padding: 0 4%
 			a
@@ -1422,42 +1415,44 @@ section.coaches
 form
 	position: relative
 	input
-		border: 1px solid $silver
+		border: 1px solid $silver_txt
 		border-radius: 50px
-		font-size: 12px
+		font-size: 16px
 		padding: 10px 10px
-		width: 220px
+		width: 60%
+		height: 60px
 		outline: none
 		position: absolute
 		font-style: italic
 		z-index: 100
-		left: 11vw
+		margin-left: 90px
 		bottom: -20px
+		z-index: 101
 		box-shadow: 0px 2px 5px 0px rgba(0,0,0, 0.3)
 	.shape
 		position: absolute
-		width: 14px
-		height: 14px
+		width: 19px
+		height: 19px
 		background-image: url('../img/Shape.png')
 		background-size: contain
 		background-repeat: no-repeat
-		bottom: -10px
-		z-index: 100
-		left: 11vw
-		margin-left: 190px
+		bottom: 0px
+		z-index: 102
+		right: 13vw
+		margin-right: -60px
 
 
 .text_advance
 	width: 50%
-	margin: 16% auto
+	margin: 66px auto
+	color: $black_txt_adv
 	h3
-		font-size: 14px
-		color: $black_txt
+		font-size: 18px
+		font-weight: 600
 		margin-bottom: 9%
 	p
-		font-size: 12px
+		font-size: 14px
 		line-height: 24px
-		color: $silver
 	.logo
 		position: relative
 		display: inline-block

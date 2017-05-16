@@ -1,13 +1,80 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-height: 900px) {
+  .review .container .block-for-slider .select-img {
+    width: 311px;
+    top: 650px;
+    margin-left: -220px; }
+    .review .container .block-for-slider .select-img .slick-slide img {
+      margin: 0; }
+  .review .container .viewport .slick-prev, .review .container .viewport .slick-next {
+    top: 760px; }
+  .review .container .viewport .slick-dots {
+    top: 750px; }
+  section.coaches .coaches_sld {
+    margin-top: 0 !important; }
+  section.coaches .coaches_sld h4 {
+    margin-bottom: 0 !important; }
+  section.coaches .coaches_sld p {
+    margin-top: 1% !important; }
+  section.coaches .coaches_sld .slick-next {
+    top: 204px; }
+  section.coaches .coaches_sld .slick-prev {
+    top: 204px; }
+  section.coaches .coaches_sld .slick-dots {
+    top: 195px; } }
+
+@media only screen and (max-height: 820px) {
+  section.coaches .show p.text {
+    width: 50%; }
+  section.coaches .show .button {
+    left: 36vw !important; }
+  .advance .container .slide_search .window {
+    margin-top: 110px;
+    width: 80%; }
+    .advance .container .slide_search .window h5 {
+      font-size: 36px;
+      margin: 0% 0; }
+    .advance .container .slide_search .window .slick-prev, .advance .container .slide_search .window .slick-next {
+      top: 350px; }
+  .advance .container .slide_search form input {
+    margin-left: 80px; }
+  .advance .container .ab .back_link_wave {
+    top: 100px; }
+  .advance .container .ab .link {
+    font-size: 22px; }
+    .advance .container .ab .link .style2 {
+      top: -195px; }
+    .advance .container .ab .link .style5 {
+      bottom: 223px;
+      left: 295px; } }
+
+@media only screen and (max-height: 769px) {
+  .how_work .section_how .container .text_bottom {
+    margin-top: -25%;
+    left: 42vw; } }
+
 @media only screen and (max-width: 1367px) {
-  .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
-    padding-top: 10%; }
-  .how_work .section_how .container figure {
-    margin-top: 3%; }
-    .how_work .section_how .container figure .text_bottom h3 {
-      bottom: 128px; }
-    .how_work .section_how .container figure .text_bottom .tx {
-      bottom: 50px; } }
+  .advance .container .slide_search .window {
+    margin-top: 110px;
+    width: 350px; }
+    .advance .container .slide_search .window h5 {
+      font-size: 32px;
+      margin: 0% 0; }
+    .advance .container .slide_search .window .slick-prev, .advance .container .slide_search .window .slick-next {
+      top: 370px; }
+  .advance .container .slide_search form input {
+    width: 300px;
+    margin-left: 60px; }
+  .advance .container .slide_search form .shape {
+    right: 33vw;
+    margin-right: -360px; }
+  .advance .container .ab .back_link_wave .link {
+    font-size: 22px; }
+    .advance .container .ab .back_link_wave .link .style2 {
+      top: -195px; }
+    .advance .container .ab .back_link_wave .link .style5 {
+      bottom: 223px;
+      left: 295px; } }
 
 @media only screen and (max-width: 1225px) {
   nav.menu nav.menu_item ul {
@@ -18,42 +85,112 @@
     display: none; }
   .back_img .meditation, .back_img .execut, .back_img .fear, .back_img .breathe, .back_img .health, .back_img .focus, .back_img .breathe_2, .back_img .leader {
     font-size: 12px; }
+  .how_work .section_how .container .number {
+    font-size: 64px; }
+  .review .white {
+    height: 550px !important; }
+  .review .container .block-for-slider .slidewrapper .slide {
+    margin-top: 5%; }
+    .review .container .block-for-slider .slidewrapper .slide .slide_img img {
+      width: 40%;
+      left: 62%;
+      bottom: 470px; }
+    .review .container .block-for-slider .slidewrapper .slide .about_txt {
+      width: 33vw; }
+    .review .container .block-for-slider .slidewrapper .slide .number {
+      font-size: 82px;
+      left: 60%;
+      top: 10px; }
+  .review .container .block-for-slider .select-img {
+    top: 570px;
+    margin-left: -140px; }
+  .review .container .block-for-slider .viewport .slick-prev, .review .container .block-for-slider .viewport .slick-next {
+    top: 690px; }
+  .review .container .block-for-slider .viewport .slick-prev {
+    margin-left: -60px; }
+  .review .container .block-for-slider .viewport .slick-next {
+    margin-left: 100px; }
+  .review .container .block-for-slider .viewport .slick-dots {
+    top: 680px;
+    margin-left: -30px; }
+  .advance .container .social {
+    left: 10%; }
+    .advance .container .social i {
+      padding: 0 25px; }
   header.head .container article.text_column_3 h1 {
     font-size: 62px; } }
 
 @media only screen and (max-width: 1025px) {
-  .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
-    font-size: 18px; }
-  .how_work .section_how .container figure {
-    height: 100vh; }
-    .how_work .section_how .container figure .slick-list {
-      height: 100vh; }
-    .how_work .section_how .container figure .number {
-      font-size: 62px; }
-    .how_work .section_how .container figure .text {
-      font-size: 16px; }
+  .how_work .section_how .container .number {
+    font-size: 42px;
+    bottom: 63px; }
+  .how_work .section_how .container .how_icon {
+    font-size: 18px;
+    line-height: 10px; }
+    .how_work .section_how .container .how_icon p {
+      line-height: 0px; }
+  .how_work .section_how .container .text {
+    font-size: 16px; }
+  .how_work .section_how .container figure img {
+    bottom: 30px; }
+  .how_work .section_how .container figure .text_bottom {
+    left: 31vw;
+    bottom: 350px;
+    margin-top: 39vh; }
+    .how_work .section_how .container figure .text_bottom h3 {
+      font-size: 22px; }
+    .how_work .section_how .container figure .text_bottom .tx {
+      margin-top: 1%; }
+    .how_work .section_how .container figure .text_bottom .some {
+      top: 44px; }
+  .how_work .section_how .container figure p {
+    width: 100%;
+    line-height: 20px; }
+  .container .row .title_txt h2 {
+    font-size: 54px; }
+  .container .row .title_txt p {
+    font-size: 22px; }
   .advance .text_advance {
     display: none; }
   .advance footer {
-    bottom: -23px !important; }
-    .advance footer .border_top {
-      display: none !important; } }
+    bottom: 23px !important; }
+    .advance footer .container .social {
+      left: 10%; }
+      .advance footer .container .social i {
+        padding: 0 20px; }
+  .advance .container .ab .back_link_wave .link {
+    font-size: 16px; }
+    .advance .container .ab .back_link_wave .link .style0 {
+      left: 70px; }
+    .advance .container .ab .back_link_wave .link .style1 {
+      left: 20px; }
+    .advance .container .ab .back_link_wave .link .style2 {
+      top: -155px; }
+    .advance .container .ab .back_link_wave .link .style5 {
+      bottom: 173px;
+      left: 245px; } }
 
 @media only screen and (max-width: 992px) {
-  .how_work .section_how .container figure {
-    bottom: 200px; }
-    .how_work .section_how .container figure img {
-      bottom: 73px;
-      width: 65%; }
-    .how_work .section_how .container figure .number {
-      font-size: 54px; }
   .advance .container .slide_search .window {
-    height: 65vh; }
+    left: 50%;
+    margin-top: 70px; }
+  .advance .container .slide_search form input {
+    margin-left: 180px; }
+  .advance .container .slide_search form .shape {
+    margin-right: -470px; }
   .advance .title_advance {
-    top: 3% !important; }
+    top: 3% !important;
+    left: 95vw !important; }
   .advance footer {
-    bottom: 0px !important;
     z-index: -2 !important; }
+  section.coaches .coaches_sld .slick-next {
+    left: 70vw;
+    top: 74px; }
+  section.coaches .coaches_sld .slick-prev {
+    left: -50px;
+    top: 74px; }
+  section.coaches .coaches_sld .slick-dots {
+    left: 226px; }
   header.head .container article.text_column_3 h1 {
     font-size: 42px; }
   footer.footer_blog .container .social {
@@ -71,78 +208,169 @@
     margin-top: 7%; }
   .container .title_txt p {
     font-size: 22px; }
+  .how_work .section_how .container .number {
+    bottom: 0;
+    left: 33vw; }
   .coaches .title_txt h2 {
     font-size: 32px;
     line-height: 33px;
     margin-top: 7%; }
   .coaches .title_txt p {
     font-size: 22px; }
-  .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
-    font-size: 16px; }
-  .how_work .section_how .container figure .slide p {
-    line-height: 22px; }
-  .how_work .section_how .container figure img {
-    bottom: 73px;
-    width: 85%; }
-  .how_work .section_how .container figure .number {
-    font-size: 54px;
-    bottom: 60px; }
+  section.coaches .show .button {
+    left: 41vw !important; }
   .advance .container .column_one {
     left: 36%; }
-  .advance .container .slide_search .window {
-    height: 65vh; }
+  .advance .container .slide_search form input {
+    margin-left: 170px; }
   .advance .title_advance {
     top: 3% !important; }
   section.advance .back_link_wave {
-    display: none; } }
-
-@media only screen and (max-width: 820px) {
-  .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
-    font-size: 16px; }
-  .how_work .section_how .container figure .slide p {
-    line-height: 18px; }
-  .how_work .section_how .container figure img {
-    bottom: 73px;
-    width: 85%; }
-  .how_work .section_how .container figure .number {
-    font-size: 54px;
-    bottom: 60px; } }
+    display: none; }
+  section.advance .title_advance {
+    font-size: 28px;
+    left: 400px !important;
+    margin: 0 !important;
+    top: 35px !important; }
+  section.advance footer .border_top {
+    display: none; }
+  section.advance footer .container .social {
+    left: 10%; }
+    section.advance footer .container .social i {
+      padding: 0 10px; } }
 
 @media only screen and (max-width: 768px) {
-  .container .title_txt h2 {
-    font-size: 32px;
-    line-height: 33px;
-    margin-top: 9%; }
-  .container .title_txt p {
-    font-size: 22px; }
+  body {
+    overflow-x: hidden !important; }
+  .main section.head {
+    height: 100vh !important; }
+    .main section.head .back_img .wave .wave_1 {
+      top: 300px; }
+    .main section.head .back_img .wave .wave_2 {
+      top: 400px; }
+    .main section.head .back_img .wave .wave_3 {
+      top: 500px; }
+  .container .row .title_txt {
+    left: 14vw; }
+    .container .row .title_txt h2 {
+      font-size: 32px; }
+    .container .row .title_txt p {
+      font-size: 18px; }
+  .how_work .section_how {
+    height: 100% !important;
+    background-size: contain !important; }
   .how_work .section_how .container .how_icon {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     left: 0;
-    margin: 0 auto; }
-    .how_work .section_how .container .how_icon .privat_chat, .how_work .section_how .container .how_icon .secure_mess, .how_work .section_how .container .how_icon .ease_shedul {
-      font-size: 14px;
-      display: inline-block;
-      padding: 0;
-      margin: 0 1%; }
-      .how_work .section_how .container .how_icon .privat_chat p, .how_work .section_how .container .how_icon .secure_mess p, .how_work .section_how .container .how_icon .ease_shedul p {
-        width: 100%;
-        display: inline;
-        position: relative; }
-      .how_work .section_how .container .how_icon .privat_chat br, .how_work .section_how .container .how_icon .secure_mess br, .how_work .section_how .container .how_icon .ease_shedul br {
+    margin-top: 10px; }
+  .how_work .section_how .container .privat_chat, .how_work .section_how .container .secure_mess, .how_work .section_how .container .ease_shedul {
+    padding: 0 7%; }
+    .how_work .section_how .container .privat_chat p, .how_work .section_how .container .secure_mess p, .how_work .section_how .container .ease_shedul p {
+      margin-top: 15%; }
+  .how_work .section_how .container .privat_chat {
+    margin-top: 0; }
+  .how_work .section_how .container .secure_mess {
+    margin-top: 0;
+    top: 0; }
+  .how_work .section_how .container .ease_shedul {
+    margin-top: -10px;
+    top: 0; }
+    .how_work .section_how .container .ease_shedul p {
+      margin-top: 17%; }
+  .how_work .section_how .container figure {
+    margin-top: 0; }
+    .how_work .section_how .container figure .text {
+      position: relative;
+      left: 63vw;
+      top: 8vh; }
+    .how_work .section_how .container figure img {
+      bottom: 80px; }
+    .how_work .section_how .container figure img.secure {
+      width: 59%; }
+    .how_work .section_how .container figure .number {
+      bottom: 22px;
+      left: 49vw; }
+    .how_work .section_how .container figure .text_bottom {
+      width: 100%;
+      left: 0;
+      bottom: 134px;
+      margin-top: 0; }
+      .how_work .section_how .container figure .text_bottom .tx br {
         display: none; }
-  .how_work .section_how .container figure .slide p {
-    line-height: 18px; }
-  .how_work .section_how .container figure img {
-    bottom: 73px;
-    width: 65%; }
-  .how_work .section_how .container figure .number {
-    font-size: 54px;
-    bottom: 60px; }
+      .how_work .section_how .container figure .text_bottom .some {
+        top: 0px;
+        right: 22%; }
+    .how_work .section_how .container figure .slick-next {
+      left: 73%; }
+    .how_work .section_how .container figure .slick-prev {
+      left: 62%; }
+  .main .review {
+    background-color: #FFFFFF; }
+  .review .container .title_txt {
+    bottom: 47px; }
+  .review .container .block-for-slider {
+    bottom: 104px;
+    height: 100%; }
+    .review .container .block-for-slider .slidewrapper .slide .slide_img img {
+      margin-top: 0vh;
+      bottom: 100px;
+      position: absolute; }
+    .review .container .block-for-slider .slidewrapper .slide .about_txt h3 {
+      font-size: 22px; }
+    .review .container .block-for-slider .slidewrapper .slide .side h4 {
+      font-size: 18px; }
+    .review .container .block-for-slider .select-img {
+      margin-top: 0;
+      top: 374px; }
+    .review .container .block-for-slider .viewport .slick-prev, .review .container .block-for-slider .viewport .slick-next {
+      top: 590px; }
+    .review .container .block-for-slider .viewport .slick-prev {
+      margin-left: -60px; }
+    .review .container .block-for-slider .viewport .slick-next {
+      margin-left: 100px; }
+  .main section.coaches .coaches_sld .slick-dots {
+    top: 240px;
+    left: 130px; }
+  .main section.coaches .coaches_sld .slick-prev {
+    top: 250px;
+    left: 80px; }
+  .main section.coaches .coaches_sld .slick-next {
+    top: 250px;
+    left: 340px; }
+  .main section.coaches .show {
+    position: relative;
+    margin-top: 180px; }
+    .main section.coaches .show .button {
+      position: relative;
+      margin: 0 auto; }
+    .main section.coaches .show .text {
+      left: 0;
+      width: 70%;
+      margin-top: 20px; }
+  .main section.coaches .border_bottom {
+    position: relative;
+    left: 0;
+    width: 70%;
+    margin: 0 auto; }
+  section.coaches {
+    height: 100% !important; }
   .advance .container .column_one {
-    left: 6%; }
+    left: 26%; }
   .advance .container .slide_search .window {
-    height: 65vh; }
-  .advance .title_advance {
-    top: 3% !important; }
+    margin-top: 100px;
+    left: 50vw;
+    margin-left: -280px; }
+  .advance .container .slide_search form input {
+    left: 50vw;
+    margin-left: -250px; }
+  .advance .container .slide_search form .shape {
+    left: 50vw;
+    margin-left: 10px; }
+  section.advance .title_advance {
+    left: 240px !important; }
   .advance footer .container .social {
     margin-top: 22px !important; }
     .advance footer .container .social i {
@@ -178,6 +406,44 @@
     margin-left: 20%; } }
 
 @media only screen and (max-width: 700px) {
+  .review .container .title_txt {
+    bottom: 47px; }
+  .review .container .block-for-slider .select-img {
+    margin-top: 0;
+    top: 404px; }
+  .review .container .block-for-slider .viewport .slick-prev, .review .container .block-for-slider .viewport .slick-next {
+    top: 590px; }
+  .review .container .block-for-slider .viewport .slick-prev {
+    margin-left: -60px; }
+  .review .container .block-for-slider .viewport .slick-next {
+    margin-left: 100px; }
+  .how_work .section_how .container .how_icon {
+    font-size: 14px;
+    line-height: 1px; }
+    .how_work .section_how .container .how_icon p {
+      margin-top: 10%; }
+    .how_work .section_how .container .how_icon .privat_chat, .how_work .section_how .container .how_icon .secure_mess, .how_work .section_how .container .how_icon .ease_shedul {
+      line-height: 10px; }
+    .how_work .section_how .container .how_icon .ease_shedul p {
+      margin-top: 15%; }
+  .how_work .section_how .container figure .text {
+    left: 56vw;
+    top: 89px; }
+  .how_work .section_how .container figure .text_bottom {
+    bottom: 150px;
+    width: 80%;
+    margin: 0 auto; }
+    .how_work .section_how .container figure .text_bottom .some {
+      top: -15px;
+      right: 33%; }
+  .how_work .section_how .container figure .number {
+    left: 71vw; }
+  .how_work .section_how .container figure img.cal {
+    width: 67%; }
+  .how_work .section_how .container figure img {
+    width: 75%; }
+  .how_work .section_how .container figure img.secure {
+    width: 75%; }
   .back_img .meditation, .back_img .execut, .back_img .fear, .back_img .breathe, .back_img .health, .back_img .focus, .back_img .breathe_2, .back_img .leader {
     font-size: 8px; }
   section.head .container .row .head_txt {
@@ -197,68 +463,29 @@
   nav.menu .mobile_menu .close_btn {
     top: 20px;
     right: 0px; }
-  .container .title_txt {
-    margin-left: 49%; }
-    .container .title_txt h2 {
-      font-size: 22px;
-      line-height: 33px;
-      margin-top: 9%; }
-    .container .title_txt p {
-      font-size: 16px; }
-  .how_work .section_how .container .how_icon {
-    left: 0;
-    margin: 0 auto; }
-    .how_work .section_how .container .how_icon .privat_chat, .how_work .section_how .container .how_icon .secure_mess, .how_work .section_how .container .how_icon .ease_shedul {
-      font-size: 12px;
-      display: inline-block;
-      padding: 0;
-      margin: 0 1%; }
-      .how_work .section_how .container .how_icon .privat_chat img, .how_work .section_how .container .how_icon .secure_mess img, .how_work .section_how .container .how_icon .ease_shedul img {
-        width: 15%; }
-      .how_work .section_how .container .how_icon .privat_chat p, .how_work .section_how .container .how_icon .secure_mess p, .how_work .section_how .container .how_icon .ease_shedul p {
-        width: 100%;
-        display: inline;
-        position: relative;
-        padding: 0%; }
-      .how_work .section_how .container .how_icon .privat_chat br, .how_work .section_how .container .how_icon .secure_mess br, .how_work .section_how .container .how_icon .ease_shedul br {
-        display: none; }
-  .how_work .section_how .container figure .slide p {
-    line-height: 18px;
-    font-size: 12px; }
-  .how_work .section_how .container figure img {
-    bottom: 23px;
-    width: 65%; }
-  .how_work .section_how .container figure .number {
-    font-size: 32px;
-    left: 40%;
-    bottom: 60px; }
-    .how_work .section_how .container figure .number span {
-      font-size: 16px; }
-  .how_work .section_how .container figure .text_bottom {
-    right: 0; }
-    .how_work .section_how .container figure .text_bottom .some {
-      left: 60%;
-      bottom: 100px; }
-    .how_work .section_how .container figure .text_bottom h3 {
-      position: relative;
-      left: 70%;
-      width: 100%;
-      padding-bottom: 1%;
-      font-size: 14px; }
-    .how_work .section_how .container figure .text_bottom .tx {
-      position: relative;
-      position: absolute;
-      left: 70%;
-      bottom: 50px;
-      width: 25%; }
-      .how_work .section_how .container figure .text_bottom .tx br {
-        display: none; }
   .advance .title_advance {
     font-size: 18px !important; }
   footer.footer_blog .container .link {
     margin-left: 12%; } }
 
 @media only screen and (max-width: 550px) {
+  .review .container .title_txt {
+    bottom: 47px; }
+  .review .container .block-for-slider .select-img {
+    margin-top: 0;
+    top: 434px; }
+  .review .container .block-for-slider .slidewrapper .slide .side {
+    left: -77px;
+    width: 37%;
+    top: 228px; }
+  .review .container .block-for-slider .viewport .slick-prev, .review .container .block-for-slider .viewport .slick-next {
+    top: 590px; }
+  .review .container .block-for-slider .viewport .slick-prev {
+    margin-left: -60px; }
+  .review .container .block-for-slider .viewport .slick-next {
+    margin-left: 100px; }
+  .advance footer .container .link_email {
+    left: -29%; }
   .coaches .title_txt h2 {
     font-size: 32px;
     line-height: 33px;
@@ -271,75 +498,32 @@
     margin-top: 0px; }
   .menu .container .popup {
     left: 65%; }
-  .container .title_txt {
-    margin-left: 49%; }
-    .container .title_txt h2 {
-      font-size: 22px;
-      line-height: 33px;
-      margin-top: 9%; }
-    .container .title_txt p {
-      font-size: 16px; }
-  .how_work .section_how .container .how_icon {
-    left: 0;
-    margin: 0 auto; }
-    .how_work .section_how .container .how_icon .privat_chat, .how_work .section_how .container .how_icon .secure_mess, .how_work .section_how .container .how_icon .ease_shedul {
-      font-size: 12px;
-      display: inline-block;
-      padding: 0;
-      margin: 0 1%; }
-      .how_work .section_how .container .how_icon .privat_chat img, .how_work .section_how .container .how_icon .secure_mess img, .how_work .section_how .container .how_icon .ease_shedul img {
-        width: 15%; }
-      .how_work .section_how .container .how_icon .privat_chat p, .how_work .section_how .container .how_icon .secure_mess p, .how_work .section_how .container .how_icon .ease_shedul p {
-        width: 100%;
-        display: inline;
-        position: relative;
-        padding: 0%; }
-      .how_work .section_how .container .how_icon .privat_chat br, .how_work .section_how .container .how_icon .secure_mess br, .how_work .section_how .container .how_icon .ease_shedul br {
-        display: none; }
-  .how_work .section_how .container figure .slide p {
-    line-height: 18px;
-    font-size: 12px; }
-  .how_work .section_how .container figure img {
-    bottom: 53px;
-    width: 65%; }
-  .how_work .section_how .container figure .number {
-    font-size: 32px;
-    left: 40%;
-    bottom: 60px; }
-    .how_work .section_how .container figure .number span {
-      font-size: 16px; }
+  .main section.coaches .show .button {
+    left: 25vw !important; }
+  .how_work .section_how .container figure .text {
+    left: 35px;
+    top: 229px; }
   .how_work .section_how .container figure .text_bottom {
-    right: 0; }
-    .how_work .section_how .container figure .text_bottom .some {
-      left: 80%;
-      bottom: 100px; }
-    .how_work .section_how .container figure .text_bottom h3 {
-      position: relative;
-      left: 0%;
-      width: 100%;
-      bottom: 0;
-      padding-bottom: 0%;
-      font-size: 14px; }
-    .how_work .section_how .container figure .text_bottom .tx {
-      position: relative;
-      left: 0;
-      bottom: 0px;
-      width: 100%; }
-      .how_work .section_how .container figure .text_bottom .tx br {
-        display: none; }
+    bottom: 0px;
+    width: 80%;
+    margin: 0 auto; }
+    .how_work .section_how .container figure .text_bottom p.some {
+      display: none; }
+  .how_work .section_how .container figure .number {
+    left: 71vw; }
   .advance .container .column_one {
     display: none; }
   .advance .container .slide_search .window {
     position: relative;
-    left: -50%;
-    top: 40px; }
-  .advance form input {
+    top: 40px;
+    margin-left: -352px; }
+  .advance .container .slide_search form input {
     bottom: -60px;
-    left: 0; }
-  .advance form .shape {
+    margin-left: -323px; }
+  .advance .container .slide_search form .shape {
+    margin-left: -60px;
     position: absolute;
-    bottom: -50px;
-    left: 0;
+    bottom: -40px;
     z-index: 1000; }
   .advance .title_advance {
     top: 8% !important; }
@@ -370,90 +554,38 @@
   section.head .container .row .head_txt img {
     margin-top: 15%;
     width: 60%; }
-  .how_work .section_how .container .how_icon {
-    left: 0;
-    margin: 0 auto; }
-    .how_work .section_how .container .how_icon .privat_chat, .how_work .section_how .container .how_icon .secure_mess, .how_work .section_how .container .how_icon .ease_shedul {
-      font-size: 12px;
-      display: inline-block;
-      margin: 0 auto;
-      width: 20%; }
-      .how_work .section_how .container .how_icon .privat_chat img, .how_work .section_how .container .how_icon .secure_mess img, .how_work .section_how .container .how_icon .ease_shedul img {
-        width: 15%; }
-      .how_work .section_how .container .how_icon .privat_chat p, .how_work .section_how .container .how_icon .secure_mess p, .how_work .section_how .container .how_icon .ease_shedul p {
-        width: 100%;
-        display: inline;
-        position: relative;
-        padding: 0%; }
-      .how_work .section_how .container .how_icon .privat_chat br, .how_work .section_how .container .how_icon .secure_mess br, .how_work .section_how .container .how_icon .ease_shedul br {
-        display: none; }
-  .how_work .section_how .container figure {
-    height: 110vh;
-    bottom: 10vh; }
-    .how_work .section_how .container figure .slide {
-      margin-top: 10vh; }
-      .how_work .section_how .container figure .slide p.text {
-        top: 30vh;
-        position: relative;
-        left: 0;
-        right: 0;
-        margin: 0; }
-        .how_work .section_how .container figure .slide p.text br {
-          display: none; }
-      .how_work .section_how .container figure .slide p {
-        line-height: 18px;
-        font-size: 12px; }
-    .how_work .section_how .container figure img {
-      bottom: 53px;
-      width: 85%; }
-    .how_work .section_how .container figure .number {
-      font-size: 32px;
-      left: 80%;
-      bottom: 10px; }
-      .how_work .section_how .container figure .number span {
-        font-size: 16px; }
-    .how_work .section_how .container figure .text_bottom {
-      right: 0; }
-      .how_work .section_how .container figure .text_bottom .some {
-        left: 80%;
-        bottom: 190px; }
-      .how_work .section_how .container figure .text_bottom h3 {
-        position: relative;
-        left: 0%;
-        width: 100%;
-        bottom: 0px;
-        padding-bottom: 0%;
-        font-size: 14px; }
-      .how_work .section_how .container figure .text_bottom .tx {
-        position: relative;
-        left: 0;
-        bottom: 0px;
-        width: 100%; }
-        .how_work .section_how .container figure .text_bottom .tx br {
-          display: none; }
-    .how_work .section_how .container figure .slick-prev {
-      top: 40px; }
-    .how_work .section_how .container figure .slick-next {
-      top: 40px; }
-  .advance .container .column_one {
+  .review .container .title_txt {
+    bottom: 47px; }
+  .review .container .block-for-slider .select-img {
+    margin-top: 0;
+    top: 404px;
+    margin-left: -90px; }
+  .review .container .block-for-slider .slidewrapper .slide .side {
+    left: -77px;
+    width: 37%;
+    top: 228px; }
+  .review .container .block-for-slider .slidewrapper .slide .about_txt {
+    width: 70vw; }
+  .review .container .block-for-slider .slidewrapper .slide .slide_img img {
     display: none; }
+  .review .container .block-for-slider .viewport .slick-prev, .review .container .block-for-slider .viewport .slick-next {
+    top: 580px; }
+  .review .container .block-for-slider .viewport .slick-prev {
+    margin-left: 0px; }
+  .review .container .block-for-slider .viewport .slick-next {
+    margin-left: 100px; }
   .advance .container .slide_search .window {
-    position: relative;
-    left: 10%;
-    top: 40px; }
-  .advance form input {
+    margin-left: -183px; }
+  .advance .container form input {
     bottom: -60px;
-    left: 25%; }
-  .advance form .shape {
+    margin-left: -159px !important; }
+  .advance .container form .shape {
+    margin-left: 100px !important;
     position: absolute;
-    bottom: -50px;
-    left: 24vw;
+    bottom: -40px;
     z-index: 1000; }
-  .advance .title_advance {
-    top: 12% !important;
-    left: 30% !important; }
-  .advance footer .container .link_email {
-    margin-left: 32vw !important; }
+  section.advance .title_advance {
+    left: 156px !important; }
   header.head {
     padding-bottom: 10px !important; }
   header.head .container .social {
@@ -549,55 +681,22 @@
     position: relative;
     margin-top: -15%; }
     footer.footer_blog .container .link span {
-      padding-right: 15%; } }
-
-@media only screen and (max-width: 400px) {
-  .how_work .section_how .container .how_icon {
-    left: 0;
-    margin: 0 auto; }
-    .how_work .section_how .container .how_icon .privat_chat, .how_work .section_how .container .how_icon .secure_mess, .how_work .section_how .container .how_icon .ease_shedul {
-      font-size: 12px;
-      display: inline-block;
-      margin: 0 auto;
-      width: 25%; }
-  .how_work .section_how .container figure .number {
-    bottom: 80px;
-    left: 75%; }
-  .how_work .section_how .container figure .slick-prev {
-    left: 60px;
-    top: 10%; }
-  .how_work .section_how .container figure .slick-next {
-    top: 10%;
-    left: 100px; }
+      padding-right: 15%; }
+  .how_work .section_how .container figure .text {
+    left: 35px;
+    top: 169px; }
   .how_work .section_how .container figure .text_bottom {
-    right: 0; }
-    .how_work .section_how .container figure .text_bottom .some {
-      left: 80%;
-      bottom: 190px; }
-    .how_work .section_how .container figure .text_bottom h3 {
-      position: relative;
-      left: 0%;
-      width: 100%;
-      bottom: 0px;
-      padding-bottom: 0%;
-      font-size: 14px; }
-    .how_work .section_how .container figure .text_bottom .tx {
-      position: relative;
-      left: 0;
-      bottom: 0px;
-      width: 100%; }
-  .advance .container .slide_search .window {
-    position: relative;
-    left: 0%;
-    top: 40px; }
-  .advance form input {
-    bottom: -60px;
-    left: 15%; }
-  .advance form .shape {
-    position: absolute;
-    bottom: -50px;
-    left: 14vw;
-    z-index: 1000; } }
+    bottom: 0px;
+    width: 80%;
+    margin: 0 auto; }
+    .how_work .section_how .container figure .text_bottom p.some {
+      display: none; }
+  .how_work .section_how .container figure .number {
+    left: 71vw; } }
+
+@media only screen and (max-width: 487px) {
+  .main section.coaches .coaches_sld .slick-next {
+    left: 150px; } }
 
 @media only screen and (max-width: 360px) {
   footer.footer_blog .container .social {

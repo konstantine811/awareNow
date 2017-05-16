@@ -2,7 +2,7 @@
 * @Author: Abrams
 * @Date:   2017-04-28 22:36:59
 * @Last Modified by:   Admin
-* @Last Modified time: 2017-05-11 18:26:51
+* @Last Modified time: 2017-05-15 16:41:28
 */
 
 'use strict';
@@ -142,13 +142,13 @@ jQuery(".main").onepage_scroll({
    afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
    loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
    keyboard: true,                  // You can activate the keyboard controls
-   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+   responsiveFallback: 768,        // You can fallback to normal page scroll by defining the width of the browser in which
                                     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
                                     // the browser's width is less than 600, the fallback will kick in.
    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 });
 
-jQuery(".main").moveTo(1);
+jQuery(".main").moveTo(4);
 
 
 jQuery('.popup').click(function() {
