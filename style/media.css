@@ -554,6 +554,9 @@
   section.head .container .row .head_txt img {
     margin-top: 15%;
     width: 60%; }
+  .how_work .section_how .container figure .text_bottom .tx {
+    margin-top: 1%;
+    text-align: justify; }
   .review .container .title_txt {
     bottom: 47px; }
   .review .container .block-for-slider .select-img {
@@ -565,7 +568,8 @@
     width: 37%;
     top: 228px; }
   .review .container .block-for-slider .slidewrapper .slide .about_txt {
-    width: 70vw; }
+    width: 65vw;
+    text-align: justify; }
   .review .container .block-for-slider .slidewrapper .slide .slide_img img {
     display: none; }
   .review .container .block-for-slider .viewport .slick-prev, .review .container .block-for-slider .viewport .slick-next {
@@ -692,7 +696,9 @@
     .how_work .section_how .container figure .text_bottom p.some {
       display: none; }
   .how_work .section_how .container figure .number {
-    left: 71vw; } }
+    left: 71vw; }
+  .advance footer .container .link_email {
+    left: 0%; } }
 
 @media only screen and (max-width: 487px) {
   .main section.coaches .coaches_sld .slick-next {
@@ -708,7 +714,11 @@
     position: relative;
     margin-top: -15%; }
     footer.footer_blog .container .link span {
-      padding-right: 10%; } }
+      padding-right: 10%; }
+  section.advance .title_advance {
+    left: 74px !important; }
+  .advance footer .container .link_email {
+    left: -10%; } }
 
 @media only screen and (max-width: 320px) {
   section.head .container .row .head_txt span {
