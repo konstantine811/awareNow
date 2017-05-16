@@ -2,7 +2,7 @@
 * @Author: Abrams
 * @Date:   2017-04-28 22:36:59
 * @Last Modified by:   Admin
-* @Last Modified time: 2017-05-15 16:41:28
+* @Last Modified time: 2017-05-16 12:26:27
 */
 
 'use strict';
@@ -129,7 +129,11 @@ jQuery('.select-img').slick({
 
 
 
-
+//поменять responsiveFallback: false на 768
+//
+//
+//
+//
 
 jQuery(".main").onepage_scroll({
    sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -148,7 +152,12 @@ jQuery(".main").onepage_scroll({
    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 });
 
-jQuery(".main").moveTo(4);
+//end
+//
+//
+//
+//
+jQuery(".main").moveTo(0);
 
 
 jQuery('.popup').click(function() {
