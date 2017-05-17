@@ -196,7 +196,8 @@ img {
 body {
   background-color: #FFFFFF;
   font-family: Lato;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 100%; }
 
 .menu {
   position: fixed;
@@ -1043,7 +1044,7 @@ section.head {
           top: 5%; }
       .how_work .section_how figure .text_bottom {
         position: relative;
-        left: 38vw;
+        left: 42vw;
         color: #7C8F9E;
         bottom: 60px;
         margin-top: -20%; }
@@ -1170,7 +1171,7 @@ section.head {
         .review .block-for-slider .slidewrapper .slide .side img {
           width: 22px;
           position: absolute;
-          bottom: 50%;
+          bottom: 15%;
           left: -50px;
           -webkit-transform: rotate(-90deg);
               -ms-transform: rotate(-90deg);
@@ -1279,16 +1280,23 @@ section.coaches {
   height: 100vh;
   position: relative;
   width: 100%;
-  background-color: #F6F8F9;
-  background-image: url("../img/Coach_bg.png");
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: 50% 20%;
-  z-index: 100; }
+  z-index: 100;
+  background-color: #F6F8F9; }
+  section.coaches::after {
+    content: 'Coach';
+    position: absolute;
+    font-size: 30vw;
+    left: 5%;
+    font-family: 'SF_NS';
+    color: #FFFFFF;
+    top: 0%;
+    z-index: -1; }
   section.coaches .coaches_sld {
     width: 72%;
     margin: 0 auto;
     margin-top: 3%;
+    position: relative;
+    left: 5%;
     z-index: 100; }
     section.coaches .coaches_sld h4 {
       color: #32495B;
@@ -1446,7 +1454,8 @@ section.coaches {
       left: 10vw;
       line-height: 32px;
       color: #32495B;
-      bottom: 0; }
+      bottom: 8px;
+      font-weight: 600; }
   section.coaches .border_bottom {
     position: absolute;
     bottom: 30px;
@@ -1501,11 +1510,11 @@ section.coaches {
         top: -24px;
         margin-top: 0; }
       .advance .back_link_wave .link .style5 {
-        left: 205px;
+        left: 465px;
         bottom: 293px;
         margin-top: 0; }
       .advance .back_link_wave .link .style6 {
-        left: 125px;
+        left: 395px;
         top: -85px;
         margin-top: 0; }
   .advance .back {
@@ -1513,7 +1522,7 @@ section.coaches {
     left: 33%;
     top: 10%; }
   .advance .title_advance {
-    font-size: 40px;
+    font-size: 32px;
     color: #7C8F9E;
     font-family: Lato;
     font-weight: 600;
@@ -1560,7 +1569,7 @@ section.coaches {
       background-color: #FFFFFF;
       -webkit-border-radius: 13px;
               border-radius: 13px;
-      left: 10%;
+      left: 15%;
       overflow: hidden;
       margin-top: 150px;
       background-image: url("../img/waves@2x.png");
@@ -1714,7 +1723,7 @@ form {
     position: absolute;
     font-style: italic;
     z-index: 100;
-    margin-left: 90px;
+    margin-left: 125px;
     bottom: -20px;
     z-index: 101;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
@@ -1729,7 +1738,7 @@ form {
     bottom: 0px;
     z-index: 102;
     right: 13vw;
-    margin-right: -60px; }
+    margin-right: -100px; }
 
 .text_advance {
   width: 50%;
