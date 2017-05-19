@@ -3,12 +3,18 @@
 @import '_responsiv_mobile'
 @import '_variables'
 
+
+html, body
+	height: 100%
 body
 	background-color: $white
 	font-family: Lato
 	overflow-x: hidden
 	font-size: 100%
 
+a
+	text-decoration: none
+	color: $white
 .menu
 	position: fixed
 	width: 100%
@@ -767,6 +773,7 @@ section.head
 				bottom: 92px
 				width: 55%
 				margin-left: -10px
+				z-index: 100
 			img.secure
 				width: 55%
 			img.cal
@@ -794,8 +801,8 @@ section.head
 				position: relative
 				left: 42vw
 				color: $silver
-				bottom: 60px
-				margin-top: -20%
+				top: -500px
+				margin-top: 20vh
 				h3
 					color: $black_txt
 					font-size: 28px
@@ -892,8 +899,9 @@ section.head
 					h3
 						margin-top: 0px
 						font-size: 40px
-						color: $black_txt
 						font-weight: 300
+						a
+							color: $black_txt
 					p
 						margin-top: 13%
 						font-size: 14px
@@ -924,8 +932,9 @@ section.head
 						transform: rotate(-90deg)
 					h4
 						font-size: 28px
-						color: $blue_txt
 						font-family: 'SF_NS'
+						a
+							color: $blue_txt
 					span
 						color: $silver
 						font-weight: 600
@@ -1295,7 +1304,7 @@ section.coaches
 			background-position: center bottom
 			z-index: 100
 			h5
-				font-size: 48px
+				font-size: 2.4vw
 				font-weight: 600
 				margin: 10% 0
 				color: $black_txt
@@ -1434,7 +1443,8 @@ form
 		position: absolute
 		font-style: italic
 		z-index: 100
-		margin-left: 125px
+		left: 6.5vw
+		margin-left: 0px
 		bottom: -20px
 		z-index: 101
 		box-shadow: 0px 2px 5px 0px rgba(0,0,0, 0.3)
@@ -1447,8 +1457,7 @@ form
 		background-repeat: no-repeat
 		bottom: 0px
 		z-index: 102
-		right: 13vw
-		margin-right: -100px
+		right: 7.6vw
 
 
 .text_advance

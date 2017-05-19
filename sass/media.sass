@@ -57,7 +57,7 @@
 					top: 350px
 			form
 				input
-					margin-left: 80px
+					// margin-left: 80px
 		.ab
 			.back_link_wave
 				top: 100px
@@ -72,11 +72,116 @@
 @include max-screen-height (769px)
 
 	//section_how_word
-	.how_work
+	// .how_work
+	// 	.section_how .container
+	// 		.text_bottom
+	// 			margin-top: -25%
+	// 			left: 42vw
+	//reviews
+	.main .review .container
+		.block-for-slider
+			.slidewrapper 
+				.slide
+					.about_txt
+						h3
+							font-size: 4vh
+							margin-top: -40px
+						p
+							font-size: 2.3vh
+							margin-top: 0
+					.slide_img img
+						margin-top: 25vh
+						width: 90vh
+			.select-img
+				top: 80vh
+		.viewport
+			.slick-prev, .slick-next
+				top: 99vh
+			.slick-dots
+				top: 97.7vh
+	//how_work
+	.main .how_work
 		.section_how .container
 			.text_bottom
-				margin-top: -25%
-				left: 42vw
+				margin-top: 100vh
+				top: -1100px
+
+@include max-screen-height (700px)
+
+	//title_txt
+	.main section .title_txt
+		h2
+			font-size: 10vh
+			line-height: 8vh
+			padding-top: 20px
+		p
+			font-size: 4vh
+	//coach
+	.main section.coaches
+		.coaches_sld .rank h5
+			margin-top: 1vh
+		.slick-prev, .slick-next
+			margin-top: 75vh
+			top: -180px
+		.slick-dots
+			margin-top: 75vh
+			top: -190px
+	.main .review .container
+		.block-for-slider
+			.slidewrapper 
+				.slide
+					.slide_img img
+						margin-top: 38vh
+						width: 90vh
+	//how_work
+	.main .how_work
+		.section_how .container
+			.text_bottom
+				margin-top: 100vh
+				top: -1005px
+			.how_icon
+				font-size: 2.9vh
+				.privat_chat, .secure_mess, .ease_shedul
+					line-height: 2vh
+
+
+@include max-screen-height (670px)
+
+	//how_work
+	// .main .how_work
+	// 	.section_how .container
+	// 		.text_bottom
+	// 			margin-top: 100vh
+	// 			top: -805px
+
+@include max-screen-height (570px)
+	//coach
+	.main section.coaches
+		.slick-next
+			left: 70vw
+			margin-top: 7vw
+			top: 74px70
+		.slick-prev
+			left: -50px
+			margin-top: 7vw
+			top: 74px
+		.slick-dots 
+			display: none
+		.show p.text
+			width: 70%
+			left: 15vw
+			line-height: 5vh
+			font-size: 3vh
+
+	//review
+	.main .review .container
+		.block-for-slider
+			.slidewrapper 
+				.slide
+					.slide_img img
+						margin-top: 58vh
+						width: 90vh
+	
 
 
 //width
@@ -98,10 +203,9 @@
 			form
 				input
 					width: 300px
-					margin-left: 60px
 				.shape
-					right: 33vw
-					margin-right: -360px
+					right: 27vw
+					margin-right: -307px
 		.ab
 			.back_link_wave
 				.link
@@ -200,21 +304,47 @@
 				img
 					bottom: 30px
 				.text_bottom
-					left: 31vw
-					bottom: 350px
-					margin-top: 39vh
+					margin-top: 100vh  !important
+					top: -805px !important
 					h3
 						font-size: 22px
 					.tx
 						margin-top: 1%
+						width: 28vw
+						br
+							display: none
 					.some
 						top: 44px
 				p
 					width: 100%
 					line-height: 20px
+	//review - new
+	.main .review .container
+		.block-for-slider
+			.slidewrapper 
+				.slide
+					.about_txt
+						h3
+							margin-top: -17px
+					.slide_img
+						img
+							width: 40%
+			.viewport
+				.slick-prev, .slick-next
+					top: 79vh
+				.slick-dots
+					top: 77.8vh
+			.select-img
+				top: 63vh
+	//end
 
 	//title_txt
 	.container .row .title_txt
+		h2
+			font-size: 54px 
+		p
+			font-size: 22px
+	section.coaches .title_txt
 		h2
 			font-size: 54px 
 		p
@@ -249,6 +379,8 @@
 						left: 245px
 
 @include max-screen(992px)
+
+	.main section
 	//section_andvance
 	.advance .container
 		.slide_search
@@ -257,9 +389,9 @@
 				margin-top: 70px
 			form
 				input
-					margin-left: 180px
+					margin-left: 113px
 				.shape
-					margin-right: -470px
+					margin-right: -417px
 
 	.advance .title_advance
 		top: 3% !important
@@ -271,9 +403,11 @@
 	//section_coaches
 	section.coaches .coaches_sld
 		.slick-next
+			margin-top: 7vh
 			left: 70vw
 			top: 74px
 		.slick-prev
+			margin-top: 7vh
 			left: -50px
 			top: 74px
 		.slick-dots 
@@ -329,7 +463,7 @@
 			.window
 			form
 				input
-					margin-left: 170px
+					margin-left: 105px
 	.advance .title_advance
 		top: 3% !important
 	section.advance
@@ -351,16 +485,41 @@
 					i
 						padding: 0 10px
 
-@include max-screen(820px)
+@include max-screen(800px)
+	//how_work
+	.main .how_work	
+		.section_how .container
+			figure
+				.text_bottom
+					top: -685px 
+	//review
+	.main 
+		.review .container 
+			.block-for-slider
+				bottom: 66px
+				.viewport 
+					.slick-next, .slick-prev
+						top: 89vh
+				.slidewrapper .slide 
+					.slide_img
+						img
+							width: 36%
+							left: 64%
+	.main section.coaches
+		.show
+			p.text
+				width: 56%
 
 
 @include max-screen(768px)
 	body
 		overflow-x: hidden !important
 	//section_head
+	.main section
+		height: 700px !important
 	.main
 		section.head
-			height: 100vh !important
+			height: 600px !important
 			.back_img
 				.wave
 					.wave_1
@@ -370,92 +529,133 @@
 					.wave_3
 						top: 500px
 	//title_txt
-	.container .row .title_txt
-		left: 14vw
+	.main section .title_txt
 		h2
-			font-size: 32px 
+			font-size: 36px !important
+			line-height: 12px
+			padding-top: 20px
 		p
-			font-size: 18px
+			font-size: 22px
+			margin-bottom: 0 !important
+			margin-top: 5% 
+
 	//section_how_work
-	.how_work
-		.section_how
-			height: 100% !important
-			background-size: contain !important
-	.how_work
-		.section_how .container
-			.how_icon
-				display: inline-flex
-				left: 0
-				margin-top: 10px
-			.privat_chat, .secure_mess, .ease_shedul
-				padding: 0 7%
-				p
-					margin-top: 15%
-			.privat_chat
-				margin-top: 0
-			.secure_mess
-				margin-top: 0
-				top: 0
-			.ease_shedul
-				margin-top: -10px
-				top: 0
-				p
-					margin-top: 17%
-			figure
-				margin-top: 0
-				.text
-					position: relative
-					left: 63vw
-					top: 8vh
-				img
-					bottom: 80px
-				img.secure
-					width: 59%
-				.number
-					bottom: 22px
-					left: 49vw
-				.text_bottom
-					width: 100%
+	.main
+		.how_work
+			.section_how
+				height: 100% !important
+				background-size: contain !important
+			.section_how .container	
+				.how_icon
+					font-size: 16px
+					.privat_chat, .secure_mess, .ease_shedul
+						line-height: 12px 
+
+	.main
+		.how_work
+			min-height: 100%
+			z-index: 0
+			.section_how
+				height: 100%
+				.how_icon
+					display: inline-flex
 					left: 0
-					bottom: 134px
+					margin-top: 10px
+				.privat_chat, .secure_mess, .ease_shedul
+					padding: 0 7%
+					p
+						margin-top: 15%
+				.privat_chat
 					margin-top: 0
-					.tx
+				.secure_mess
+					margin-top: 0
+					top: 0
+				.ease_shedul
+					margin-top: -10px
+					top: 0
+					p
+						margin-top: 17%
+				figure
+					margin-top: 0
+					.text
+						position: relative
+						left: 63vw
+						top: 8vh
+						width: 30vw
 						br
 							display: none
-					.some
-						top: 0px
-						right: 22%
-				.slick-next
-					left: 73%
-				.slick-prev
-					left: 62%
+					img
+						bottom: 80px
+					img.secure
+						width: 59%
+					.number
+						bottom: 22px
+						left: 49vw
+					.text_bottom
+						width: 100%
+						left: 0
+						margin-top: 0 !important
+						top: -133px !important
+						.tx
+							width: 60vw
+							margin-left: 10vw
+						h3
+							margin-left: 10vw
+							br
+								display: none
+						.some
+							top: 0px
+							right: 22%
+					.slick-next
+						left: 73%
+					.slick-prev
+						left: 62%
 
 	//section_reviews
 	.main
 		.review
+			z-index: 98
 			background-color: $white
-	.review .container
+			z-index: -1
+			.white
+				height: 50%
+
+	.main .review .container
 		.title_txt
-			bottom: 47px
+			bottom: 0
+			line-height: 0
 		.block-for-slider
 			bottom: 104px
 			height: 100%
 			.slidewrapper
 				.slide
+					margin: 0
+					.side
+						top: 170px
+					.number
+						top: 100px
 					.slide_img
 						img
-							margin-top: 0vh
-							bottom: 100px
+							margin-top: 0 !important
 							position: absolute
+							bottom: -50px
 					.about_txt
+						bottom: 0
 						h3
 							font-size: 22px
+							margin-top: 30px !important
+						p
+							margin-top: 20px
+							line-height: 22px
+							font-size: 16px
 					.side
 						h4
 							font-size: 18px
 			.select-img
+				top: 396px !important
 				margin-top: 0
-				top: 374px
+				img
+					margin: 0 !important
 			.viewport
 				.slick-prev, .slick-next
 					top: 590px
@@ -463,36 +663,53 @@
 					margin-left: -60px
 				.slick-next
 					margin-left: 100px
+
+	
 	//section_coaches
 	.main
 		section.coaches
 			.coaches_sld
 				.slick-dots 
-					top: 240px
-					left: 130px
+					top: 237px
+					margin-left: -30vw
+					left: 186px
+					margin-top: 0
+					display: inline
 				.slick-prev
 					top: 250px
 					left: 80px
+					margin-top: 0
 				.slick-next
 					top: 250px
 					left: 340px
+					margin-top: 0
 			.show
 				position: relative
 				margin-top: 180px
 				.button
 					position: relative
 					margin: 0 auto
-				.text
+				p.text
 					left: 0
 					width: 70%
 					margin-top: 20px
+					line-height: 22px
+					font-size: 16px
 			.border_bottom
 				position: relative
 				left: 0
 				width: 70%
 				margin: 0 auto
-	section.coaches
-		height: 100% !important
+	.main section.coaches
+		.coaches_sld .rank h5
+			margin-top: 20px
+		.slick-prev, .slick-next
+			top: 320px !important
+		.slick-dots
+			top: 307px !important
+		.coaches_sld
+			h4
+				margin-bottom: 10% !important
 	//section: advance
 	.advance .container
 		.column_one
@@ -501,11 +718,12 @@
 			.window
 				margin-top: 100px
 				left: 50vw
+				height: 430px
 				margin-left: -280px
 			form
 				input
 					left: 50vw
-					margin-left: -250px
+					margin-left: -254px
 				.shape
 					left: 50vw
 					margin-left: 10px
@@ -556,20 +774,21 @@
 @include max-screen(700px)
 
 	//section_reveiws
-	.review .container
-		.title_txt
-			bottom: 47px
-		.block-for-slider
-			.select-img
-				margin-top: 0
-				top: 404px
-			.viewport
-				.slick-prev, .slick-next
-					top: 590px
-				.slick-prev
-					margin-left: -60px
-				.slick-next
-					margin-left: 100px
+	.main
+		.review .container
+			.block-for-slider
+				.slidewrapper
+					.slide
+						.slide_img
+							img
+								bottom: 16px
+				.select-img
+					top: 430px !important
+				.viewport
+					.slick-prev, .slick-next
+						top: 626px
+
+
 
 	//sectin_how_work
 	.how_work
@@ -586,8 +805,8 @@
 						margin-top: 15%
 			figure
 				.text
-					left: 56vw
-					top: 89px
+					left: 61vw
+					top: 154px
 				.text_bottom
 					bottom: 150px
 					width: 80%
@@ -639,24 +858,26 @@
 @include max-screen(550px)
 
 	//section_reveiws
-	.review .container
-		.title_txt
-			bottom: 47px
-		.block-for-slider
-			.select-img
-				margin-top: 0
-				top: 434px
-			.slidewrapper .slide .side
-				left: -77px
-				width: 37%
-				top: 228px
-			.viewport
-				.slick-prev, .slick-next
-					top: 590px
-				.slick-prev
-					margin-left: -60px
-				.slick-next
-					margin-left: 100px
+	.main
+		.review .container
+			.block-for-slider
+				.slidewrapper
+					.slide
+						.slide_img
+							img
+								bottom: 16px
+						.number
+							top: 150px
+						.about_txt	
+							width: 70vw
+							p
+								width: 33vw
+				.select-img
+					top: 430px !important
+				.viewport
+					.slick-prev, .slick-next
+						top: 586px
+
 	//
 	.advance footer .container
 		.link_email
@@ -679,21 +900,30 @@
 			left: 65% 
 	.main section.coaches .show .button
 		left: 25vw !important
+	.main
+		section.coaches
+			.coaches_sld
+				.slick-next
+					left: 320px
 
 	//sectin_how_work
 	.how_work
 		.section_how .container
 			figure
+				img
+					margin-left: 0
 				.text
-					left: 35px
+					left: 18vw
+					width: 60vw
 					top: 229px
 				.text_bottom
-					bottom: 0px
+					top: -20px !important
 					width: 80%
 					margin: 0 auto
 					p.some
 						display: none
 				.number
+					bottom: 0
 					left: 71vw
 	//section_advance
 	.advance .container
@@ -777,6 +1007,32 @@
 					margin-left: 0px
 				.slick-next
 					margin-left: 100px
+	.main
+		.review .container
+			.block-for-slider
+				bottom: 0px
+				.slidewrapper
+					.slide
+						.number
+							display: none
+						.about_txt	
+							width: 55vw
+							p
+								width: 100%
+						.side
+							top: 60px
+				.select-img
+					top: 873px !important
+					margin-top: -130vw
+					left: 60vw
+					margin-left: -200px
+				.viewport
+					.slick-prev, .slick-next
+						top: 993px !important
+						margin-top: -130vw
+
+
+
 	//advance
 
 	.advance .container
@@ -901,7 +1157,7 @@
 		.section_how .container
 			figure
 				.text
-					left: 35px
+					margin-left: 2vw
 					top: 169px
 				.text_bottom
 					bottom: 0px
@@ -909,6 +1165,7 @@
 					margin: 0 auto
 					p.some
 						display: none
+
 				.number
 					left: 71vw
 	.advance footer .container
@@ -924,10 +1181,38 @@
 
 
 @include max-screen(400px)
+	//how_work
+	.main
+		.how_work
+			.section_how .container 
+				figure
+					.number
+						display: none
+					img
+						bottom: 52px
+					.text
+						top: 131px
+				.text_bottom
+					margin-top: 0px !important
+
 
 	
 
 @include max-screen(360px)
+
+	//how_work
+	.main
+		.how_work
+			.section_how .container 
+				figure
+					.number
+						display: none
+					img
+						bottom: 52px
+					.text
+						top: 131px
+				.text_bottom
+					margin-top: 30px !important
 
 
 	//blog

@@ -163,7 +163,7 @@ img {
   .col-medium-table-8 {
     width: 100%; } }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .col-table-1 {
     width: 16.66667%; }
   .col-table-2 {
@@ -193,11 +193,18 @@ img {
   .col-exs-2 {
     width: 100%; } }
 
+html, body {
+  height: 100%; }
+
 body {
   background-color: #FFFFFF;
   font-family: Lato;
   overflow-x: hidden;
   font-size: 100%; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
 
 .menu {
   position: fixed;
@@ -1018,7 +1025,8 @@ section.head {
         position: relative;
         bottom: 92px;
         width: 55%;
-        margin-left: -10px; }
+        margin-left: -10px;
+        z-index: 100; }
       .how_work .section_how figure img.secure {
         width: 55%; }
       .how_work .section_how figure img.cal {
@@ -1046,8 +1054,8 @@ section.head {
         position: relative;
         left: 42vw;
         color: #7C8F9E;
-        bottom: 60px;
-        margin-top: -20%; }
+        top: -500px;
+        margin-top: 20vh; }
         .how_work .section_how figure .text_bottom h3 {
           color: #32495B;
           font-size: 28px;
@@ -1142,8 +1150,9 @@ section.head {
         .review .block-for-slider .slidewrapper .slide .about_txt h3 {
           margin-top: 0px;
           font-size: 40px;
-          color: #32495B;
           font-weight: 300; }
+          .review .block-for-slider .slidewrapper .slide .about_txt h3 a {
+            color: #32495B; }
         .review .block-for-slider .slidewrapper .slide .about_txt p {
           margin-top: 13%;
           font-size: 14px;
@@ -1178,8 +1187,9 @@ section.head {
                   transform: rotate(-90deg); }
         .review .block-for-slider .slidewrapper .slide .side h4 {
           font-size: 28px;
-          color: #0389A4;
           font-family: 'SF_NS'; }
+          .review .block-for-slider .slidewrapper .slide .side h4 a {
+            color: #0389A4; }
         .review .block-for-slider .slidewrapper .slide .side span {
           color: #7C8F9E;
           font-weight: 600;
@@ -1578,7 +1588,7 @@ section.coaches {
       background-position: center bottom;
       z-index: 100; }
       .advance .slide_search .window h5 {
-        font-size: 48px;
+        font-size: 2.4vw;
         font-weight: 600;
         margin: 10% 0;
         color: #32495B; }
@@ -1723,7 +1733,8 @@ form {
     position: absolute;
     font-style: italic;
     z-index: 100;
-    margin-left: 125px;
+    left: 6.5vw;
+    margin-left: 0px;
     bottom: -20px;
     z-index: 101;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
@@ -1737,8 +1748,7 @@ form {
     background-repeat: no-repeat;
     bottom: 0px;
     z-index: 102;
-    right: 13vw;
-    margin-right: -100px; }
+    right: 7.6vw; }
 
 .text_advance {
   width: 50%;
