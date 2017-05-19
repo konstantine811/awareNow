@@ -193,9 +193,6 @@ img {
   .col-exs-2 {
     width: 100%; } }
 
-html, body {
-  height: 100%; }
-
 body {
   background-color: #FFFFFF;
   font-family: Lato;
@@ -670,7 +667,7 @@ section.blog {
     font-weight: 300; }
   section.blog .section_first {
     width: 70%;
-    display: inline-block; }
+    display: block; }
   section.blog .recent article.blog_txt h4 {
     color: #32495B;
     font-size: 28px;
@@ -758,7 +755,7 @@ section.blog {
     text-decoration: none;
     color: #FFFFFF;
     position: relative;
-    left: 43%; }
+    left: 30%; }
 
 .info_data, .message {
   color: #7C8F9E;
@@ -780,7 +777,6 @@ footer.footer_blog {
   position: relative;
   width: 100%;
   background-color: #FFFFFF;
-  padding-bottom: 5%;
   margin: 3% 0; }
   footer.footer_blog .logo {
     position: relative;
