@@ -144,15 +144,44 @@
 				.privat_chat, .secure_mess, .ease_shedul
 					line-height: 2vh
 
+	//advance
+	.main .advance .container
+		.slide_search
+			.window
+				height: 60vh
+				h5
+					font-size: 4.5vh
+				p
+					font-size: 2vh
+					line-height: 4vh
+				.slick-next, .slick-prev
+					top: 53vh
+	.main .advance footer
+		height: 15vh
+		.container
+			.border_top
+				display: none
+			.logo
+				.circle
+					top: 1vh
+					margin-top: 35px
+				img
+					margin-top: 1vh
+			.social, .link_email
+				margin-top: 1vh
+				top: 30px
 
-@include max-screen-height (670px)
+
+@include max-screen-height (600px)
 
 	//how_work
-	// .main .how_work
-	// 	.section_how .container
-	// 		.text_bottom
-	// 			margin-top: 100vh
-	// 			top: -805px
+	.main .how_work
+		.section_how .container
+			.text_bottom
+				top: -731px !important
+	.main .advance
+		footer
+			height: 10vh
 
 @include max-screen-height (570px)
 	//coach
@@ -182,7 +211,16 @@
 						margin-top: 58vh
 						width: 90vh
 	
+@include max-screen-height (520px)
 
+	//how_work
+	.main .how_work
+		.section_how .container
+			.text_bottom
+				top: -701px !important
+	.main .advance
+		footer
+			height: 10vh
 
 //width
 @include max-screen (1840px)
@@ -277,6 +315,9 @@
 					i
 						padding: 0 25px
 
+	.main .advance
+		.column_one
+			left: 20%
 	//blog 
 	header.head .container
 		article.text_column_3
@@ -552,10 +593,10 @@
 						line-height: 12px 
 
 	.main
-		.how_work
+		.how_work 
 			min-height: 100%
 			z-index: 0
-			.section_how
+			.section_how .container
 				height: 100%
 				.how_icon
 					display: inline-flex
@@ -580,7 +621,7 @@
 					.text
 						position: relative
 						left: 63vw
-						top: 8vh
+						top: 100px
 						width: 30vw
 						br
 							display: none
@@ -590,7 +631,7 @@
 						width: 59%
 					.number
 						bottom: 22px
-						left: 49vw
+						left: 59vw
 					.text_bottom
 						width: 100%
 						left: 0
@@ -711,33 +752,51 @@
 			h4
 				margin-bottom: 10% !important
 	//section: advance
-	.advance .container
+	.main .advance
+		height: 800px !important
+	 .container
 		.column_one
 			left: 26%
 		.slide_search
 			.window
-				margin-top: 100px
-				left: 50vw
-				height: 430px
-				margin-left: -280px
+				margin-left: -180px
+				margin-top: 240px
+				height: 430px !important
+				h5
+					font-size: 32px !important
+				p
+					margin-top: 10px 
+					font-size: 16px !important
+					line-height: 32px !important
+			.slick-next, .slick-prev
+				top: 390px !important
 			form
 				input
-					left: 50vw
-					margin-left: -254px
+					left: 20vw
+					margin-left: -190px
 				.shape
-					left: 50vw
-					margin-left: 10px
+					left: 20vw
+					margin-left: 70px
 	section.advance
 		.title_advance
 			left: 240px !important
 	.advance
-		footer .container
+		footer
+			width: 100% !important
+			padding-top: 40px
+			left: 0 !important
+			height: 100px !important
+			.container
 			.social
 				margin-top: 22px !important
+				top: 0 !important
 				i
 					padding: 0 4px !important
 			.link_email
 				margin-top: 22px !important
+				left: -20% !important
+				text-align: left !important
+				top: 0 !important
 			.row
 				.col-4:nth-child(2)
 					display: none !important
@@ -791,37 +850,38 @@
 
 
 	//sectin_how_work
-	.how_work
-		.section_how .container
-			.how_icon
-				font-size: 14px
-				line-height: 1px
-				p
-					margin-top: 10%
-				.privat_chat, .secure_mess, .ease_shedul
-					line-height: 10px
-				.ease_shedul
+	.main
+		.how_work
+			.section_how .container
+				.how_icon
+					font-size: 14px
+					line-height: 1px
 					p
-						margin-top: 15%
-			figure
-				.text
-					left: 61vw
-					top: 154px
-				.text_bottom
-					bottom: 150px
-					width: 80%
-					margin: 0 auto
-					.some
-						top: -15px
-						right: 33%
-				.number
-					left: 71vw
-				img.cal
-					width: 67%
-				img
-					width: 75%
-				img.secure
-					width: 75%
+						margin-top: 10%
+					.privat_chat, .secure_mess, .ease_shedul
+						line-height: 10px
+					.ease_shedul
+						p
+							margin-top: 15%
+				figure
+					.text
+						left: 61vw
+						top: 164px
+					.text_bottom
+						bottom: 150px
+						width: 80%
+						margin: 0 auto
+						.some
+							top: 50px
+							right: 23%
+					.number
+						left: 71vw
+					img.cal
+						width: 67%
+					img
+						width: 75%
+					img.secure
+						width: 75%
 
 	.back_img
 		.meditation, .execut, .fear, .breathe, .health, .focus, .breathe_2, .leader
@@ -907,7 +967,7 @@
 					left: 320px
 
 	//sectin_how_work
-	.how_work
+	.main .how_work
 		.section_how .container
 			figure
 				img
@@ -927,23 +987,14 @@
 					left: 71vw
 	//section_advance
 	.advance .container
-		.column_one
-			display: none
 	.advance .container
 		.slide_search
 			.window
 				position: relative
-				top: 40px
-				margin-left: -352px
 	.advance .container .slide_search
 		form
 			input
-				bottom: -60px
-				margin-left: -323px
 			.shape
-				margin-left: -60px
-				position: absolute
-				bottom: -40px
 				z-index: 1000
 	.advance .title_advance
 		top: 8% !important
@@ -1035,19 +1086,31 @@
 
 	//advance
 
-	.advance .container
+	.main .advance .container
 	 	.slide_search
 	 		.window
-	 			margin-left: -183px
+	 			margin-top: 8px
 			form
 				input
-					bottom: -60px
-					margin-left: -159px !important
+					left: 50vw
+					margin-left: -160px
 				.shape
-					margin-left: 100px !important
-					position: absolute
-					bottom: -40px
+					left: 50vw
+					margin-left: 90px
 					z-index: 1000
+	.main .advance footer
+		.container
+			.social
+				left: 0
+				padding: 0 4%
+				a
+					padding-right: 15%
+				a:nth-child(1)
+					padding-left: 15%
+			.link_email
+				left: 0 !important
+				span
+					padding-right: 5%
 	section.advance .title_advance
 		left: 156px !important
 	//blog
@@ -1153,7 +1216,7 @@
 				padding-right: 15%
 
 	//sectin_how_work
-	.how_work
+	.main .how_work
 		.section_how .container
 			figure
 				.text
@@ -1199,6 +1262,19 @@
 	
 
 @include max-screen(360px)
+	.main section
+		.title_txt
+			h2
+				font-size: 26px !important
+			p
+				font-size: 20px
+	.main .advance
+		.container
+			.column_one
+				left: 0
+				h3
+					font-size: 18px
+					margin-top: 40px
 
 	//how_work
 	.main
@@ -1211,8 +1287,9 @@
 						bottom: 52px
 					.text
 						top: 131px
-				.text_bottom
-					margin-top: 30px !important
+					.text_bottom
+						top: 12px !important
+						height: 200px
 
 
 	//blog
@@ -1239,6 +1316,29 @@
 			font-size: 12px
 		.button
 			padding: 12px 32px
+	.main .advance
+		.container
+			.column_one
+				left: 0
+				h3
+					font-size: 16px
+
+	///footer
+	.main .advance footer
+		.container
+			.social
+				left: 0
+				padding: 0 0%
+				a
+					padding-right: 5%
+				a:nth-child(1)
+					padding-left: 5%
+			.link_email
+				left: 0 !important
+				span
+					padding: 0%
+					padding-right: 2%
+					
 	//blog
 	
 	footer.footer_blog .container

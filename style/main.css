@@ -354,7 +354,8 @@ a.logo {
   background-position: 55vw 0%;
   background-color: #0389a4;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  margin-top: -30px; }
   .mobile_menu a.aware {
     padding: 3% 3%;
     font-size: 16px;
@@ -383,6 +384,8 @@ a.logo {
   .mobile_menu .button {
     margin-top: 5%;
     padding: 13px 30px; }
+  .mobile_menu .button.sign, .mobile_menu .login {
+    right: 0; }
   .mobile_menu .close_btn {
     position: absolute;
     top: 50px;
@@ -1600,7 +1603,7 @@ section.coaches {
         background-image: url("../img/left.png");
         background-repeat: no-repeat;
         background-size: contain;
-        top: 460px;
+        top: 476px;
         left: 60px;
         cursor: pointer;
         z-index: 100; }
@@ -1615,7 +1618,7 @@ section.coaches {
           font-weight: 600; }
       .advance .slide_search .window .slick-next {
         position: absolute;
-        top: 460px;
+        top: 476px;
         left: 120px;
         background-image: url("../img/right.png");
         background-repeat: no-repeat;
@@ -1657,7 +1660,7 @@ section.coaches {
   .advance footer {
     position: absolute;
     bottom: 0;
-    height: 12%;
+    height: 100px;
     left: 10%;
     width: 80%;
     z-index: 90; }
