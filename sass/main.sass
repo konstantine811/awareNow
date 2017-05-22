@@ -71,9 +71,10 @@ a
 	.popup
 		display: none
 		width: 50px
-		height: 50px
+		height: 34px
 		cursor: pointer
 		position: relative
+		top: -10px
 		left: 65%
 		z-index: 100
 		&:hover::before
@@ -140,15 +141,17 @@ a.logo
 	height: 100vh
 	width: 100%
 	margin-top: -30px
+	position: relative
 	a.aware
-		padding: 3% 3%
+		padding: 36px 30px 3%
 		font-size: 16px
 		text-decoration: none
 		color: black
 		display: inline-block
 		span
-			color: $blue_txt
+			color: $main_color
 	ul
+		padding-bottom: 70px
 		li
 			list-style: none
 			padding: 0% 0%
@@ -157,8 +160,8 @@ a.logo
 			a
 				text-decoration: none
 				color: $white
-				font-size: 24px
-				padding: 2% 3%
+				font-size: 26px
+				padding: 2.5% 30px
 				display: block
 				margin: 0 0
 				transition: background-color ease-in-out 0.3s
@@ -169,8 +172,38 @@ a.logo
 	.button
 		margin-top: 5%
 		padding: 13px 30px
-	.button.sign, .login
-		right: 0
+	.button.sign, .login		
+		bottom: 30px
+		position: absolute
+		left: 30px
+		right: auto
+		display: inline-block
+	.sign
+		background-color: $white
+		i
+			opacity: 1
+			transition: all 0.3s ease
+			position: relative
+			background-color: $red
+			border-radius: 50%
+			width: 100%
+			padding: 1px 5px
+			right: 15px
+			box-shadow: 0 0 7px 0 #EA0C71
+			&::after
+				content: ''
+				border: solid $white
+				border-width: 0 2px 2px 0
+				display: inline-block
+				padding: 2px
+				position: relative
+				bottom: 1px
+				transform: rotate(-45deg)
+
+	.login
+		left: 130px
+		a
+			color: #fff
 	.close_btn
 		position: absolute
 		top: 50px
@@ -1102,6 +1135,7 @@ section.coaches
 				position: absolute
 				bottom: 0px
 				width: 32%
+				height: auto
 				left: 70px
 				margin-left: 3vw
 				border-radius: 10px
@@ -1114,8 +1148,9 @@ section.coaches
 		background-size: contain
 		margin-top: 7vw
 		top: 274px
-		left: 150px
+		left: auto
 		cursor: pointer
+		right: calc(55% + 120px)
 		&::before
 			font-family: Lato
 			font-size: 14px
@@ -1134,6 +1169,7 @@ section.coaches
 		background-repeat: no-repeat
 		background-size: contain
 		cursor: pointer
+		left: calc(50% + 120px)
 		&::before
 			font-family: Lato
 			font-size: 14px
@@ -1145,19 +1181,35 @@ section.coaches
 			font-weight: 600
 	.slick-dots li.slick-active button:before
 		color: $red
-		border: 1px solid $silver
 		border-radius: 50%
+	.slick-dots li.slick-active button:after
+		content: ''
+		border: 1px solid $silver
+		border-radius: 100%
+		position: absolute
+		left: 2px
+		right: 2px
+		top: 2px
+		bottom: 2px
 	.slick-dots 
 		position: absolute
-		display: inline-flex
-		margin-top: 7vw
-		top: 264px
+		// margin-top: 7vw
+		top: 250px
 		left: 196px
+		display: inline-block
+		left: -5%
+		right: 0
+		text-align: center
+		width: 240px
+		margin: 7vw auto 0
+		bottom: auto
 	.slick-dots li button:before
 		width: 12.2px
 		height: 12px
 		line-height: 13px
 		transition: opacity 0.4s ease-in-out
+		left: 3px
+		top: 4px
 	.show
 		position: absolute
 		bottom: 10%
@@ -1302,7 +1354,7 @@ section.coaches
 			background-size: contain
 			background-repeat: no-repeat
 			background-position: center bottom
-			z-index: 100
+			z-index: 10
 			h5
 				font-size: 2.4vw
 				font-weight: 600
@@ -1432,6 +1484,7 @@ section.coaches
 
 form
 	position: relative
+	z-index: 100
 	input
 		border: 1px solid $silver_txt
 		border-radius: 50px
