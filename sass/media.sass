@@ -30,11 +30,11 @@
 		p
 			margin-top: 1% !important
 		.slick-next
-			top: 204px
+			top: 227px
 		.slick-prev
-			top: 204px
+			top: 227px
 		.slick-dots 
-			top: 195px
+			top: 210px
 
 @include max-screen-height (820px)
 
@@ -43,7 +43,6 @@
 		width: 50%
 	section.coaches .show .button
 		left: 36vw !important
-	
 	//sectino_advance
 	.advance .container
 		.slide_search
@@ -63,11 +62,11 @@
 				top: 100px
 			.link
 				font-size: 22px
-				.style2
-					top: -195px
-				.style5
-					bottom: 223px
-					left: 295px
+				// .style2
+				// 	top: -195px
+				// .style5
+				// 	bottom: 223px
+				// 	left: 295px
 
 @include max-screen-height (769px)
 
@@ -127,7 +126,7 @@
 			top: -180px
 		.slick-dots
 			margin: 75vh auto 0
-			top: -194px
+			top: -199px
 		.coaches_sld
 			.photo_slide img
 				width: 28%
@@ -226,7 +225,7 @@
 	.main .how_work
 		.section_how .container
 			.text_bottom
-				top: -701px !important
+				top: -662px !important
 	.main .advance
 		footer
 			height: 10vh
@@ -257,12 +256,25 @@
 			.back_link_wave
 				.link
 					font-size: 22px
-					.style2
-						top: -195px
-					.style5
-						bottom: 223px
-						left: 295px
+					// .style2
+					// 	top: -195px
+					// .style5
+					// 	bottom: 223px
+					// 	left: 295px
 
+	//how_work
+	.main .how_work
+		.section_how figure .text_bottom
+			.some
+				display: none
+
+@include max-screen(1282px)
+	//review
+	.main
+		.review
+			.block-for-slider
+				.slidewrapper .slide .about_txt
+					width: 22vw
 
 @include max-screen(1225px)
 	nav.menu
@@ -381,11 +393,11 @@
 							width: 40%
 			.viewport
 				.slick-prev, .slick-next
-					top: 79vh
+					top: 96vh
 				.slick-dots
-					top: 77.8vh
+					top: 94vh
 			.select-img
-				top: 63vh
+				top: 79vh
 	//end
 
 	//title_txt
@@ -418,15 +430,15 @@
 			.back_link_wave
 				.link
 					font-size: 16px
-					.style0
-						left: 70px
-					.style1
-						left: 20px
-					.style2
-						top: -155px
-					.style5
-						bottom: 173px
-						left: 245px
+					// .style0
+					// 	left: 70px
+					// .style1
+					// 	left: 20px
+					// .style2
+					// 	top: -155px
+					// .style5
+					// 	bottom: 173px
+					// 	left: 245px
 
 @include max-screen(992px)
 
@@ -461,7 +473,7 @@
 			left: -50px
 			top: 74px
 		.slick-dots 
-			left: 226px
+			left: 0px
 
 	//blog
 	header.head .container
@@ -577,10 +589,10 @@
 			margin-top: -10px
 	//section_head
 	.main section
-		height: 700px !important
+		height: 100% !important
 	.main
 		section.head
-			height: 650px !important
+			height: 629px !important
 			.back_img
 				.wave
 					.wave_1
@@ -606,8 +618,9 @@
 	//section_how_work
 	.main
 		.how_work
+			height: 740px !important
 			.section_how
-				height: 550px !important
+				height: 100% !important
 				background-size: contain !important
 			.section_how .container	
 				.how_icon
@@ -619,7 +632,6 @@
 
 	.main
 		.how_work 
-			min-height: 100%
 			z-index: 0
 			.section_how .container
 				height: 100%
@@ -662,7 +674,7 @@
 						left: 0
 						height: auto
 						margin-top: 0 !important
-						top: -133px !important
+						top: 0px !important
 						.tx
 							width: 60vw
 							margin-left: 10vw
@@ -681,18 +693,23 @@
 	//section_reviews
 	.main
 		.review
+			height: 594px !important
 			z-index: 98
 			background-color: $white
-			z-index: -1
+			z-index: 1
 			.white
 				height: 50%
 
 	.main .review .container
 		.title_txt
-			bottom: 0
+			top: 30px
 			line-height: 0
+			padding-bottom: 0
+			h2
+				padding-top: 0px
+				margin-top: 0
 		.block-for-slider
-			bottom: 104px
+			bottom: 0px
 			height: 100%
 			.slidewrapper
 				.slide
@@ -710,7 +727,7 @@
 						bottom: 0
 						h3
 							font-size: 22px
-							margin-top: 30px !important
+							margin-top: 0px !important
 						p
 							margin-top: 20px
 							line-height: 22px
@@ -739,7 +756,7 @@
 			.coaches_sld
 				.slick-dots 
 					top: 237px
-					margin-left: -127px
+					margin-left: 104px
 					margin-top: 0
 					display: inline
 				.slick-prev
@@ -774,7 +791,7 @@
 		.slick-prev, .slick-next
 			top: 320px !important
 		.slick-dots
-			top: 307px !important
+			top: 305px !important
 		.coaches_sld
 			h4
 				margin-bottom: 10% !important
@@ -879,6 +896,7 @@
 	//sectin_how_work
 	.main
 		.how_work
+			height: 800px !important
 			.section_how .container
 				.how_icon
 					font-size: 14px
@@ -892,10 +910,9 @@
 							margin-top: 15%
 				figure
 					.text
-						left: 61vw
-						top: 164px
+						left: 17vw
+						top: 284px
 					.text_bottom
-						bottom: 150px
 						width: 80%
 						margin: 0 auto
 						.some
@@ -992,26 +1009,43 @@
 				.slick-next
 					left: 320px
 				.slick-dots 
-					margin-left: -139px
+					margin-left: 89px
+					top: 302px !important
 
 	//sectin_how_work
 	.main .how_work
+		height: 750px !important
 		.section_how .container
 			figure
 				img
 					margin-left: 0
 				.text
-					left: 18vw
+					left: 16vw
 					width: 60vw
-					top: 229px
 				.text_bottom
-					top: -20px !important
+					top: 5px !important
 					width: 80%
 					margin: 0 auto
 					p.some
 						display: none
 				.number
 					bottom: 0
+					left: 71vw
+		//sectin_how_work
+	.main .how_work
+		min-height: 650px
+		.section_how .container
+			figure
+				.text
+					top: 226px
+				.text_bottom
+					bottom: 0px
+					width: 80%
+					margin: 0 auto
+					p.some
+						display: none
+
+				.number
 					left: 71vw
 	//section_advance
 	.advance .container
@@ -1052,9 +1086,7 @@
 				padding-right: 15%
 @include max-screen(479px)
 
-	.main
-		section.head
-			height: 520px !important
+
 	section.head .back_img
 		opacity: 0.5
 	section.head .container .row .head_txt
@@ -1086,16 +1118,16 @@
 			.slidewrapper .slide .slide_img img
 				display: none
 			.viewport
-				.slick-prev, .slick-next
-					top: 580px
 				.slick-prev
 					margin-left: 0px
 				.slick-next
 					margin-left: 100px
 	.main
 		.review .container
+			.title_txt
+				top: 85px
 			.block-for-slider
-				bottom: 0px
+				top: 139px
 				.slidewrapper
 					.slide
 						.number
@@ -1105,16 +1137,15 @@
 							p
 								width: 100%
 						.side
-							top: 60px
+							top: 90px
 				.select-img
-					top: 873px !important
-					margin-top: -130vw
-					left: 60vw
-					margin-left: -200px
+					top: calc(95% + 22px) !important
+					margin-top: 0
+					left: calc(55% - 170px)
+					margin-left: 0
 				.viewport
 					.slick-prev, .slick-next
-						top: 993px !important
-						margin-top: -130vw
+						top: calc(95% + 182px)
 
 
 
@@ -1253,22 +1284,7 @@
 			span
 				padding-right: 15%
 
-	//sectin_how_work
-	.main .how_work
-		.section_how .container
-			figure
-				.text
-					margin-left: 2vw
-					top: 169px
-				.text_bottom
-					bottom: 0px
-					width: 80%
-					margin: 0 auto
-					p.some
-						display: none
 
-				.number
-					left: 71vw
 	.advance footer .container
 		.link_email
 			left: 0%
@@ -1283,11 +1299,17 @@
 		.slick-next
 			left: 150px
 
-
-@include max-screen(400px)
 	//how_work
 	.main
 		.how_work
+			height: 700px !important
+
+
+@include max-screen(415px)
+	//how_work
+	.main
+		.how_work
+			height: 500px !important
 			.section_how .container 
 				figure
 					.number
@@ -1352,6 +1374,13 @@
 	.advance footer .container .link_email
 		left: -10%
 @include max-screen(320px)
+
+	.main
+		.review .container
+			.block-for-slider
+				.viewport
+					.slick-prev, .slick-next
+						display: none
 	section.head .container .row .head_txt
 		span
 			font-size: 12px

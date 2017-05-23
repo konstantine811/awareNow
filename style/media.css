@@ -17,11 +17,11 @@
   section.coaches .coaches_sld p {
     margin-top: 1% !important; }
   section.coaches .coaches_sld .slick-next {
-    top: 204px; }
+    top: 227px; }
   section.coaches .coaches_sld .slick-prev {
-    top: 204px; }
+    top: 227px; }
   section.coaches .coaches_sld .slick-dots {
-    top: 195px; } }
+    top: 210px; } }
 
 @media only screen and (max-height: 820px) {
   section.coaches .show p.text {
@@ -39,12 +39,7 @@
   .advance .container .ab .back_link_wave {
     top: 100px; }
   .advance .container .ab .link {
-    font-size: 22px; }
-    .advance .container .ab .link .style2 {
-      top: -195px; }
-    .advance .container .ab .link .style5 {
-      bottom: 223px;
-      left: 295px; } }
+    font-size: 22px; } }
 
 @media only screen and (max-height: 769px) {
   .main .review .container .block-for-slider .slidewrapper .slide .about_txt h3 {
@@ -80,7 +75,7 @@
     top: -180px; }
   .main section.coaches .slick-dots {
     margin: 75vh auto 0;
-    top: -194px; }
+    top: -199px; }
   .main section.coaches .coaches_sld .photo_slide img {
     width: 28%;
     height: auto; }
@@ -146,7 +141,7 @@
 
 @media only screen and (max-height: 520px) {
   .main .how_work .section_how .container .text_bottom {
-    top: -701px !important; }
+    top: -662px !important; }
   .main .advance footer {
     height: 10vh; } }
 
@@ -166,11 +161,12 @@
     margin-right: -307px; }
   .advance .container .ab .back_link_wave .link {
     font-size: 22px; }
-    .advance .container .ab .back_link_wave .link .style2 {
-      top: -195px; }
-    .advance .container .ab .back_link_wave .link .style5 {
-      bottom: 223px;
-      left: 295px; } }
+  .main .how_work .section_how figure .text_bottom .some {
+    display: none; } }
+
+@media only screen and (max-width: 1282px) {
+  .main .review .block-for-slider .slidewrapper .slide .about_txt {
+    width: 22vw; } }
 
 @media only screen and (max-width: 1225px) {
   nav.menu nav.menu_item ul {
@@ -251,11 +247,11 @@
   .main .review .container .block-for-slider .slidewrapper .slide .slide_img img {
     width: 40%; }
   .main .review .container .block-for-slider .viewport .slick-prev, .main .review .container .block-for-slider .viewport .slick-next {
-    top: 79vh; }
+    top: 96vh; }
   .main .review .container .block-for-slider .viewport .slick-dots {
-    top: 77.8vh; }
+    top: 94vh; }
   .main .review .container .block-for-slider .select-img {
-    top: 63vh; }
+    top: 79vh; }
   .container .row .title_txt h2 {
     font-size: 54px; }
   .container .row .title_txt p {
@@ -273,16 +269,7 @@
       .advance footer .container .social i {
         padding: 0 20px; }
   .advance .container .ab .back_link_wave .link {
-    font-size: 16px; }
-    .advance .container .ab .back_link_wave .link .style0 {
-      left: 70px; }
-    .advance .container .ab .back_link_wave .link .style1 {
-      left: 20px; }
-    .advance .container .ab .back_link_wave .link .style2 {
-      top: -155px; }
-    .advance .container .ab .back_link_wave .link .style5 {
-      bottom: 173px;
-      left: 245px; } }
+    font-size: 16px; } }
 
 @media only screen and (max-width: 992px) {
   .advance .container .slide_search .window {
@@ -306,7 +293,7 @@
     left: -50px;
     top: 74px; }
   section.coaches .coaches_sld .slick-dots {
-    left: 226px; }
+    left: 0px; }
   header.head .container article.text_column_3 h1 {
     font-size: 42px; }
   footer.footer_blog .container .social {
@@ -381,9 +368,9 @@
     body .mobile_menu {
       margin-top: -10px; }
   .main section {
-    height: 700px !important; }
+    height: 100% !important; }
   .main section.head {
-    height: 650px !important; }
+    height: 629px !important; }
     .main section.head .back_img .wave .wave_1 {
       top: 300px; }
     .main section.head .back_img .wave .wave_2 {
@@ -402,17 +389,18 @@
       font-size: 22px;
       margin-bottom: 0 !important;
       margin-top: 5%; }
-  .main .how_work .section_how {
-    height: 550px !important;
-    background-size: contain !important; }
-  .main .how_work .section_how .container .how_icon {
-    font-size: 16px; }
-    .main .how_work .section_how .container .how_icon p {
-      line-height: 1; }
-    .main .how_work .section_how .container .how_icon .privat_chat, .main .how_work .section_how .container .how_icon .secure_mess, .main .how_work .section_how .container .how_icon .ease_shedul {
-      line-height: 12px; }
   .main .how_work {
-    min-height: 100%;
+    height: 740px !important; }
+    .main .how_work .section_how {
+      height: 100% !important;
+      background-size: contain !important; }
+    .main .how_work .section_how .container .how_icon {
+      font-size: 16px; }
+      .main .how_work .section_how .container .how_icon p {
+        line-height: 1; }
+      .main .how_work .section_how .container .how_icon .privat_chat, .main .how_work .section_how .container .how_icon .secure_mess, .main .how_work .section_how .container .how_icon .ease_shedul {
+        line-height: 12px; }
+  .main .how_work {
     z-index: 0; }
     .main .how_work .section_how .container {
       height: 100%; }
@@ -458,7 +446,7 @@
           left: 0;
           height: auto;
           margin-top: 0 !important;
-          top: -133px !important; }
+          top: 0px !important; }
           .main .how_work .section_how .container figure .text_bottom .tx {
             width: 60vw;
             margin-left: 10vw; }
@@ -474,16 +462,21 @@
         .main .how_work .section_how .container figure .slick-prev {
           left: 62%; }
   .main .review {
+    height: 594px !important;
     z-index: 98;
     background-color: #FFFFFF;
-    z-index: -1; }
+    z-index: 1; }
     .main .review .white {
       height: 50%; }
   .main .review .container .title_txt {
-    bottom: 0;
-    line-height: 0; }
+    top: 30px;
+    line-height: 0;
+    padding-bottom: 0; }
+    .main .review .container .title_txt h2 {
+      padding-top: 0px;
+      margin-top: 0; }
   .main .review .container .block-for-slider {
-    bottom: 104px;
+    bottom: 0px;
     height: 100%; }
     .main .review .container .block-for-slider .slidewrapper .slide {
       margin: 0; }
@@ -499,7 +492,7 @@
         bottom: 0; }
         .main .review .container .block-for-slider .slidewrapper .slide .about_txt h3 {
           font-size: 22px;
-          margin-top: 30px !important; }
+          margin-top: 0px !important; }
         .main .review .container .block-for-slider .slidewrapper .slide .about_txt p {
           margin-top: 20px;
           line-height: 22px;
@@ -521,7 +514,7 @@
     height: 750px !important; }
     .main section.coaches .coaches_sld .slick-dots {
       top: 237px;
-      margin-left: -127px;
+      margin-left: 104px;
       margin-top: 0;
       display: inline; }
     .main section.coaches .coaches_sld .slick-prev {
@@ -555,7 +548,7 @@
   .main section.coaches .slick-prev, .main section.coaches .slick-next {
     top: 320px !important; }
   .main section.coaches .slick-dots {
-    top: 307px !important; }
+    top: 305px !important; }
   .main section.coaches .coaches_sld h4 {
     margin-bottom: 10% !important; }
   .main .advance {
@@ -632,33 +625,34 @@
     top: 430px !important; }
   .main .review .container .block-for-slider .viewport .slick-prev, .main .review .container .block-for-slider .viewport .slick-next {
     top: 626px; }
-  .main .how_work .section_how .container .how_icon {
-    font-size: 14px;
-    line-height: 1px; }
-    .main .how_work .section_how .container .how_icon p {
-      margin-top: 10%; }
-    .main .how_work .section_how .container .how_icon .privat_chat, .main .how_work .section_how .container .how_icon .secure_mess, .main .how_work .section_how .container .how_icon .ease_shedul {
-      line-height: 10px; }
-    .main .how_work .section_how .container .how_icon .ease_shedul p {
-      margin-top: 15%; }
-  .main .how_work .section_how .container figure .text {
-    left: 61vw;
-    top: 164px; }
-  .main .how_work .section_how .container figure .text_bottom {
-    bottom: 150px;
-    width: 80%;
-    margin: 0 auto; }
-    .main .how_work .section_how .container figure .text_bottom .some {
-      top: 50px;
-      right: 23%; }
-  .main .how_work .section_how .container figure .number {
-    left: 71vw; }
-  .main .how_work .section_how .container figure img.cal {
-    width: 67%; }
-  .main .how_work .section_how .container figure img {
-    width: 75%; }
-  .main .how_work .section_how .container figure img.secure {
-    width: 75%; }
+  .main .how_work {
+    height: 800px !important; }
+    .main .how_work .section_how .container .how_icon {
+      font-size: 14px;
+      line-height: 1px; }
+      .main .how_work .section_how .container .how_icon p {
+        margin-top: 10%; }
+      .main .how_work .section_how .container .how_icon .privat_chat, .main .how_work .section_how .container .how_icon .secure_mess, .main .how_work .section_how .container .how_icon .ease_shedul {
+        line-height: 10px; }
+      .main .how_work .section_how .container .how_icon .ease_shedul p {
+        margin-top: 15%; }
+    .main .how_work .section_how .container figure .text {
+      left: 17vw;
+      top: 284px; }
+    .main .how_work .section_how .container figure .text_bottom {
+      width: 80%;
+      margin: 0 auto; }
+      .main .how_work .section_how .container figure .text_bottom .some {
+        top: 50px;
+        right: 23%; }
+    .main .how_work .section_how .container figure .number {
+      left: 71vw; }
+    .main .how_work .section_how .container figure img.cal {
+      width: 67%; }
+    .main .how_work .section_how .container figure img {
+      width: 75%; }
+    .main .how_work .section_how .container figure img.secure {
+      width: 75%; }
   .back_img .meditation, .back_img .execut, .back_img .fear, .back_img .breathe, .back_img .health, .back_img .focus, .back_img .breathe_2, .back_img .leader {
     font-size: 8px; }
   section.head .container .row .head_txt {
@@ -714,22 +708,36 @@
   .main section.coaches .coaches_sld .slick-next {
     left: 320px; }
   .main section.coaches .coaches_sld .slick-dots {
-    margin-left: -139px; }
-  .main .how_work .section_how .container figure img {
-    margin-left: 0; }
-  .main .how_work .section_how .container figure .text {
-    left: 18vw;
-    width: 60vw;
-    top: 229px; }
-  .main .how_work .section_how .container figure .text_bottom {
-    top: -20px !important;
-    width: 80%;
-    margin: 0 auto; }
-    .main .how_work .section_how .container figure .text_bottom p.some {
-      display: none; }
-  .main .how_work .section_how .container figure .number {
-    bottom: 0;
-    left: 71vw; }
+    margin-left: 89px;
+    top: 302px !important; }
+  .main .how_work {
+    height: 750px !important; }
+    .main .how_work .section_how .container figure img {
+      margin-left: 0; }
+    .main .how_work .section_how .container figure .text {
+      left: 16vw;
+      width: 60vw; }
+    .main .how_work .section_how .container figure .text_bottom {
+      top: 5px !important;
+      width: 80%;
+      margin: 0 auto; }
+      .main .how_work .section_how .container figure .text_bottom p.some {
+        display: none; }
+    .main .how_work .section_how .container figure .number {
+      bottom: 0;
+      left: 71vw; }
+  .main .how_work {
+    min-height: 650px; }
+    .main .how_work .section_how .container figure .text {
+      top: 226px; }
+    .main .how_work .section_how .container figure .text_bottom {
+      bottom: 0px;
+      width: 80%;
+      margin: 0 auto; }
+      .main .how_work .section_how .container figure .text_bottom p.some {
+        display: none; }
+    .main .how_work .section_how .container figure .number {
+      left: 71vw; }
   .advance .container .slide_search .window {
     position: relative; }
   .advance .container .slide_search form .shape {
@@ -757,8 +765,6 @@
       padding-right: 15%; } }
 
 @media only screen and (max-width: 479px) {
-  .main section.head {
-    height: 520px !important; }
   section.head .back_img {
     opacity: 0.5; }
   section.head .container .row .head_txt h1 {
@@ -785,14 +791,14 @@
     text-align: justify; }
   .review .container .block-for-slider .slidewrapper .slide .slide_img img {
     display: none; }
-  .review .container .block-for-slider .viewport .slick-prev, .review .container .block-for-slider .viewport .slick-next {
-    top: 580px; }
   .review .container .block-for-slider .viewport .slick-prev {
     margin-left: 0px; }
   .review .container .block-for-slider .viewport .slick-next {
     margin-left: 100px; }
+  .main .review .container .title_txt {
+    top: 85px; }
   .main .review .container .block-for-slider {
-    bottom: 0px; }
+    top: 139px; }
     .main .review .container .block-for-slider .slidewrapper .slide .number {
       display: none; }
     .main .review .container .block-for-slider .slidewrapper .slide .about_txt {
@@ -800,15 +806,17 @@
       .main .review .container .block-for-slider .slidewrapper .slide .about_txt p {
         width: 100%; }
     .main .review .container .block-for-slider .slidewrapper .slide .side {
-      top: 60px; }
+      top: 90px; }
     .main .review .container .block-for-slider .select-img {
-      top: 873px !important;
-      margin-top: -130vw;
-      left: 60vw;
-      margin-left: -200px; }
+      top: -webkit-calc(95% + 22px) !important;
+      top: calc(95% + 22px) !important;
+      margin-top: 0;
+      left: -webkit-calc(55% - 170px);
+      left: calc(55% - 170px);
+      margin-left: 0; }
     .main .review .container .block-for-slider .viewport .slick-prev, .main .review .container .block-for-slider .viewport .slick-next {
-      top: 993px !important;
-      margin-top: -130vw; }
+      top: -webkit-calc(95% + 182px);
+      top: calc(95% + 182px); }
   .main .advance .container .slide_search .window {
     margin-top: 8px; }
   .main .advance .container form input {
@@ -931,17 +939,6 @@
     margin-top: -15%; }
     footer.footer_blog .container .link span {
       padding-right: 15%; }
-  .main .how_work .section_how .container figure .text {
-    margin-left: 2vw;
-    top: 169px; }
-  .main .how_work .section_how .container figure .text_bottom {
-    bottom: 0px;
-    width: 80%;
-    margin: 0 auto; }
-    .main .how_work .section_how .container figure .text_bottom p.some {
-      display: none; }
-  .main .how_work .section_how .container figure .number {
-    left: 71vw; }
   .advance footer .container .link_email {
     left: 0%; } }
 
@@ -949,17 +946,21 @@
   body section.head .back_img {
     display: none; }
   .main section.coaches .coaches_sld .slick-next {
-    left: 150px; } }
+    left: 150px; }
+  .main .how_work {
+    height: 700px !important; } }
 
-@media only screen and (max-width: 400px) {
-  .main .how_work .section_how .container figure .number {
-    display: none; }
-  .main .how_work .section_how .container figure img {
-    bottom: 52px; }
-  .main .how_work .section_how .container figure .text {
-    top: 131px; }
-  .main .how_work .section_how .container .text_bottom {
-    margin-top: 0px !important; } }
+@media only screen and (max-width: 415px) {
+  .main .how_work {
+    height: 500px !important; }
+    .main .how_work .section_how .container figure .number {
+      display: none; }
+    .main .how_work .section_how .container figure img {
+      bottom: 52px; }
+    .main .how_work .section_how .container figure .text {
+      top: 131px; }
+    .main .how_work .section_how .container .text_bottom {
+      margin-top: 0px !important; } }
 
 @media only screen and (max-width: 360px) {
   .main section .title_txt h2 {
@@ -996,6 +997,8 @@
     left: -10%; } }
 
 @media only screen and (max-width: 320px) {
+  .main .review .container .block-for-slider .viewport .slick-prev, .main .review .container .block-for-slider .viewport .slick-next {
+    display: none; }
   section.head .container .row .head_txt span {
     font-size: 12px; }
   section.head .container .row .head_txt .button {
