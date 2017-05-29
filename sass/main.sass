@@ -18,6 +18,7 @@ a
 	width: 100%
 	z-index: 100
 	padding-top: 30px
+	top: 0
 	.menu_item
 		position: relative
 		margin-top: 18px
@@ -32,42 +33,55 @@ a
 	.button
 		display: inline-block
 		border-radius: 100px
-		padding: 14px 25px
+		padding: 12px 25px 11px 47px
 		cursor: pointer
+		text-align: right
 		transition: all 0.7s ease
 		font-size: 14px
 		margin-top: 6px
 		position: relative
 		right: 40px
-		&:hover
-			background-color: $white
-			i
-				opacity: 1
-		i
-			opacity: 0
-			transition: all 0.3s ease
-			position: relative
-			background-color: $red
-			border-radius: 50%
-			width: 100%
-			padding: 1px 5px
-			right: 15px
-			box-shadow: 0 0 7px 0 #EA0C71
-			&::after
-				content: ''
-				border: solid $white
-				border-width: 0 2px 2px 0
-				display: inline-block
-				padding: 2px
-				position: relative
-				bottom: 1px
-				transform: rotate(-45deg)
+		// &:hover, &.active
+		// 	background-color: $white
+		// 	box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.33)
+		// 	i
+		// 		opacity: 1
+		// i
+		// 	opacity: 0
+		// 	transition: all 0.3s ease
+		// 	position: relative
+		// 	background-color: $red
+		// 	border-radius: 50%
+		// 	width: 100%
+		// 	padding: 1px 5px
+		// 	right: 15px
+		// 	box-shadow: 0 0 7px 0 #EA0C71
+		// 	&::after
+		// 		content: ''
+		// 		border: solid $white
+		// 		border-width: 0 2px 2px 0
+		// 		display: inline-block
+		// 		padding: 2px
+		// 		position: relative
+		// 		bottom: 1px
+		// 		transform: rotate(-45deg)
 		a
 			text-decoration: none
 			color: black
-	.login
+	.sign
 		position: relative
 		right: 60px
+		background-color: $white
+		i.arrow
+			width: 100%
+			height: 100%
+			background-image: url('../img/Group-1.png')
+			position: absolute
+			background-repeat: no-repeat
+			display: block
+			left: 5px
+			top: 5px
+			
 	.popup
 		display: none
 		width: 50px
@@ -132,6 +146,47 @@ a.logo
 	100%
 		box-shadow: 0 0 0 0 rgba($mobile_bgc, 0.0)
 
+.menu_blog
+	position: fixed
+	width: 100%
+	z-index: 100
+	padding-top: 30px
+	padding-left: 20%
+	padding-bottom: 10px
+	a.logo 
+		img
+			left: 0
+		.circle
+			left: 0
+		.now
+			left: 0
+	.button
+		display: inline-block
+		border-radius: 100px
+		padding: 12px 25px 11px 47px
+		cursor: pointer
+		transition: all 0.7s ease
+		font-size: 14px
+		margin-top: 6px
+		position: relative
+		left: calc(32vw - 446px)
+		a
+			text-decoration: none
+			color: black
+	.sign
+		position: relative
+		margin-left: 60px
+		background-color: $white
+		i.arrow
+			width: 100%
+			height: 100%
+			background-image: url('../img/Group-1.png')
+			position: absolute
+			background-repeat: no-repeat
+			display: block
+			left: 5px
+			top: 5px
+
 .mobile_menu
 	display: none
 	background-repeat: no-repeat
@@ -178,32 +233,8 @@ a.logo
 		left: 30px
 		right: auto
 		display: inline-block
-	.sign
-		background-color: $white
-		i
-			opacity: 1
-			transition: all 0.3s ease
-			position: relative
-			background-color: $red
-			border-radius: 50%
-			width: 100%
-			padding: 1px 5px
-			right: 15px
-			box-shadow: 0 0 7px 0 #EA0C71
-			&::after
-				content: ''
-				border: solid $white
-				border-width: 0 2px 2px 0
-				display: inline-block
-				padding: 2px
-				position: relative
-				bottom: 1px
-				transform: rotate(-45deg)
-
 	.login
-		left: 130px
-		a
-			color: #fff
+		left: 150px
 	.close_btn
 		position: absolute
 		top: 50px
@@ -236,7 +267,7 @@ header.head
 	background-color: $white
 	background-image: url('../img/fg.png')
 	background-repeat: no-repeat
-	background-position: 38% 60%
+	background-position: calc(35% + 144px) calc(15% + 344px)
 	padding-bottom: 32vh
 	.background_head
 		position: absolute
@@ -247,6 +278,8 @@ header.head
 		background-repeat: no-repeat
 		background-position: center top
 		background-size: 60%
+	.container
+		width: 70%
 	.social
 		position: relative
 		top: 20vh
@@ -274,7 +307,7 @@ header.head
 	.rank
 		position: relative
 		top: 45vh
-		left: 18%
+		left: 25%
 		.bgc_number
 			position: absolute
 			font-size: 40px
@@ -443,12 +476,14 @@ section.blog
 	background-color: $white
 	position: relative
 	padding-bottom: 50px
+	.container
+		width: 70%
 	h2
 		font-weight: 600
 		font-size: 82px
 		color: $black_txt
 		position: relative
-		left: 30%
+		left: 31%
 		margin-top: 2%
 	h3
 		font-size: 18px
@@ -491,7 +526,7 @@ section.blog
 			a.read_more.last
 				margin-bottom: 0
 	.info
-		margin-left: 18%
+		margin-left: 45%
 		.bgc_number
 				position: relative
 				font-size: 40px
@@ -535,7 +570,7 @@ section.blog
 		position: absolute
 		top: 120px
 		display: block
-		right: 5%
+		right: 15%
 		h3
 			margin-bottom: 12%
 		.popular
@@ -570,6 +605,8 @@ footer.footer_blog
 	width: 100%
 	background-color: $white
 	margin: 3% 0
+	.container
+		width: 90%
 	.logo
 		position: relative
 		left: 0%
@@ -889,8 +926,8 @@ section.head
 	.background_circle
 		position: absolute
 		right: 0%
-		width: 50%
-		top: 5%
+		width: 58%
+		top: calc(5% - 230px)
 		z-index: 1
 		img
 			width: 100%
@@ -974,24 +1011,27 @@ section.head
 						font-size: 14px
 						font-family: Lato
 		.select-img
-			width: 500px
+			width: 600px
 			cursor: pointer
 			position: absolute
 			margin-top: -10vw
 			top: 700px
-			left: 40vw
+			left: 36vw
 			margin-left: -380px
 			.slick-slide
+				margin-right: 8%
 				img
 					padding: 10%
+					margin-right: 20%
 					border: none
+					border-radius: 10px
 					margin: 0 10%
-					transition: opacity 0.5s ease-in-out
+					transition: border 0.5s ease-in-out
 			.slick-current
 				img
 					border: 1px solid $silver_txt
 					border-radius: 10px
-					padding: 10%
+					padding: 10% 10%
 		.slick-initialized .slick-slide
 			outline: none
 
@@ -1038,7 +1078,6 @@ section.head
 			top: -2px
 	.slick-dots li.slick-active button:before
 		color: $red
-		border: 1px solid $silver
 		border-radius: 50%
 	.slick-dots 
 		position: absolute
@@ -1066,7 +1105,7 @@ section.coaches
 	z-index: 100
 	background-color: $bgc
 	&::after
-		content: 'Coach'
+		content: 'Guide'
 		position: absolute
 		font-size: 30vw
 		left: 5%
@@ -1118,13 +1157,16 @@ section.coaches
 					width: 10px
 					display: inline-block
 					height: 10px
-					border: 3px solid $silver
+					border: 3px solid $border_circle
 					border-radius: 50%
 					margin-top: 2%
+					margin-right: 4px
 				p
-					color: $main_color
+					color: $blue_txt
 					font-size: 10px
 					font-weight: 600
+					font-family: Lato
+					font-style: italic
 					position: relative
 					bottom: 0px
 					margin: 0 0
@@ -1182,15 +1224,6 @@ section.coaches
 	.slick-dots li.slick-active button:before
 		color: $red
 		border-radius: 50%
-	.slick-dots li.slick-active button:after
-		content: ''
-		border: 1px solid $silver
-		border-radius: 100%
-		position: absolute
-		left: 2px
-		right: 2px
-		top: 2px
-		bottom: 2px
 	.slick-dots 
 		position: absolute
 		// margin-top: 7vw
@@ -1277,25 +1310,19 @@ section.coaches
 				bottom: 0px
 				left: calc(13vw - 53px)
 			.style1
-				left: 70px
-				bottom: 0px
-				margin-top: 0
-				top: -100px
+				left: calc(13vw - 123px)
+				top: calc(0px - 7vw)
 			.style2
-				left: -21px
+				right: 0px
 				top: 0
 				margin-top: 0
-				top: calc(50px - 20vw)
-			.style3
-				left: calc(13vw - 253px)
-				top: -24px
-				margin-top: 0
+				top: calc(0px - 15vw)
 			.style5
-				left: calc(43vw - 293px)
-				top: calc(50px - 20vw)
+				left: calc(23vw + 10px)
+				top: calc(-20px - 15vw)
 			.style6
 				left: calc(5% + 64px)
-				top: -85px
+				top: calc(4vw - 130px)
 				margin-top: 0
 
 	.back
@@ -1488,7 +1515,7 @@ form
 		border: 1px solid $silver_txt
 		border-radius: 50px
 		font-size: 16px
-		padding: 10px 10px
+		padding: 10px 29px
 		width: 60%
 		height: 60px
 		outline: none
@@ -1564,4 +1591,6 @@ form
 	z-index: -1
 
 		
-
+a.slide.slick-slide.slick-active.style3
+	opacity: 0 !important
+	transition: 0s

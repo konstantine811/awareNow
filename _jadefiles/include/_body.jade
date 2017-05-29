@@ -4,10 +4,9 @@ body
 			a(href="#").aware Aware
 				span  Now
 			+nav_menu(menu)
-			.button.sign
+			.button.sign.active
 				i.arrow
-				a(href="#") Sign Up
-							
+				a(href="#") Sign Up		
 			.button.login
 				i.arrow
 				a(href="#") Login
@@ -25,10 +24,9 @@ body
 						+nav_menu(menu)
 				.col-3.col-sm-2.col-table-3.col-exs-1
 					.button_item
-						.button.sign
+						.button.sign.active
 							i.arrow
 							a(href="#") Sign Up
-							
 						.button.login
 							i.arrow
 							a(href="#") Login
@@ -68,9 +66,7 @@ body
 							img(src="img/Main title.png")
 							h1 Self-mastering ecosystem
 							p The iCouch Calendar is the best booking and schedule management system ever built.
-							.button
-								a(href="") Try now
-							span Show me more
+							a(href="#" class="button") Try now
 		section.how_work
 			.head_text
 				.container
@@ -78,7 +74,6 @@ body
 						.col-12
 							.title_txt
 								h2 How it works
-								p Some of the benifits
 			.section_how
 				.container
 					.row
@@ -137,7 +132,6 @@ body
 					.col-12
 						.title_txt
 							h2 Reviews
-							p Happy participants
 						.block-for-slider
 							.viewport
 								.slidewrapper
@@ -209,7 +203,6 @@ body
 		section.coaches
 			.title_txt
 				h2 Top coaches
-				p Trust the professionals
 			.coaches_sld
 				.slide
 					h4 Adam McBride

@@ -3,7 +3,8 @@
   .review .container .block-for-slider .select-img {
     width: 311px;
     top: 650px;
-    margin-left: -220px; }
+    left: -webkit-calc(36vw + 207px);
+    left: calc(36vw + 207px); }
     .review .container .block-for-slider .select-img .slick-slide img {
       margin: 0; }
   .review .container .viewport .slick-prev, .review .container .viewport .slick-next {
@@ -195,7 +196,8 @@
       top: 10px; }
   .review .container .block-for-slider .select-img {
     top: 570px;
-    margin-left: -140px; }
+    left: -webkit-calc(36vw + 307px);
+    left: calc(36vw + 307px); }
   .review .container .block-for-slider .viewport .slick-prev, .review .container .block-for-slider .viewport .slick-next {
     top: 690px; }
   .review .container .block-for-slider .viewport .slick-prev {
@@ -211,8 +213,14 @@
       padding: 0 25px; }
   .main .advance .column_one {
     left: 20%; }
-  header.head .container article.text_column_3 h1 {
-    font-size: 62px; } }
+  body header.head .container {
+    width: 80%; }
+    body header.head .container article.text_column_3 h1 {
+      font-size: 62px; }
+  body section.blog {
+    width: 100%; }
+  body .menu_blog {
+    padding-left: 15%; } }
 
 @media only screen and (max-width: 1025px) {
   .how_work .section_how .container .number {
@@ -269,7 +277,9 @@
       .advance footer .container .social i {
         padding: 0 20px; }
   .advance .container .ab .back_link_wave .link {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .main section.coaches .coaches_sld .photo_slide img {
+    width: 40%; } }
 
 @media only screen and (max-width: 992px) {
   .advance .container .slide_search .window {
@@ -370,7 +380,7 @@
   .main section {
     height: 100% !important; }
   .main section.head {
-    height: 629px !important; }
+    height: 649px !important; }
     .main section.head .back_img .wave .wave_1 {
       top: 300px; }
     .main section.head .back_img .wave .wave_2 {
@@ -616,7 +626,9 @@
   footer.footer_blog .container .social {
     margin-left: 18%; }
   footer.footer_blog .container .link {
-    margin-left: 20%; } }
+    margin-left: 20%; }
+  section.blog .container .info {
+    margin-left: 0; } }
 
 @media only screen and (max-width: 700px) {
   .main .review .container .block-for-slider .slidewrapper .slide .slide_img img {
@@ -658,7 +670,8 @@
   section.head .container .row .head_txt {
     margin: 0 auto;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    left: 0; }
     section.head .container .row .head_txt h1 {
       width: 100%;
       font-size: 42px;
@@ -674,7 +687,21 @@
   .advance .title_advance {
     font-size: 18px !important; }
   footer.footer_blog .container .link {
-    margin-left: 12%; } }
+    margin-left: 12%; }
+  body header.head .container {
+    width: 100%; }
+    body header.head .container article.text_column_3 h1 {
+      font-size: 38px; }
+  body .menu_blog {
+    padding-left: 6%; }
+    body .menu_blog .button {
+      left: -webkit-calc(32vw - 365px);
+      left: calc(32vw - 365px); } }
+
+@media only screen and (max-width: 581px) {
+  .main section.coaches .coaches_sld .photo_slide img {
+    width: 37%;
+    left: 162px; } }
 
 @media only screen and (max-width: 550px) {
   .main .review .container .block-for-slider .slidewrapper .slide .slide_img img {
@@ -848,9 +875,10 @@
   header.head .container .social {
     display: none; }
   header.head .container .rank {
-    top: 40vh;
-    margin-top: 200px;
-    padding-top: 30vw;
+    top: -webkit-calc(135px + 194vw);
+    top: calc(135px + 194vw);
+    margin-top: 0;
+    padding-top: 0;
     margin-left: 20%; }
     header.head .container .rank .bgc_number {
       position: relative;
@@ -858,7 +886,7 @@
     header.head .container .rank .check_rank {
       position: absolute;
       left: 200%;
-      top: 20px;
+      top: 0px;
       margin-top: 30vw; }
   header.head .container .column_2 {
     margin-top: 30%;
@@ -870,6 +898,8 @@
       margin-bottom: 5%; }
     header.head .container .column_2 .coaches {
       display: none; }
+    header.head .container .column_2 img {
+      width: 92%; }
   header.head .container article.text_column_3 {
     left: 0;
     top: 0;
@@ -878,7 +908,7 @@
     margin-right: 5%;
     margin-top: 200px; }
     header.head .container article.text_column_3 p.about {
-      width: 100%;
+      width: 90%;
       margin-top: 0; }
       header.head .container article.text_column_3 p.about:before {
         display: none; }
@@ -940,7 +970,18 @@
     footer.footer_blog .container .link span {
       padding-right: 15%; }
   .advance footer .container .link_email {
-    left: 0%; } }
+    left: 0%; }
+  body section.blog .container {
+    width: 100%; }
+    body section.blog .container .recent {
+      width: 90%; }
+  body .menu_blog .button {
+    margin-left: 139px;
+    width: 120px; }
+  body .menu_blog .login {
+    left: -webkit-calc(36vw - 221px);
+    left: calc(36vw - 221px);
+    bottom: 47px; } }
 
 @media only screen and (max-width: 487px) {
   body section.head .back_img {
@@ -960,7 +1001,15 @@
     .main .how_work .section_how .container figure .text {
       top: 131px; }
     .main .how_work .section_how .container .text_bottom {
-      margin-top: 0px !important; } }
+      margin-top: 0px !important; }
+  .main section.coaches .coaches_sld .photo_slide img {
+    width: 37%;
+    left: 122px; } }
+
+@media only screen and (max-width: 445px) {
+  .menu_blog .container .button_item {
+    bottom: 24px;
+    position: relative; } }
 
 @media only screen and (max-width: 360px) {
   .main section .title_txt h2 {
@@ -972,6 +1021,9 @@
     .main .advance .container .column_one h3 {
       font-size: 18px;
       margin-top: 40px; }
+  .main section.coaches .coaches_sld .photo_slide img {
+    width: 47%;
+    left: 80px; }
   .main .how_work .section_how .container figure .number {
     display: none; }
   .main .how_work .section_how .container figure img {
@@ -1030,7 +1082,10 @@
     margin-top: -22%; }
     footer.footer_blog .container .link span {
       padding-right: 3%; }
-  header.head .container article.text_column_3 .rank .check_rank {
-    position: absolute;
-    right: 20%;
-    top: 10%; } }
+  header.head .container .rank {
+    top: -webkit-calc(192px + 194vw);
+    top: calc(192px + 194vw); } }
+
+@media only screen and (max-width: 302px) {
+  .menu_blog a.logo .circle {
+    top: 19px; } }

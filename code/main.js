@@ -2,13 +2,8 @@
 * @Author: Abrams
 * @Date:   2017-04-28 22:36:59
 * @Last Modified by:   Admin
-* @Last Modified time: 2017-05-16 12:26:27
+* @Last Modified time: 2017-05-26 18:27:53
 */
-
-'use strict';
-
-
-
 
 jQuery(document).ready(function() {
 
@@ -143,7 +138,8 @@ jQuery(".main").onepage_scroll({
    pagination: false,                // You can either show or hide the pagination. Toggle true for show, false for hide.
    updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
    beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+   afterMove: function(index) {
+   },   // This option accepts a callback function. The function will be called after the page moves.
    loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
    keyboard: true,                  // You can activate the keyboard controls
    responsiveFallback: 768,        // You can fallback to normal page scroll by defining the width of the browser in which
@@ -165,6 +161,17 @@ jQuery('.popup').click(function() {
 })
 jQuery('.close_btn, ul li').click(function() {
   jQuery('.mobile_menu').fadeOut(500);
-})
+});
+
+//sign hover
+$( ".sign" ).hover(
+  function() {
+    $( this ).parent().find('.login').removeClass( "active" );
+  }, function() {
+    $( this ).parent().find('.login').addClass( "active" );
+  }
+);
+
+
 
 });

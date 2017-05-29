@@ -13,7 +13,7 @@
 			.select-img
 				width: 311px
 				top: 650px
-				margin-left: -220px
+				left: calc(36vw + 207px)
 				.slick-slide
 					img
 						margin: 0
@@ -317,7 +317,7 @@
 						top: 10px
 			.select-img
 				top: 570px
-				margin-left: -140px
+				left: calc(36vw + 307px)
 			.viewport
 				.slick-prev, .slick-next
 					top: 690px
@@ -340,10 +340,16 @@
 		.column_one
 			left: 20%
 	//blog 
-	header.head .container
-		article.text_column_3
-			h1
-				font-size: 62px
+	body
+		header.head .container
+			width: 80%
+			article.text_column_3
+				h1
+					font-size: 62px
+		section.blog
+			width: 100%
+		.menu_blog
+			padding-left: 15%
 
 
 @include max-screen(1025px)
@@ -439,6 +445,13 @@
 					// .style5
 					// 	bottom: 173px
 					// 	left: 245px
+	//section_coaches
+	.main
+		section.coaches
+			.coaches_sld
+				.photo_slide
+					img
+						width: 40%
 
 @include max-screen(992px)
 
@@ -592,7 +605,7 @@
 		height: 100% !important
 	.main
 		section.head
-			height: 629px !important
+			height: 649px !important
 			.back_img
 				.wave
 					.wave_1
@@ -873,6 +886,10 @@
 			margin-left: 18%
 		.link
 			margin-left: 20%
+	
+	section.blog .container
+		.info
+			margin-left: 0
 
 @include max-screen(700px)
 
@@ -934,6 +951,7 @@
 		margin: 0 auto
 		width: 100%
 		text-align: center
+		left: 0
 		h1
 			width: 100%
 			font-size: 42px
@@ -953,11 +971,35 @@
 	.advance .title_advance
 		font-size: 18px !important
 
+
+
 	//blog
 	footer.footer_blog .container
 		.link
 			margin-left: 12%
-	
+	body
+		header.head
+			.container
+				width: 100%
+				article.text_column_3
+					h1
+						font-size: 38px
+		.menu_blog
+			padding-left: 6%
+			.button
+				left: calc(32vw - 365px)
+
+
+
+@include max-screen(581px)
+	//section_coaches
+	.main
+		section.coaches
+			.coaches_sld
+				.photo_slide
+					img
+						width: 37%
+						left: 162px
 @include max-screen(550px)
 
 	//section_reveiws
@@ -980,7 +1022,6 @@
 				.viewport
 					.slick-prev, .slick-next
 						top: 586px
-
 	//
 	.advance footer .container
 		.link_email
@@ -1084,6 +1125,7 @@
 			position: relative
 			span
 				padding-right: 15%
+
 @include max-screen(479px)
 
 
@@ -1190,9 +1232,9 @@
 		.social
 			display: none
 		.rank
-			top: 40vh
-			margin-top: 200px
-			padding-top: 30vw
+			top: calc(135px + 194vw)
+			margin-top: 0
+			padding-top: 0
 			margin-left: 20%
 			.bgc_number
 				position: relative
@@ -1200,7 +1242,7 @@
 			.check_rank
 				position: absolute
 				left: 200%
-				top: 20px
+				top: 0px
 				margin-top: 30vw
 		.column_2
 			margin-top: 30%
@@ -1211,7 +1253,9 @@
 				display: block
 				margin-bottom: 5%
 			.coaches
-				display: none			
+				display: none
+			img
+				width: 92%		
 		article.text_column_3
 			left: 0
 			top: 0
@@ -1220,7 +1264,7 @@
 			margin-right: 5%
 			margin-top: 200px
 			p.about
-				width: 100%
+				width: 90%
 				margin-top: 0
 				&:before
 					display: none
@@ -1288,6 +1332,21 @@
 	.advance footer .container
 		.link_email
 			left: 0%
+	body section.blog
+		.container
+			width: 100%
+			.recent
+				width: 90%
+	body
+		.menu_blog
+			.button
+				margin-left: 139px
+				width: 120px
+			.login
+				left: calc(36vw - 221px)
+				bottom: 47px
+
+	
 
 
 
@@ -1321,8 +1380,23 @@
 				.text_bottom
 					margin-top: 0px !important
 
+	//section_coaches
+	.main
+		section.coaches
+			.coaches_sld
+				.photo_slide
+					img
+						width: 37%
+						left: 122px
 
-	
+
+@include max-screen(445px)
+	.menu_blog
+		.container	
+			.button_item
+				bottom: 24px
+				position: relative
+
 
 @include max-screen(360px)
 	.main section
@@ -1338,6 +1412,13 @@
 				h3
 					font-size: 18px
 					margin-top: 40px
+	.main
+		section.coaches
+			.coaches_sld
+				.photo_slide
+					img
+						width: 47%
+						left: 80px
 
 	//how_work
 	.main
@@ -1424,15 +1505,17 @@
 			span
 				padding-right: 3%
 	header.head .container
-		article.text_column_3
-			.rank
-				.check_rank
-					position: absolute
-					right: 20%
-					top: 10%
+		.rank
+			top: calc(192px + 194vw)
+				// .check_rank
+				// 	position: absolute
+				// 	right: 20%
+				// 	top: 10%
 
-
-
+@include max-screen(302px)
+	.menu_blog
+		a.logo .circle
+			top: 19px
 @include min-screen(320px)
 @include min-screen(480px)
 
