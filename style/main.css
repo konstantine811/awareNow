@@ -374,6 +374,36 @@ a.logo {
       display: block;
       left: 5px;
       top: 5px; }
+  .menu_blog .popup {
+    display: none;
+    width: 50px;
+    height: 34px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 0%;
+    z-index: 100; }
+    .menu_blog .popup:hover::before {
+      -webkit-animation: pulse 0.9s cubic-bezier(0.6, 0.28, 0.735, 0.045) infinite;
+              animation: pulse 0.9s cubic-bezier(0.6, 0.28, 0.735, 0.045) infinite; }
+    .menu_blog .popup:hover::after {
+      -webkit-animation: pulse 0.9s cubic-bezier(0.6, 0.28, 0.735, 0.045) infinite;
+              animation: pulse 0.9s cubic-bezier(0.6, 0.28, 0.735, 0.045) infinite; }
+    .menu_blog .popup::before, .menu_blog .popup::after {
+      content: " ";
+      position: absolute;
+      right: 0;
+      margin-top: 7%;
+      border: 4px solid #10BCBF;
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      -webkit-box-shadow: 0 0 11px 0 rgba(16, 188, 191, 0.8);
+              box-shadow: 0 0 11px 0 rgba(16, 188, 191, 0.8); }
+    .menu_blog .popup::before {
+      width: 29px; }
+    .menu_blog .popup::after {
+      width: 20px;
+      top: 16px; }
 
 .mobile_menu {
   display: none;
@@ -383,8 +413,10 @@ a.logo {
   background-color: #0389a4;
   height: 100vh;
   width: 100%;
-  margin-top: -30px;
-  position: relative; }
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0; }
   .mobile_menu a.aware {
     padding: 36px 30px 3%;
     font-size: 16px;
@@ -416,16 +448,35 @@ a.logo {
     margin-top: 5%;
     padding: 13px 30px; }
   .mobile_menu .button.sign, .mobile_menu .login {
-    bottom: 30px;
+    bottom: 70px;
     position: absolute;
     left: 30px;
     right: auto;
-    display: inline-block; }
+    display: inline-block;
+    -webkit-border-radius: 100px;
+            border-radius: 100px;
+    padding: 12px 25px 11px 47px;
+    cursor: pointer; }
+    .mobile_menu .button.sign a, .mobile_menu .login a {
+      color: black; }
+  .mobile_menu .sign {
+    position: relative;
+    right: 60px;
+    background-color: #FFFFFF; }
+    .mobile_menu .sign i.arrow {
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/Group-1.png");
+      position: absolute;
+      background-repeat: no-repeat;
+      display: block;
+      left: 5px;
+      top: 5px; }
   .mobile_menu .login {
     left: 150px; }
   .mobile_menu .close_btn {
     position: absolute;
-    top: 50px;
+    top: 28px;
     right: 20px;
     width: 30px;
     height: 30px;
@@ -878,37 +929,49 @@ section.head {
       margin-top: 0%;
       margin-left: 10%;
       margin-right: 0%;
-      z-index: 3; }
+      z-index: 3;
+      right: 0;
+      left: 0; }
     section.head .back_img .oval_2 {
       position: absolute;
       margin-top: 5%;
       margin-left: 23%;
       margin-right: 10%;
-      z-index: 3; }
+      z-index: 3;
+      right: 0;
+      left: 0; }
     section.head .back_img .oval_3 {
       position: absolute;
       margin-left: 35%;
       margin-right: 23%;
       margin-top: 16%;
-      z-index: 3; }
+      z-index: 3;
+      right: 0;
+      left: 0; }
     section.head .back_img .oval_4 {
       position: absolute;
       margin-left: 44%;
       margin-right: 31%;
       margin-top: 25%;
-      z-index: 3; }
+      z-index: 3;
+      right: 0;
+      left: 0; }
     section.head .back_img .oval_5 {
       position: absolute;
       margin-left: 48.5%;
       margin-right: 35.3%;
       margin-top: 29%;
-      z-index: 3; }
+      z-index: 3;
+      right: 0;
+      left: 0; }
     section.head .back_img .wave_1 {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       position: absolute;
       top: 55%;
-      z-index: 2; }
+      z-index: 2;
+      right: 0;
+      left: 0; }
       section.head .back_img .wave_1 img {
         width: 100vw; }
     section.head .back_img .wave_2 {
@@ -1781,7 +1844,7 @@ section.coaches {
 
 form {
   position: relative;
-  z-index: 100; }
+  z-index: 99; }
   form input {
     border: 1px solid #C7D0D6;
     -webkit-border-radius: 50px;

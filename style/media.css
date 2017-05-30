@@ -100,7 +100,7 @@
     .main .advance .container .slide_search .window .slick-next, .main .advance .container .slide_search .window .slick-prev {
       top: 53vh; }
   .main .advance footer {
-    height: 15vh; }
+    height: 12vh; }
     .main .advance footer .container .border_top {
       display: none; }
     .main .advance footer .container .logo .circle {
@@ -114,9 +114,7 @@
 
 @media only screen and (max-height: 600px) {
   .main .how_work .section_how .container .text_bottom {
-    top: -731px !important; }
-  .main .advance footer {
-    height: 10vh; } }
+    top: -731px !important; } }
 
 @media only screen and (max-height: 570px) {
   .main section.coaches .slick-next {
@@ -142,9 +140,7 @@
 
 @media only screen and (max-height: 520px) {
   .main .how_work .section_how .container .text_bottom {
-    top: -662px !important; }
-  .main .advance footer {
-    height: 10vh; } }
+    top: -662px !important; } }
 
 @media only screen and (max-width: 1367px) {
   .advance .container .slide_search .window {
@@ -375,8 +371,6 @@
       background: #f0f4f7;
       -webkit-box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.19);
               box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.19); }
-    body .mobile_menu {
-      margin-top: -10px; }
   .main section {
     height: 100% !important; }
   .main section.head {
@@ -523,17 +517,17 @@
   .main section.coaches {
     height: 750px !important; }
     .main section.coaches .coaches_sld .slick-dots {
-      top: 237px;
-      margin-left: 104px;
+      top: 302px;
+      margin-left: 50px;
       margin-top: 0;
       display: inline; }
     .main section.coaches .coaches_sld .slick-prev {
-      top: 250px;
-      left: 80px;
+      top: 320px;
+      left: 53px;
       margin-top: 0; }
     .main section.coaches .coaches_sld .slick-next {
-      top: 250px;
-      left: 340px;
+      top: 320px;
+      left: 268px;
       margin-top: 0; }
     .main section.coaches .show {
       position: relative;
@@ -555,19 +549,15 @@
       margin: 0 auto; }
   .main section.coaches .coaches_sld .rank h5 {
     margin-top: 20px; }
-  .main section.coaches .slick-prev, .main section.coaches .slick-next {
-    top: 320px !important; }
-  .main section.coaches .slick-dots {
-    top: 305px !important; }
   .main section.coaches .coaches_sld h4 {
     margin-bottom: 10% !important; }
   .main .advance {
-    height: 800px !important; }
+    height: 675px !important; }
     .main .advance .column_one {
       left: 26%; }
     .main .advance .slide_search .window {
-      margin-left: -180px;
-      margin-top: 240px;
+      margin-left: -175px;
+      margin-top: 107px;
       height: 430px !important; }
       .main .advance .slide_search .window h5 {
         font-size: 32px !important; }
@@ -602,6 +592,11 @@
       top: 0 !important; }
     .advance footer .row .col-4:nth-child(2) {
       display: none !important; }
+  .menu_blog .container .button_item {
+    display: none; }
+  .menu_blog .container .popup {
+    display: block;
+    left: 22%; }
   header.head .container article.text_column_3 {
     top: 100px;
     margin-top: 0; }
@@ -628,7 +623,11 @@
   footer.footer_blog .container .link {
     margin-left: 20%; }
   section.blog .container .info {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .menu_blog .mobile_menu .login {
+    left: 205px; }
+  .menu_blog .mobile_menu .close_btn {
+    left: 67%; } }
 
 @media only screen and (max-width: 700px) {
   .main .review .container .block-for-slider .slidewrapper .slide .slide_img img {
@@ -732,11 +731,6 @@
     left: 65%; }
   .main section.coaches .show .button {
     left: 25vw !important; }
-  .main section.coaches .coaches_sld .slick-next {
-    left: 320px; }
-  .main section.coaches .coaches_sld .slick-dots {
-    margin-left: 89px;
-    top: 302px !important; }
   .main .how_work {
     height: 750px !important; }
     .main .how_work .section_how .container figure img {
@@ -845,7 +839,7 @@
       top: -webkit-calc(95% + 182px);
       top: calc(95% + 182px); }
   .main .advance .container .slide_search .window {
-    margin-top: 8px; }
+    margin-top: 99px; }
   .main .advance .container form input {
     left: 50vw;
     margin-left: -160px; }
@@ -886,8 +880,7 @@
     header.head .container .rank .check_rank {
       position: absolute;
       left: 200%;
-      top: 0px;
-      margin-top: 30vw; }
+      top: 100px; }
   header.head .container .column_2 {
     margin-top: 30%;
     left: 0;
@@ -937,7 +930,7 @@
     section.blog .section_first .recent h3 {
       display: none; }
     section.blog .section_first .recent article.blog_txt {
-      padding: 8% 0;
+      padding: 1% 0;
       margin: 0 5%; }
       section.blog .section_first .recent article.blog_txt .info_data {
         display: block;
@@ -963,31 +956,31 @@
     footer.footer_blog .container .social i {
       padding-right: 15%; }
   footer.footer_blog .container .link {
-    margin-left: 10%;
+    margin-left: 14%;
     margin-right: 0;
     position: relative;
     margin-top: -15%; }
     footer.footer_blog .container .link span {
-      padding-right: 15%; }
+      padding: 0;
+      padding-right: 13px; }
   .advance footer .container .link_email {
     left: 0%; }
   body section.blog .container {
     width: 100%; }
     body section.blog .container .recent {
       width: 90%; }
-  body .menu_blog .button {
-    margin-left: 139px;
-    width: 120px; }
-  body .menu_blog .login {
-    left: -webkit-calc(36vw - 221px);
-    left: calc(36vw - 221px);
-    bottom: 47px; } }
+  body .menu_blog .mobile_menu .close_btn {
+    left: 90%; }
+  .menu_blog .container .popup {
+    left: 51%; } }
 
 @media only screen and (max-width: 487px) {
   body section.head .back_img {
     display: none; }
   .main section.coaches .coaches_sld .slick-next {
-    left: 150px; }
+    left: -webkit-calc(72vw - 110px);
+    left: calc(72vw - 110px);
+    right: 0; }
   .main .how_work {
     height: 700px !important; } }
 
@@ -1005,11 +998,6 @@
   .main section.coaches .coaches_sld .photo_slide img {
     width: 37%;
     left: 122px; } }
-
-@media only screen and (max-width: 445px) {
-  .menu_blog .container .button_item {
-    bottom: 24px;
-    position: relative; } }
 
 @media only screen and (max-width: 360px) {
   .main section .title_txt h2 {
@@ -1038,15 +1026,13 @@
     footer.footer_blog .container .social i {
       padding-right: 10%; }
   footer.footer_blog .container .link {
-    margin-left: 8%;
-    position: relative;
-    margin-top: -15%; }
-    footer.footer_blog .container .link span {
-      padding-right: 10%; }
+    margin-left: 13%; }
   section.advance .title_advance {
     left: 74px !important; }
   .advance footer .container .link_email {
-    left: -10%; } }
+    left: -10%; }
+  .menu_blog .mobile_menu .button.sign {
+    left: 0; } }
 
 @media only screen and (max-width: 320px) {
   .main .review .container .block-for-slider .viewport .slick-prev, .main .review .container .block-for-slider .viewport .slick-next {
@@ -1077,11 +1063,11 @@
     footer.footer_blog .container .social i {
       padding-right: 3%; }
   footer.footer_blog .container .link {
-    margin-left: 8%;
-    position: relative;
     margin-top: -22%; }
     footer.footer_blog .container .link span {
-      padding-right: 3%; }
+      padding-right: 3%; } }
+
+@media only screen and (max-width: 316px) {
   header.head .container .rank {
     top: -webkit-calc(192px + 194vw);
     top: calc(192px + 194vw); } }

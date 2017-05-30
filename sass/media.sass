@@ -162,7 +162,7 @@
 				.slick-next, .slick-prev
 					top: 53vh
 	.main .advance footer
-		height: 15vh
+		height: 12vh
 		.container
 			.border_top
 				display: none
@@ -184,9 +184,6 @@
 		.section_how .container
 			.text_bottom
 				top: -731px !important
-	.main .advance
-		footer
-			height: 10vh
 
 @include max-screen-height (570px)
 	//coach
@@ -226,9 +223,6 @@
 		.section_how .container
 			.text_bottom
 				top: -662px !important
-	.main .advance
-		footer
-			height: 10vh
 
 //width
 @include max-screen (1840px)
@@ -598,8 +592,8 @@
 			padding-top: 10px
 			background: #f0f4f7
 			box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.19)
-		.mobile_menu
-			margin-top: -10px
+		// .mobile_menu
+		// 	margin-top: -10px
 	//section_head
 	.main section
 		height: 100% !important
@@ -768,17 +762,17 @@
 			height: 750px !important
 			.coaches_sld
 				.slick-dots 
-					top: 237px
-					margin-left: 104px
+					top: 302px
+					margin-left: 50px
 					margin-top: 0
 					display: inline
 				.slick-prev
-					top: 250px
-					left: 80px
+					top: 320px
+					left: 53px
 					margin-top: 0
 				.slick-next
-					top: 250px
-					left: 340px
+					top: 320px
+					left: 268px
 					margin-top: 0
 			.show
 				position: relative
@@ -801,23 +795,19 @@
 	.main section.coaches
 		.coaches_sld .rank h5
 			margin-top: 20px
-		.slick-prev, .slick-next
-			top: 320px !important
-		.slick-dots
-			top: 305px !important
 		.coaches_sld
 			h4
 				margin-bottom: 10% !important
 	//section: advance
 	.main .advance
-		height: 800px !important
+		height: 675px !important
 	 .container
 		.column_one
 			left: 26%
 		.slide_search
 			.window
-				margin-left: -180px
-				margin-top: 240px
+				margin-left: -175px
+				margin-top: 107px
 				height: 430px !important
 				h5
 					font-size: 32px !important
@@ -859,6 +849,13 @@
 					display: none !important
 	
 	//blog
+	
+	.menu_blog .container
+		.button_item
+			display: none
+		.popup
+			display: block
+			left: 22%
 	header.head .container
 		article.text_column_3
 			top: 100px
@@ -890,6 +887,12 @@
 	section.blog .container
 		.info
 			margin-left: 0
+	.menu_blog
+		.mobile_menu
+			.login
+				left: 205px
+			.close_btn
+				left: 67% 
 
 @include max-screen(700px)
 
@@ -962,7 +965,7 @@
 			color: $black_txt
 			line-height: 29px
 	nav.menu
-		.mobile_menu
+		.mobile_menu, 
 			.close_btn
 				top: 20px
 				right: 10px
@@ -1044,14 +1047,6 @@
 			left: 65% 
 	.main section.coaches .show .button
 		left: 25vw !important
-	.main
-		section.coaches
-			.coaches_sld
-				.slick-next
-					left: 320px
-				.slick-dots 
-					margin-left: 89px
-					top: 302px !important
 
 	//sectin_how_work
 	.main .how_work
@@ -1196,7 +1191,7 @@
 	.main .advance .container
 	 	.slide_search
 	 		.window
-	 			margin-top: 8px
+	 			margin-top: 99px
 			form
 				input
 					left: 50vw
@@ -1242,8 +1237,7 @@
 			.check_rank
 				position: absolute
 				left: 200%
-				top: 0px
-				margin-top: 30vw
+				top: 100px
 		.column_2
 			margin-top: 30%
 			left: 0
@@ -1293,7 +1287,7 @@
 				h3
 					display: none
 				article.blog_txt
-					padding: 8% 0
+					padding: 1% 0
 					margin: 0 5%
 					.info_data
 						display: block
@@ -1321,12 +1315,13 @@
 			i
 				padding-right: 15%
 		.link
-			margin-left: 10%
+			margin-left: 14%
 			margin-right: 0
 			position: relative
 			margin-top: -15%
 			span
-				padding-right: 15%
+				padding: 0
+				padding-right: 13px
 
 
 	.advance footer .container
@@ -1337,16 +1332,25 @@
 			width: 100%
 			.recent
 				width: 90%
+	// body
+	// 	.menu_blog
+	// 		.button
+	// 			margin-left: 139px
+	// 			width: 120px
+	// 		.login
+	// 			left: calc(36vw - 221px)
+	// 			bottom: 47px
+	// 		.popup
+	// 			left: 58%
 	body
 		.menu_blog
-			.button
-				margin-left: 139px
-				width: 120px
-			.login
-				left: calc(36vw - 221px)
-				bottom: 47px
+			.mobile_menu
+				.close_btn
+					left: 90% 
+	.menu_blog .container
+		.popup
+			left: 51%
 
-	
 
 
 
@@ -1356,7 +1360,8 @@
 			display: none
 	.main section.coaches .coaches_sld 
 		.slick-next
-			left: 150px
+			left: calc(72vw - 110px)
+			right: 0
 
 	//how_work
 	.main
@@ -1391,11 +1396,11 @@
 
 
 @include max-screen(445px)
-	.menu_blog
-		.container	
-			.button_item
-				bottom: 24px
-				position: relative
+	// .menu_blog
+	// 	.container	
+	// 		.button_item
+	// 			bottom: 24px
+	// 			position: relative
 
 
 @include max-screen(360px)
@@ -1443,17 +1448,21 @@
 			i
 				padding-right: 10%
 		.link
-			margin-left: 8%
-			position: relative
-			margin-top: -15%
-			span
-				padding-right: 10%
+			margin-left: 13%
+			// position: relative
+			// margin-top: -15%
+			// span
+			// 	padding-right: 10%
 	
 	section.advance .title_advance
 		left: 74px !important
 
 	.advance footer .container .link_email
 		left: -10%
+	.menu_blog
+		.mobile_menu
+			.button.sign
+				left: 0
 @include max-screen(320px)
 
 	.main
@@ -1499,18 +1508,14 @@
 			i
 				padding-right: 3%
 		.link
-			margin-left: 8%
-			position: relative
 			margin-top: -22%
 			span
 				padding-right: 3%
+@include max-screen(316px)
 	header.head .container
 		.rank
 			top: calc(192px + 194vw)
-				// .check_rank
-				// 	position: absolute
-				// 	right: 20%
-				// 	top: 10%
+
 
 @include max-screen(302px)
 	.menu_blog

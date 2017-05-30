@@ -1,37 +1,37 @@
 body
-	nav.menu
-		.mobile_menu
-			a(href="#").aware Aware
-				span  Now
-			+nav_menu(menu)
-			.button.sign.active
-				i.arrow
-				a(href="#") Sign Up		
-			.button.login
-				i.arrow
-				a(href="#") Login
-			.close_btn
-		.container
-			.row
-				.col-3.col-sm-2.col-table-3.col-exs-1
-					a(href="#" class="logo")
-						img(src="img/logo.png")
-						.circle
-						.now Aware 
-							span Now 
-				.col-6
-					nav.menu_item
-						+nav_menu(menu)
-				.col-3.col-sm-2.col-table-3.col-exs-1
-					.button_item
-						.button.sign.active
-							i.arrow
-							a(href="#") Sign Up
-						.button.login
-							i.arrow
-							a(href="#") Login
-					.popup
+	nav.mobile_menu
+		a(href="#").aware Aware
+			span  Now
+		+nav_menu(menu)
+		.button.sign.active
+			i.arrow
+			a(href="#") Sign Up		
+		.button.login
+			i.arrow
+			a(href="#") Login
+		.close_btn
 	.main
+		nav.menu
+			.container
+				.row
+					.col-3.col-sm-2.col-table-3.col-exs-1
+						a(href="#" class="logo")
+							img(src="img/logo.png")
+							.circle
+							.now Aware 
+								span Now 
+					.col-6
+						nav.menu_item
+							+nav_menu(menu)
+					.col-3.col-sm-2.col-table-3.col-exs-1
+						.button_item
+							.button.sign.active
+								i.arrow
+								a(href="#") Sign Up
+							.button.login
+								i.arrow
+								a(href="#") Login
+						.popup
 		section.head
 			.back_img
 				.oval_1
@@ -346,10 +346,10 @@ body
 				.row
 					.col-4
 						.column_one
-							h3 More than
-							.number
-								span 247
-								span.text Coaches
+							//- h3 More than
+							//- .number
+							//- 	span 247
+							//- 	span.text Coaches
 					.col-4.col-sm-4.col-exs-2
 						.slide_search
 							form(action="")

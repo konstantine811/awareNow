@@ -2,7 +2,7 @@
 * @Author: Abrams
 * @Date:   2017-04-28 22:36:59
 * @Last Modified by:   Admin
-* @Last Modified time: 2017-05-26 18:27:53
+* @Last Modified time: 2017-05-30 15:42:42
 */
 
 jQuery(document).ready(function() {
@@ -156,8 +156,15 @@ jQuery(".main").onepage_scroll({
 jQuery(".main").moveTo(0);
 
 
-jQuery('.popup').click(function() {
-  jQuery('.mobile_menu').fadeIn(500);
+jQuery('nav.menu .popup').click(function() {
+  jQuery('nav.mobile_menu').fadeIn(500);
+})
+jQuery('.close_btn, ul li').click(function() {
+  jQuery('.mobile_menu').fadeOut(500);
+});
+
+jQuery('nav.menu_blog .popup').click(function() {
+  jQuery('nav.mobile_menu').fadeIn(500);
 })
 jQuery('.close_btn, ul li').click(function() {
   jQuery('.mobile_menu').fadeOut(500);
