@@ -231,7 +231,7 @@ a {
     font-size: 14px;
     margin-top: 6px;
     position: relative;
-    right: 40px; }
+    right: 73px; }
     .menu .button a {
       text-decoration: none;
       color: black; }
@@ -356,8 +356,8 @@ a.logo {
     font-size: 14px;
     margin-top: 6px;
     position: relative;
-    left: -webkit-calc(32vw - 446px);
-    left: calc(32vw - 446px); }
+    left: -webkit-calc(22vw - 295px);
+    left: calc(22vw - 295px); }
     .menu_blog .button a {
       text-decoration: none;
       color: black; }
@@ -413,7 +413,7 @@ a.logo {
   background-color: #0389a4;
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   top: 0;
   left: 0; }
@@ -760,6 +760,7 @@ section.blog {
     font-style: italic;
     color: #7C8F9E;
     margin: 4% 0;
+    left: 31.5% !important;
     font-weight: 300; }
   section.blog .section_first {
     width: 70%;
@@ -833,11 +834,12 @@ section.blog {
       font-size: 14px;
       font-weight: 300; }
   section.blog .info_first {
-    margin-top: 16%; }
+    margin-top: 0%; }
   section.blog .side_bar {
     width: 20%;
     position: absolute;
-    top: 120px;
+    top: -webkit-calc(289px - 7%);
+    top: calc(289px - 7%);
     display: block;
     right: 15%; }
     section.blog .side_bar h3 {
@@ -963,7 +965,21 @@ section.head {
       margin-top: 29%;
       z-index: 3;
       right: 0;
+      cursor: pointer;
       left: 0; }
+      section.head .back_img .oval_5 .button_test {
+        width: 100%;
+        height: 100%;
+        display: block;
+        cursor: pointer; }
+        section.head .back_img .oval_5 .button_test span {
+          color: #F82140;
+          position: relative;
+          bottom: -webkit-calc(8vw + 20px);
+          bottom: calc(8vw + 20px);
+          left: -webkit-calc(46% - 20px);
+          left: calc(46% - 20px);
+          font-size: 26px; }
     section.head .back_img .wave_1 {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -977,7 +993,8 @@ section.head {
     section.head .back_img .wave_2 {
       position: absolute;
       top: 69%;
-      z-index: 3; }
+      z-index: 3;
+      pointer-events: none; }
       section.head .back_img .wave_2 img {
         width: 100vw; }
     section.head .back_img .wave_3 {
@@ -1056,7 +1073,8 @@ section.head {
               box-shadow: 0 9px 24px 0 #F82140;
       -webkit-transition: all 0.7s ease;
       transition: all 0.7s ease;
-      cursor: pointer; }
+      cursor: pointer;
+      position: absolute; }
       section.head .head_txt .button:hover {
         -webkit-transform: translateY(-10px) translateX(-5px);
             -ms-transform: translateY(-10px) translateX(-5px);
@@ -1071,7 +1089,8 @@ section.head {
 .title_txt {
   position: relative;
   margin-top: 4%;
-  margin-left: 26.6%; }
+  margin-left: 26.6%;
+  z-index: 103; }
   .title_txt h2 {
     font-size: 82px;
     font-weight: 600;

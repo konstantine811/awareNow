@@ -45,7 +45,7 @@
 @media only screen and (max-height: 769px) {
   .main .review .container .block-for-slider .slidewrapper .slide .about_txt h3 {
     font-size: 4vh;
-    margin-top: -40px; }
+    margin-top: -20px; }
   .main .review .container .block-for-slider .slidewrapper .slide .about_txt p {
     font-size: 2.3vh;
     margin-top: 0; }
@@ -143,6 +143,8 @@
     top: -662px !important; } }
 
 @media only screen and (max-width: 1367px) {
+  .menu .container .sign {
+    right: 36px; }
   .advance .container .slide_search .window {
     margin-top: 110px;
     width: 350px; }
@@ -179,7 +181,7 @@
   .review .white {
     height: 550px !important; }
   .review .container .block-for-slider .slidewrapper .slide {
-    margin-top: 5%; }
+    margin-top: 8%; }
     .review .container .block-for-slider .slidewrapper .slide .slide_img img {
       width: 40%;
       left: 62%;
@@ -219,6 +221,10 @@
     padding-left: 15%; } }
 
 @media only screen and (max-width: 1025px) {
+  .main section.head .head_txt {
+    margin-left: 0;
+    margin-right: 0;
+    left: 107px; }
   .how_work .section_how .container .number {
     font-size: 42px;
     bottom: 63px; }
@@ -517,16 +523,19 @@
   .main section.coaches {
     height: 750px !important; }
     .main section.coaches .coaches_sld .slick-dots {
-      top: 302px;
+      top: 349px;
       margin-left: 50px;
       margin-top: 0;
-      display: inline; }
+      display: inline;
+      z-index: 100; }
     .main section.coaches .coaches_sld .slick-prev {
-      top: 320px;
+      top: 363px;
       left: 53px;
-      margin-top: 0; }
+      margin-top: 0;
+      z-index: 200; }
     .main section.coaches .coaches_sld .slick-next {
-      top: 320px;
+      top: 363px;
+      z-index: 200;
       left: 268px;
       margin-top: 0; }
     .main section.coaches .show {
@@ -596,7 +605,7 @@
     display: none; }
   .menu_blog .container .popup {
     display: block;
-    left: 22%; }
+    left: 60%; }
   header.head .container article.text_column_3 {
     top: 100px;
     margin-top: 0; }
@@ -627,7 +636,7 @@
   .menu_blog .mobile_menu .login {
     left: 205px; }
   .menu_blog .mobile_menu .close_btn {
-    left: 67%; } }
+    left: 90%; } }
 
 @media only screen and (max-width: 700px) {
   .main .review .container .block-for-slider .slidewrapper .slide .slide_img img {
@@ -680,6 +689,9 @@
       margin: 10% auto 15%;
       color: #32495B;
       line-height: 29px; }
+    section.head .container .row .head_txt .button {
+      left: -webkit-calc(55% - 100px);
+      left: calc(55% - 100px); }
   nav.menu .mobile_menu .close_btn {
     top: 20px;
     right: 10px; }

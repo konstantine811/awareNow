@@ -84,7 +84,7 @@
 					.about_txt
 						h3
 							font-size: 4vh
-							margin-top: -40px
+							margin-top: -20px
 						p
 							font-size: 2.3vh
 							margin-top: 0
@@ -229,6 +229,11 @@
 
 
 @include max-screen (1367px)
+	//menu
+	//
+	.menu .container
+		.sign
+			right: 36px
 	//sectino_advance
 	.advance .container
 		.slide_search
@@ -297,7 +302,7 @@
 		.block-for-slider
 			.slidewrapper
 				.slide
-					margin-top: 5%
+					margin-top: 8%
 					.slide_img
 						img
 							width: 40%
@@ -347,6 +352,14 @@
 
 
 @include max-screen(1025px)
+
+	//section_head
+	.main
+		section.head
+			.head_txt
+				margin-left: 0
+				margin-right: 0
+				left: 107px
 
 	//section_how_work
 	.how_work
@@ -762,16 +775,19 @@
 			height: 750px !important
 			.coaches_sld
 				.slick-dots 
-					top: 302px
+					top: 349px
 					margin-left: 50px
 					margin-top: 0
 					display: inline
+					z-index: 100
 				.slick-prev
-					top: 320px
+					top: 363px
 					left: 53px
 					margin-top: 0
+					z-index: 200
 				.slick-next
-					top: 320px
+					top: 363px
+					z-index: 200
 					left: 268px
 					margin-top: 0
 			.show
@@ -855,7 +871,7 @@
 			display: none
 		.popup
 			display: block
-			left: 22%
+			left: 60%
 	header.head .container
 		article.text_column_3
 			top: 100px
@@ -892,9 +908,10 @@
 			.login
 				left: 205px
 			.close_btn
-				left: 67% 
+				left: 90% 
 
 @include max-screen(700px)
+
 
 	//section_reveiws
 	.main
@@ -946,7 +963,7 @@
 						width: 75%
 					img.secure
 						width: 75%
-
+	//head
 	.back_img
 		.meditation, .execut, .fear, .breathe, .health, .focus, .breathe_2, .leader
 			font-size: 8px
@@ -964,6 +981,8 @@
 			margin: 10% auto 15%
 			color: $black_txt
 			line-height: 29px
+		.button
+			left: calc(55% - 100px)
 	nav.menu
 		.mobile_menu, 
 			.close_btn
