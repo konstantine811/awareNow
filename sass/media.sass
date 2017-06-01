@@ -23,10 +23,10 @@
 			.slick-dots 
 				top: 750px
 	section.coaches .coaches_sld
-		margin-top: 0 !important
+		margin-top: 20px !important
 	section.coaches .coaches_sld
 		h4
-			margin-bottom: 0 !important
+			margin-bottom: 0px !important
 		p
 			margin-top: 1% !important
 		.slick-next
@@ -92,7 +92,7 @@
 						margin-top: 25vh
 						width: 90vh
 			.select-img
-				top: 80vh
+				top: 85vh
 		.viewport
 			.slick-prev, .slick-next
 				top: 99vh
@@ -117,6 +117,12 @@
 			padding-top: 20px
 		p
 			font-size: 4vh
+
+	//section_head
+	.main section.head
+		.back_img 
+			.oval_5
+				left: 68vw
 	//coach
 	.main section.coaches
 		.coaches_sld .rank h5
@@ -161,6 +167,15 @@
 					line-height: 4vh
 				.slick-next, .slick-prev
 					top: 53vh
+		.text_advance
+			margin: 26px auto
+			h3
+				margin-bottom: 0
+			.logo img
+				top: -30px
+			.logo
+				.circle
+					top: 3.6px
 	.main .advance footer
 		height: 12vh
 		.container
@@ -175,6 +190,7 @@
 			.social, .link_email
 				margin-top: 1vh
 				top: 30px
+
 
 
 @include max-screen-height (600px)
@@ -621,6 +637,9 @@
 						top: 400px
 					.wave_3
 						top: 500px
+				.oval_5
+					top: 305px
+					left: 65vw
 	//title_txt
 	.main section .title_txt
 		margin: 0 auto
@@ -983,6 +1002,13 @@
 			line-height: 29px
 		.button
 			left: calc(55% - 100px)
+	.main section.head
+		.back_img
+			.oval_5
+				margin: 0
+				width: 16%
+				left: 48%
+				top: 200px
 	nav.menu
 		.mobile_menu, 
 			.close_btn
