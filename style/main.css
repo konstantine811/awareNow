@@ -2,24 +2,36 @@
   font-family: "Lato";
   src: url("../fonts/Lato/Lato-Regular.eot");
   src: url("../fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Lato/Lato-Regular.woff") format("woff");
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+  src: url("../fonts/Lato/Lato-Regular.svg") format("svg");
   font-weight: 300;
   font-style: regular; }
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato/Lato-Bold.eot");
   src: url("../fonts/Lato/Lato-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Lato/Lato-Bold.woff") format("woff");
+  src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
+  src: url("../fonts/Lato/Lato-Bold.svg") format("svg");
   font-weight: 600;
   font-style: bold; }
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato/Lato-Italic.eot");
   src: url("../fonts/Lato/Lato-Italic.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Lato/Lato-Italic.woff") format("woff");
+  src: url("../fonts/Lato/Lato-Italic.ttf") format("truetype");
+  src: url("../fonts/Lato/Lato-Italic.svg") format("svg");
   font-weight: 300;
   font-style: italic; }
 @font-face {
   font-family: "SF_NS";
   src: url("../fonts/SF_NS/SFUIDisplay-Regular.eot");
   src: url("../fonts/SF_NS/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/SF_NS/SFUIDisplay-Regular.woff") format("woff");
+  src: url("../fonts/SF_NS/SFUIDisplay-Regular.ttf") format("truetype");
+  src: url("../fonts/SF_NS/SFUIDisplay-Regular.svg") format("svg");
   font-weight: 300;
   font-style: regular; }
 * {
@@ -832,6 +844,7 @@ footer.footer_blog {
   footer.footer_blog .container {
     width: 90%; }
   footer.footer_blog .logo {
+    pointer-events: none;
     position: relative;
     left: 0%;
     margin-top: 5%; }
@@ -923,7 +936,7 @@ section.head {
         display: block;
         cursor: pointer; }
         section.head .back_img .oval_5 .button_test span {
-          color: #fff;
+          color: #FFFFFF;
           position: relative;
           bottom: calc(8vw + 20px);
           left: calc(46% - 20px);
@@ -1379,45 +1392,49 @@ section.coaches {
         box-shadow: 0px 1px 1px 1px #F82140; }
     section.coaches .coaches_sld p {
       color: #7C8F9E;
+      visibility: hidden;
       font-size: 14px;
       width: 26%;
       margin-top: 10%; }
-    section.coaches .coaches_sld .rank h5 {
-      font-weight: 600;
-      margin: 0 0;
-      margin-top: 10%; }
-    section.coaches .coaches_sld .rank .check_rank input {
-      display: none; }
-    section.coaches .coaches_sld .rank .check_rank input + label {
-      cursor: pointer; }
-    section.coaches .coaches_sld .rank .check_rank label {
-      position: relative;
-      width: 10px;
-      display: inline-block;
-      height: 10px;
-      border: 3px solid #B5C6CA;
-      border-radius: 50%;
-      margin-top: 2%;
-      margin-right: 4px; }
-    section.coaches .coaches_sld .rank .check_rank p {
-      color: #0389A4;
-      font-size: 10px;
-      font-weight: 600;
-      font-family: Lato;
-      font-style: italic;
-      position: relative;
-      bottom: 0px;
-      margin: 0 0;
-      margin-top: 2%; }
+    section.coaches .coaches_sld .rank {
+      visibility: hidden; }
+      section.coaches .coaches_sld .rank h5 {
+        font-weight: 600;
+        margin: 0 0;
+        margin-top: 10%; }
+      section.coaches .coaches_sld .rank .check_rank input {
+        display: none; }
+      section.coaches .coaches_sld .rank .check_rank input + label {
+        cursor: pointer; }
+      section.coaches .coaches_sld .rank .check_rank label {
+        position: relative;
+        width: 10px;
+        display: inline-block;
+        height: 10px;
+        border: 3px solid #B5C6CA;
+        border-radius: 50%;
+        margin-top: 2%;
+        margin-right: 4px; }
+      section.coaches .coaches_sld .rank .check_rank p {
+        color: #0389A4;
+        font-size: 10px;
+        font-weight: 600;
+        font-family: Lato;
+        font-style: italic;
+        position: relative;
+        bottom: 0px;
+        margin: 0 0;
+        margin-top: 2%; }
     section.coaches .coaches_sld .photo_slide {
-      position: relative; }
+      position: relative;
+      margin-bottom: 10px; }
       section.coaches .coaches_sld .photo_slide img {
         position: absolute;
         bottom: 0px;
         width: 32%;
         height: auto;
         left: 70px;
-        margin-left: 3vw;
+        margin-left: -3.5vw;
         border-radius: 10px; }
   section.coaches .slick_slide {
     outline: none;
@@ -1682,7 +1699,7 @@ section.coaches {
   .advance footer {
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 200px;
     left: 10%;
     width: 80%;
     z-index: 90; }
@@ -1817,8 +1834,23 @@ form {
   bottom: 214px;
   z-index: -1; }
 
+.slick-slide {
+  padding-bottom: 10px; }
+
 a.slide.slick-slide.slick-active.style3 {
   opacity: 0 !important;
   transition: 0s; }
+
+footer .col-4 ul {
+  list-style: none;
+  margin-top: -20px; }
+  footer .col-4 ul li {
+    margin: 5px 0; }
+    footer .col-4 ul li a {
+      color: #7C8F9E; }
+  footer .col-4 ul.right {
+    padding-top: 30px; }
+    footer .col-4 ul.right li {
+      text-align: right; }
 
 /*# sourceMappingURL=main.css.map */
