@@ -3,1666 +3,1659 @@
 @import '_responsiv_mobile'
 @import '_variables'
 
-
 body
-	background-color: $white
-	font-family: Lato
-	overflow-x: hidden
-	font-size: 100%
+  background-color: $white
+  font-family: Lato
+  overflow-x: hidden
+  font-size: 100%
 
 a
-	text-decoration: none
-	color: $white
-.menu
-	position: fixed
-	width: 100%
-	z-index: 100
-	padding-top: 30px
-	top: 0
-	.menu_item
-		position: relative
-		margin-top: 18px
-		ul
-			li
-				display: inline
-				font-size: 14px
-				a
-					color: black
-					margin: 0 3%
-					text-decoration: none
-	.button
-		display: inline-block
-		border-radius: 100px
-		padding: 12px 25px 11px 47px
-		cursor: pointer
-		text-align: right
-		transition: all 0.7s ease
-		font-size: 14px
-		margin-top: 6px
-		position: relative
-		right: 73px
-		// &:hover, &.active
-		// 	background-color: $white
-		// 	box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.33)
-		// 	i
-		// 		opacity: 1
-		// i
-		// 	opacity: 0
-		// 	transition: all 0.3s ease
-		// 	position: relative
-		// 	background-color: $red
-		// 	border-radius: 50%
-		// 	width: 100%
-		// 	padding: 1px 5px
-		// 	right: 15px
-		// 	box-shadow: 0 0 7px 0 #EA0C71
-		// 	&::after
-		// 		content: ''
-		// 		border: solid $white
-		// 		border-width: 0 2px 2px 0
-		// 		display: inline-block
-		// 		padding: 2px
-		// 		position: relative
-		// 		bottom: 1px
-		// 		transform: rotate(-45deg)
-		a
-			text-decoration: none
-			color: black
-	.sign
-		position: relative
-		right: 60px
-		background-color: $white
-		i.arrow
-			width: 100%
-			height: 100%
-			background-image: url('../img/Group-1.png')
-			position: absolute
-			background-repeat: no-repeat
-			display: block
-			left: 5px
-			top: 5px
-			
-	.popup
-		display: none
-		width: 50px
-		height: 34px
-		cursor: pointer
-		position: relative
-		top: -10px
-		left: 65%
-		z-index: 100
-		&:hover::before
-			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
-		&:hover::after
-			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
-		&::before, &::after
-			content: " "
-			position: absolute
-			right: 0
-			margin-top: 7%
-			border: 4px solid $main_color
-			border-radius: 20px
-			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
-		&::before
-			width: 29px
-		&::after
-			width: 20px
-			top: 16px
-a.logo
-	position: relative
-	display: inline-block
-	text-decoration: none
-	color: black
-	img
-		position: absolute
-		top: -40%
-		left: 10vw
-		margin-left: -19px
-	.circle
-		position: absolute
-		top: 26px
-		left: 10vw
-		margin-left: 3px
-		width: 4px
-		border: 4px solid $main_color
-		border-radius: 50%
-		box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+  text-decoration: none
+  color: $white
 
-	.now
-		position: relative
-		text-decoration: none
-		color: black
-		left: 10vw
-		margin-left: 40px
-		top: 18px
-		span
-			color: $blue_txt
+.menu
+  position: fixed
+  width: 100%
+  z-index: 100
+  padding-top: 30px
+  top: 0
+  .menu_item
+    position: relative
+    margin-top: 18px
+    ul
+      li
+        display: inline
+        font-size: 14px
+        a
+          color: black
+          margin: 0 3%
+          text-decoration: none
+  .button
+    display: inline-block
+    border-radius: 100px
+    padding: 12px 25px 11px 47px
+    cursor: pointer
+    text-align: right
+    transition: all 0.7s ease
+    font-size: 14px
+    margin-top: 6px
+    position: relative
+    right: 73px
+    // &:hover, &.active
+    // 	background-color: $white
+    // 	box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.33)
+    // 	i
+    // 		opacity: 1
+    // i
+    // 	opacity: 0
+    // 	transition: all 0.3s ease
+    // 	position: relative
+    // 	background-color: $red
+    // 	border-radius: 50%
+    // 	width: 100%
+    // 	padding: 1px 5px
+    // 	right: 15px
+    // 	box-shadow: 0 0 7px 0 #EA0C71
+    // 	&::after
+    // 		content: ''
+    // 		border: solid $white
+    // 		border-width: 0 2px 2px 0
+    // 		display: inline-block
+    // 		padding: 2px
+    // 		position: relative
+    // 		bottom: 1px
+    // 		transform: rotate(-45deg)
+    a
+      text-decoration: none
+      color: black
+  .sign
+    position: relative
+    right: 60px
+    background-color: $white
+    i.arrow
+      width: 100%
+      height: 100%
+      background-image: url('../img/Group-1.png')
+      position: absolute
+      background-repeat: no-repeat
+      display: block
+      left: 5px
+      top: 5px
+
+  .popup
+    display: none
+    width: 50px
+    height: 34px
+    cursor: pointer
+    position: relative
+    top: -10px
+    left: 65%
+    z-index: 100
+    &:hover::before
+      animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+    &:hover::after
+      animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+    &::before, &::after
+      content: " "
+      position: absolute
+      right: 0
+      margin-top: 7%
+      border: 4px solid $main_color
+      border-radius: 20px
+      box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+    &::before
+      width: 29px
+    &::after
+      width: 20px
+      top: 16px
+
+a.logo
+  position: relative
+  display: inline-block
+  text-decoration: none
+  color: black
+  img
+    position: absolute
+    top: -40%
+    left: 10vw
+    margin-left: -19px
+  .circle
+    position: absolute
+    top: 26px
+    left: 10vw
+    margin-left: 3px
+    width: 4px
+    border: 4px solid $main_color
+    border-radius: 50%
+    box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+
+  .now
+    position: relative
+    text-decoration: none
+    color: black
+    left: 10vw
+    margin-left: 40px
+    top: 18px
+    span
+      color: $blue_txt
 
 @keyframes pulse
-	0%
-		box-shadow: 0 0 0 0 rgba($main_color, 0.4)
-	70%
-		box-shadow: 0 0 0 5px rgba($mobile_bgc, 0.1)
-	100%
-		box-shadow: 0 0 0 0 rgba($mobile_bgc, 0.0)
+  0%
+    box-shadow: 0 0 0 0 rgba($main_color, 0.4)
+  70%
+    box-shadow: 0 0 0 5px rgba($mobile_bgc, 0.1)
+  100%
+    box-shadow: 0 0 0 0 rgba($mobile_bgc, 0.0)
 
 .menu_blog
-	position: fixed
-	width: 100%
-	z-index: 100
-	padding-top: 30px
-	padding-left: 20%
-	padding-bottom: 10px
-	a.logo 
-		img
-			left: 0
-		.circle
-			left: 0
-		.now
-			left: 0
-	.button
-		display: inline-block
-		border-radius: 100px
-		padding: 12px 25px 11px 47px
-		cursor: pointer
-		transition: all 0.7s ease
-		font-size: 14px
-		margin-top: 6px
-		position: relative
-		left: calc(22vw - 295px)
-		a
-			text-decoration: none
-			color: black
-	.sign
-		position: relative
-		margin-left: 60px
-		background-color: $white
-		i.arrow
-			width: 100%
-			height: 100%
-			background-image: url('../img/Group-1.png')
-			position: absolute
-			background-repeat: no-repeat
-			display: block
-			left: 5px
-			top: 5px
-	.popup
-		display: none
-		width: 50px
-		height: 34px
-		cursor: pointer
-		position: relative
-		top: 10px
-		left: 0%
-		z-index: 100
-		&:hover::before
-			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
-		&:hover::after
-			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
-		&::before, &::after
-			content: " "
-			position: absolute
-			right: 0
-			margin-top: 7%
-			border: 4px solid $main_color
-			border-radius: 20px
-			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
-		&::before
-			width: 29px
-		&::after
-			width: 20px
-			top: 16px
+  position: fixed
+  width: 100%
+  z-index: 100
+  padding-top: 30px
+  padding-left: 20%
+  padding-bottom: 10px
+  a.logo
+    img
+      left: 0
+    .circle
+      left: 0
+    .now
+      left: 0
+  .button
+    display: inline-block
+    border-radius: 100px
+    padding: 12px 25px 11px 47px
+    cursor: pointer
+    transition: all 0.7s ease
+    font-size: 14px
+    margin-top: 6px
+    position: relative
+    left: calc(22vw - 295px)
+    a
+      text-decoration: none
+      color: black
+  .sign
+    position: relative
+    margin-left: 60px
+    background-color: $white
+    i.arrow
+      width: 100%
+      height: 100%
+      background-image: url('../img/Group-1.png')
+      position: absolute
+      background-repeat: no-repeat
+      display: block
+      left: 5px
+      top: 5px
+  .popup
+    display: none
+    width: 50px
+    height: 34px
+    cursor: pointer
+    position: relative
+    top: 10px
+    left: 0%
+    z-index: 100
+    &:hover::before
+      animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+    &:hover::after
+      animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+    &::before, &::after
+      content: " "
+      position: absolute
+      right: 0
+      margin-top: 7%
+      border: 4px solid $main_color
+      border-radius: 20px
+      box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+    &::before
+      width: 29px
+    &::after
+      width: 20px
+      top: 16px
 
 .mobile_menu
-	display: none
-	background-repeat: no-repeat
-	background-size: 100%
-	background-position: 55vw 0%
-	background-color: $mobile_bgc
-	height: 100vh
-	width: 100%
-	position: fixed
-	z-index: 1000
-	top: 0
-	left: 0
-	a.aware
-		padding: 36px 30px 3%
-		font-size: 16px
-		text-decoration: none
-		color: black
-		display: inline-block
-		span
-			color: $main_color
-	ul
-		padding-bottom: 70px
-		li
-			list-style: none
-			padding: 0% 0%
-			width: 100%
+  display: none
+  background-repeat: no-repeat
+  background-size: 100%
+  background-position: 55vw 0%
+  background-color: $mobile_bgc
+  height: 100vh
+  width: 100%
+  position: fixed
+  z-index: 1000
+  top: 0
+  left: 0
+  a.aware
+    padding: 36px 30px 3%
+    font-size: 16px
+    text-decoration: none
+    color: black
+    display: inline-block
+    span
+      color: $main_color
+  ul
+    padding-bottom: 70px
+    li
+      list-style: none
+      padding: 0% 0%
+      width: 100%
 
-			a
-				text-decoration: none
-				color: $white
-				font-size: 26px
-				padding: 2.5% 30px
-				display: block
-				margin: 0 0
-				transition: background-color ease-in-out 0.3s
-				&:hover
-					background-color: rgba(0,0,0, 0.4)
-					border-bottom: 1px solid rgba($silver, 0.5)
-					border-top: 1px solid rgba($silver, 0.5)
-	.button
-		margin-top: 5%
-		padding: 13px 30px
-	.button.sign, .login		
-		bottom: 70px
-		position: absolute
-		left: 30px
-		right: auto
-		display: inline-block
-		border-radius: 100px
-		padding: 12px 25px 11px 47px
-		cursor: pointer
-		a
-			color: black
-	.sign
-		position: relative
-		right: 60px
-		background-color: $white
-		i.arrow
-			width: 100%
-			height: 100%
-			background-image: url('../img/Group-1.png')
-			position: absolute
-			background-repeat: no-repeat
-			display: block
-			left: 5px
-			top: 5px
-	.login
-		left: 150px
-	.close_btn
-		position: absolute
-		top: 28px
-		right: 20px
-		width: 30px
-		height: 30px
-		cursor: pointer
-		&:hover::before
-			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
-		&:hover::after
-			animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
-		&::before, &::after
-			content: " "
-			position: absolute
-			right: 0
-			margin-top: 41%
-			border: 2px solid $main_color
-			border-radius: 20px
-			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
-			width: 30px
-		&::before
-			transform: rotate(-45deg)
-		&::after
-			transform: rotate(45deg)
-
+      a
+        text-decoration: none
+        color: $white
+        font-size: 26px
+        padding: 2.5% 30px
+        display: block
+        margin: 0 0
+        transition: background-color ease-in-out 0.3s
+        &:hover
+          background-color: rgba(0, 0, 0, 0.4)
+          border-bottom: 1px solid rgba($silver, 0.5)
+          border-top: 1px solid rgba($silver, 0.5)
+  .button
+    margin-top: 5%
+    padding: 13px 30px
+  .button.sign, .login
+    bottom: 70px
+    position: absolute
+    left: 30px
+    right: auto
+    display: inline-block
+    border-radius: 100px
+    padding: 12px 25px 11px 47px
+    cursor: pointer
+    a
+      color: black
+  .sign
+    position: relative
+    right: 60px
+    background-color: $white
+    i.arrow
+      width: 100%
+      height: 100%
+      background-image: url('../img/Group-1.png')
+      position: absolute
+      background-repeat: no-repeat
+      display: block
+      left: 5px
+      top: 5px
+  .login
+    left: 150px
+  .close_btn
+    position: absolute
+    top: 28px
+    right: 20px
+    width: 30px
+    height: 30px
+    cursor: pointer
+    &:hover::before
+      animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+    &:hover::after
+      animation: pulse 0.9s cubic-bezier(0.600, 0.280, 0.735, 0.045) infinite
+    &::before, &::after
+      content: " "
+      position: absolute
+      right: 0
+      margin-top: 41%
+      border: 2px solid $main_color
+      border-radius: 20px
+      box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+      width: 30px
+    &::before
+      transform: rotate(-45deg)
+    &::after
+      transform: rotate(45deg)
 
 header.head
-	height: 100%
-	width: 100%
-	background-color: $white
-	background-image: url('../img/fg.png')
-	background-repeat: no-repeat
-	background-position: calc(35% + 144px) calc(15% + 344px)
-	padding-bottom: 32vh
-	.background_head
-		position: absolute
-		background-color: $bgc
-		height: 40vh
-		width: 100%
-		background-image: url('../img/bgc_head.png')
-		background-repeat: no-repeat
-		background-position: center top
-		background-size: 60%
-	.container
-		width: 70%
-	.social
-		position: relative
-		top: 20vh
-		left: 4vw
-		margin-left: 10px
-		color: $silver
-		font-size: 18px
-		&:after
-			content: ''
-			width: 18%
-			border: 2px solid $main_color
-			position: absolute
-			border-radius: 20px
-			top: 19.5vh
-			left: 0
-			box-shadow: 0px 0px 10px 3px rgba($main_color, 0.5)
-		h3
-			font-style: italic
-		a
-			text-decoration: none
-			color: $silver
-			display: inline-block
-			margin-top: 5%
-			margin-right: 5%
-	.rank
-		position: relative
-		top: 45vh
-		left: 25%
-		.bgc_number
-			position: absolute
-			font-size: 40px
-			font-family: 'SF_NS'
-			bottom: 50%
-			left: 20px
-			color: $silver_txt
-			z-index: 0
-		.check_rank
-			position: relative
-			h3
-				color: $black_txt
-			input
-				display: none
-			input + label
-				cursor: pointer
-				margin-top: 3%
-			label
-				position: relative
-				width: 10px
-				display: inline-block
-				height: 10px
-				border: 3px solid $silver
-				border-radius: 50%
-			p
-				color: $main_color
-				font-size: 10px
-				font-weight: 600
-				position: relative
-				bottom: 0px
-	.column_2
-		position: relative
-		top: 20vh
-		left: 0
-		h2
-			font-size: 48px
-			font-weight: 600
-			color: $black_txt
-			display: none
-		.coaches
-			position: absolute
-			bottom: 110%
-			left: 14%
-			text-decoration: none
-			color: $black_txt
-			font-family: Lato
-			font-weight: 600
-			font-size: 18px
-			background-image: url('../img/left.png')
-			background-repeat: no-repeat
-			background-position: center left
-			padding-left: 40px
-			transition: all 0.3s ease
-			&:hover
-				color: $red
-		img
-			width: 22vh
-		.link
-			font-family: 'SF_NS'
-			font-size: 40px
-			color: $blue_txt
-			p
-				margin: 2% 0
-		.button_show
-			background-color: $red
-			display: inline
-			color: $white
-			font-weight: 300
-			padding: 3px 10px
-			border-radius: 10px
-			font-size: 12px
-			transition: all 0.3s ease-in-out
-			cursor: pointer
-			&:hover
-				background-color: $red_hover
-				box-shadow: 0px 1px 1px 1px $red
-	article.text_column_3
-		position: relative
-		top: 20vh
-		margin-top: 20px
-		left: 0
-		&:after
-			content: ''
-			position: absolute
-			width: 4vw
-			border: 2px solid rgba($silver, 0.6)
-			bottom: -10%
-			border-radius: 10px
-			left: 0
-			box-shadow: 0px 0px 10px 4px rgba($silver, 0.4)
+  height: 100%
+  width: 100%
+  background-color: $white
+  background-image: url('../img/fg.png')
+  background-repeat: no-repeat
+  background-position: calc(35% + 144px) calc(15% + 344px)
+  padding-bottom: 32vh
+  .background_head
+    position: absolute
+    background-color: $bgc
+    height: 40vh
+    width: 100%
+    background-image: url('../img/bgc_head.png')
+    background-repeat: no-repeat
+    background-position: center top
+    background-size: 60%
+  .container
+    width: 70%
+  .social
+    position: relative
+    top: 20vh
+    left: 4vw
+    margin-left: 10px
+    color: $silver
+    font-size: 18px
+    &:after
+      content: ''
+      width: 18%
+      border: 2px solid $main_color
+      position: absolute
+      border-radius: 20px
+      top: 19.5vh
+      left: 0
+      box-shadow: 0px 0px 10px 3px rgba($main_color, 0.5)
+    h3
+      font-style: italic
+    a
+      text-decoration: none
+      color: $silver
+      display: inline-block
+      margin-top: 5%
+      margin-right: 5%
+  .rank
+    position: relative
+    top: 45vh
+    left: 25%
+    .bgc_number
+      position: absolute
+      font-size: 40px
+      font-family: 'SF_NS'
+      bottom: 50%
+      left: 20px
+      color: $silver_txt
+      z-index: 0
+    .check_rank
+      position: relative
+      h3
+        color: $black_txt
+      input
+        display: none
+      input + label
+        cursor: pointer
+        margin-top: 3%
+      label
+        position: relative
+        width: 10px
+        display: inline-block
+        height: 10px
+        border: 3px solid $silver
+        border-radius: 50%
+      p
+        color: $main_color
+        font-size: 10px
+        font-weight: 600
+        position: relative
+        bottom: 0px
+  .column_2
+    position: relative
+    top: 20vh
+    left: 0
+    h2
+      font-size: 48px
+      font-weight: 600
+      color: $black_txt
+      display: none
+    .coaches
+      position: absolute
+      bottom: 110%
+      left: 14%
+      text-decoration: none
+      color: $black_txt
+      font-family: Lato
+      font-weight: 600
+      font-size: 18px
+      background-image: url('../img/left.png')
+      background-repeat: no-repeat
+      background-position: center left
+      padding-left: 40px
+      transition: all 0.3s ease
+      &:hover
+        color: $red
+    img
+      width: 22vh
+    .link
+      font-family: 'SF_NS'
+      font-size: 40px
+      color: $blue_txt
+      p
+        margin: 2% 0
+    .button_show
+      background-color: $red
+      display: inline
+      color: $white
+      font-weight: 300
+      padding: 3px 10px
+      border-radius: 10px
+      font-size: 12px
+      transition: all 0.3s ease-in-out
+      cursor: pointer
+      &:hover
+        background-color: $red_hover
+        box-shadow: 0px 1px 1px 1px $red
+  article.text_column_3
+    position: relative
+    top: 20vh
+    margin-top: 20px
+    left: 0
+    &:after
+      content: ''
+      position: absolute
+      width: 4vw
+      border: 2px solid rgba($silver, 0.6)
+      bottom: -10%
+      border-radius: 10px
+      left: 0
+      box-shadow: 0px 0px 10px 4px rgba($silver, 0.4)
 
-		h1
-			font-size: 82px
-			font-weight: 600
-			color: $black_txt
-		p.about
-			width: 80%
-			margin-top: 7vh
-			font-size: 14px
-			line-height: 32px
-			color: $silver
-			&:before
-				content: ''
-				height: 30px
-				width: 20px
-				left: -8vw
-				position: absolute
-				border-left: 8px solid $main_color
-				border-right: 8px solid $main_color
-				border-radius: 3px
-				filter: drop-shadow(0px 0px 4px $main_color)
-				transform: skewX(-10deg)
-			.side_logo
-				position: absolute
-				left: 88%
-				transform: rotate(90deg)
-				font-style: italic
-				text-align: center
-				font-size: 18px
-				color: $silver
-				top: 198px
-				&:before
-					content: ''
-					width: 100%
-					height: 100%
-					right: 40px
-					position: absolute
-					background-image: url('../img/Group@2x.png')
-					background-repeat: no-repeat
-					background-size: contain
-					background-position: center
-					transform: rotate(-90deg)
-		.social
-			position: relative
-			display: none
-			top: 0
-			padding: 0
-			left: 0
-			margin-left: 0px
-			color: $silver
-			font-size: 18px
-			margin-top: 30px
-			a
-				margin-right: 35px
+    h1
+      font-size: 82px
+      font-weight: 600
+      color: $black_txt
+    p.about
+      width: 80%
+      margin-top: 7vh
+      font-size: 14px
+      line-height: 32px
+      color: $silver
+      &:before
+        content: ''
+        height: 30px
+        width: 20px
+        left: -8vw
+        position: absolute
+        border-left: 8px solid $main_color
+        border-right: 8px solid $main_color
+        border-radius: 3px
+        filter: drop-shadow(0px 0px 4px $main_color)
+        transform: skewX(-10deg)
+      .side_logo
+        position: absolute
+        left: 88%
+        transform: rotate(90deg)
+        font-style: italic
+        text-align: center
+        font-size: 18px
+        color: $silver
+        top: 198px
+        &:before
+          content: ''
+          width: 100%
+          height: 100%
+          right: 40px
+          position: absolute
+          background-image: url('../img/Group@2x.png')
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+          transform: rotate(-90deg)
+    .social
+      position: relative
+      display: none
+      top: 0
+      padding: 0
+      left: 0
+      margin-left: 0px
+      color: $silver
+      font-size: 18px
+      margin-top: 30px
+      a
+        margin-right: 35px
 
 .button_red
-	margin-top: 50px
-	background: linear-gradient(0deg, #E90B74 0%, #FF0B0B 100%)
-	color: $white
-	display: inline-block
-	border-radius: 100px
-	font-size: 16px
-	padding: 14px 59px 16px 59px
-	box-shadow: 0 9px 24px 0 $red
-	transition: all 0.7s ease
-	cursor: pointer
-	&:hover
-		background-color: $red_hover
-		transform: translateY(-10px) translateX(-5px)
-		box-shadow: 0px 14px 24px 2px $red_hover
-
+  margin-top: 50px
+  background: linear-gradient(0deg, #E90B74 0%, #FF0B0B 100%)
+  color: $white
+  display: inline-block
+  border-radius: 100px
+  font-size: 16px
+  padding: 14px 59px 16px 59px
+  box-shadow: 0 9px 24px 0 $red
+  transition: all 0.7s ease
+  cursor: pointer
+  &:hover
+    background-color: $red_hover
+    transform: translateY(-10px) translateX(-5px)
+    box-shadow: 0px 14px 24px 2px $red_hover
 
 section.blog
-	height: 100%
-	width: 100%
-	background-color: $white
-	position: relative
-	padding-bottom: 50px
-	.container
-		width: 70%
-	h2
-		font-weight: 600
-		font-size: 82px
-		color: $black_txt
-		position: relative
-		left: 31%
-		margin-top: 2%
-	h3
-		font-size: 18px
-		font-style: italic
-		color: $silver
-		margin: 4% 0
-		left: 31.5% !important
-		font-weight: 300
-	.section_first
-		width: 70%
-		display: block
-	.recent
-		article.blog_txt
-			h4
-				color: $black_txt
-				font-size: 28px
-				font-weight: 600
-				line-height: 42px
-			p
-				color: $silver
-				font-size: 14px
-				line-height: 32px
-				margin-top: 7%
-			a.read_more
-				text-decoration: none
-				color: $black_txt
-				font-size: 18px
-				font-weight: 600
-				margin-top: 5%
-				display: inline-block
-				margin-bottom: 20%
-				background-image: url('../img/right.png')
-				background-repeat: no-repeat
-				background-position: center right
-				padding-right: 40px
-				transition: all 0.3s ease
-				&:hover
-					color: $red
-			.info_data
-				display: none 
-			a.read_more.last
-				margin-bottom: 0
-	.info
-		margin-left: 45%
-		.bgc_number
-				position: relative
-				font-size: 40px
-				font-family: 'SF_NS'
-				margin-bottom: 2%
-				left: 5px
-				color: $silver_txt
-				z-index: 0
-				.bottom
-					position: absolute
-					z-index: 0
-		.message
-			display: block
-			position: relative
-			color: $silver
-			font-size: 14px
-			font-weight: 300
-			margin-bottom: 20%
-			margin-top: 9%
-			margin-left: 0
-			padding: 0 30px
-			background-image: url('../img/Combined Shape@2x.png')
-			background-size: contain
-			background-repeat: no-repeat
-			background-position: center left
-			height: 20px
-		p,span, .message
-			position: relative
-		p
-			font-size: 18px
-			font-weight: 600
-			color: $black_txt
-		span.data
-			color: $silver
-			font-size: 14px
-			font-weight: 300
-	.info_first
-		margin-top: 0%
-	.side_bar
-		width: 20%
-		position: absolute
-		top: calc(289px - 7%)
-		display: block
-		right: 15%
-		h3
-			margin-bottom: 12%
-		.popular
-			h5
-				font-size: 18px
-				font-weight: 600
-				line-height: 32px
-				color: $black_txt
-	a.button_red
-		text-decoration: none
-		color: $white
-		position: relative
-		left: 30%
+  height: 100%
+  width: 100%
+  background-color: $white
+  position: relative
+  padding-bottom: 50px
+  .container
+    width: 70%
+  h2
+    font-weight: 600
+    font-size: 82px
+    color: $black_txt
+    position: relative
+    left: 31%
+    margin-top: 2%
+  h3
+    font-size: 18px
+    font-style: italic
+    color: $silver
+    margin: 4% 0
+    left: 31.5% !important
+    font-weight: 300
+  .section_first
+    width: 70%
+    display: block
+  .recent
+    article.blog_txt
+      h4
+        color: $black_txt
+        font-size: 28px
+        font-weight: 600
+        line-height: 42px
+      p
+        color: $silver
+        font-size: 14px
+        line-height: 32px
+        margin-top: 7%
+      a.read_more
+        text-decoration: none
+        color: $black_txt
+        font-size: 18px
+        font-weight: 600
+        margin-top: 5%
+        display: inline-block
+        margin-bottom: 20%
+        background-image: url('../img/right.png')
+        background-repeat: no-repeat
+        background-position: center right
+        padding-right: 40px
+        transition: all 0.3s ease
+        &:hover
+          color: $red
+      .info_data
+        display: none
+      a.read_more.last
+        margin-bottom: 0
+  .info
+    margin-left: 45%
+    .bgc_number
+      position: relative
+      font-size: 40px
+      font-family: 'SF_NS'
+      margin-bottom: 2%
+      left: 5px
+      color: $silver_txt
+      z-index: 0
+      .bottom
+        position: absolute
+        z-index: 0
+    .message
+      display: block
+      position: relative
+      color: $silver
+      font-size: 14px
+      font-weight: 300
+      margin-bottom: 20%
+      margin-top: 9%
+      margin-left: 0
+      padding: 0 30px
+      background-image: url('../img/Combined Shape@2x.png')
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center left
+      height: 20px
+    p, span, .message
+      position: relative
+    p
+      font-size: 18px
+      font-weight: 600
+      color: $black_txt
+    span.data
+      color: $silver
+      font-size: 14px
+      font-weight: 300
+  .info_first
+    margin-top: 0%
+  .side_bar
+    width: 20%
+    position: absolute
+    top: calc(289px - 7%)
+    display: block
+    right: 15%
+    h3
+      margin-bottom: 12%
+    .popular
+      h5
+        font-size: 18px
+        font-weight: 600
+        line-height: 32px
+        color: $black_txt
+  a.button_red
+    text-decoration: none
+    color: $white
+    position: relative
+    left: 30%
+
 .info_data, .message
-	color: $silver
-	font-size: 14px
-	font-weight: 300
-	margin-bottom: 20%
-	margin-top: 5%
-	.message
-		padding: 0 30px
-		background-image: url('../img/Combined Shape@2x.png')
-		background-size: contain
-		background-repeat: no-repeat
-		background-position: center left
-		margin-left: 20px
-		display: inline-block
-		height: 20px
+  color: $silver
+  font-size: 14px
+  font-weight: 300
+  margin-bottom: 20%
+  margin-top: 5%
+  .message
+    padding: 0 30px
+    background-image: url('../img/Combined Shape@2x.png')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center left
+    margin-left: 20px
+    display: inline-block
+    height: 20px
 
 footer.footer_blog
-	position: relative
-	width: 100%
-	background-color: $white
-	margin: 3% 0
-	.container
-		width: 90%
-	.logo
-		position: relative
-		left: 0%
-		margin-top: 5%
-	.border_top
-		border-top: 1px solid $silver
-		width: 80%
-		height: 100%
-		position: relative
-		margin: 0% auto
-		margin-top: 2%
-	.social
-		color: $silver
-		font-size: 14px
-		margin-left: 24%
-		margin-top: 16%
-		i
-			padding: 0 20px
-		a
-			text-decoration: none
-			color: $silver
-	.link
-		margin-top: 16%
-		color: $silver
-		font-size: 14px
-		text-align: right
-		margin-right: 28%
-		span
-			padding: 0 4%
-		a
-			text-decoration: none
-			color: $silver
+  position: relative
+  width: 100%
+  background-color: $white
+  margin: 3% 0
+  .container
+    width: 90%
+  .logo
+    position: relative
+    left: 0%
+    margin-top: 5%
+  .border_top
+    border-top: 1px solid $silver
+    width: 80%
+    height: 100%
+    position: relative
+    margin: 0% auto
+    margin-top: 2%
+  .social
+    color: $silver
+    font-size: 14px
+    margin-left: 24%
+    margin-top: 16%
+    i
+      padding: 0 20px
+    a
+      text-decoration: none
+      color: $silver
+  .link
+    margin-top: 16%
+    color: $silver
+    font-size: 14px
+    text-align: right
+    margin-right: 28%
+    span
+      padding: 0 4%
+    a
+      text-decoration: none
+      color: $silver
 
 //section head_page
 section.head
-	height: 100vh
-	overflow: hidden
-	padding: 22px 0
-	background-color: $bgc
-	.back_img
-		position: absolute
-		left: 0
-		height: 100vh
-		width: 100%
-		display: inline-block
-		z-index: 0
-		font-size: 18px
-		font-weight: 600
-		color: $silver_txt
-		.oval_1
-			position: absolute
-			margin-top: 0%
-			margin-left: 10%
-			margin-right: 0%
-			z-index: 3
-			right: 0
-			left: 0
-		.oval_2
-			position: absolute
-			margin-top: 5%
-			margin-left: 23%
-			margin-right: 10%
-			z-index: 3
-			right: 0
-			left: 0
-		.oval_3
-			position: absolute
-			margin-left: 35%
-			margin-right: 23%
-			margin-top: 16%
-			z-index: 3
-			right: 0
-			left: 0
-		.oval_4
-			position: absolute
-			margin-left: 44%
-			margin-right: 31%
-			margin-top: 25%
-			z-index: 3
-			right: 0
-			left: 0
-		.oval_5
-			position: absolute
-			z-index: 3
-			width: 15%
-			top: calc(65vh - 56px)
-			left: 48vw
-			.button_test
-				width: 100%
-				height: 100%
-				display: block
-				cursor: pointer
-				span
-					color: $red
-					position: relative
-					bottom: calc(8vw + 20px)
-					left: calc(46% - 20px)
-					font-size: 26px
+  height: 100vh
+  overflow: hidden
+  padding: 22px 0
+  background-color: $bgc
+  .back_img
+    position: absolute
+    left: 0
+    height: 100vh
+    width: 100%
+    display: inline-block
+    z-index: 0
+    font-size: 18px
+    font-weight: 600
+    color: $silver_txt
+    .oval_1
+      position: absolute
+      margin-top: 0%
+      margin-left: 10%
+      margin-right: 0%
+      z-index: 3
+      right: 0
+      left: 0
+    .oval_2
+      position: absolute
+      margin-top: 5%
+      margin-left: 23%
+      margin-right: 10%
+      z-index: 3
+      right: 0
+      left: 0
+    .oval_3
+      position: absolute
+      margin-left: 35%
+      margin-right: 23%
+      margin-top: 16%
+      z-index: 3
+      right: 0
+      left: 0
+    .oval_4
+      position: absolute
+      margin-left: 44%
+      margin-right: 31%
+      margin-top: 25%
+      z-index: 3
+      right: 0
+      left: 0
+    .oval_5
+      position: absolute
+      z-index: 3
+      width: 15%
+      top: calc(65vh - 56px)
+      left: 48vw
+      .button_test
+        width: 100%
+        height: 100%
+        display: block
+        cursor: pointer
+        span
+          color: $white
+          position: relative
+          bottom: calc(8vw + 20px)
+          left: calc(46% - 20px)
+          font-size: 26px
+    .wave_1
+      box-sizing: border-box
+      position: absolute
+      top: 55%
+      z-index: 2
+      right: 0
+      left: 0
+      img
+        width: 100vw
+    .wave_2
+      position: absolute
+      top: 69%
+      z-index: 3
+      pointer-events: none
+      img
+        width: 100vw
+    .wave_3
+      position: absolute
+      top: 85%
+      z-index: 5
+      img
+        width: 100vw
+        height: 100%
+    .meditation
+      position: absolute
+      top: 28vw
+      left: 13%
+    .execut
+      position: absolute
+      top: 12vw
+      left: 13%
+    .fear
+      position: absolute
+      top: 12vw
+      left: 89%
 
-		.wave_1
-			box-sizing: border-box
-			position: absolute
-			top: 55%
-			z-index: 2
-			right: 0
-			left: 0
-			img
-				width: 100vw
-		.wave_2
-			position: absolute
-			top: 69%
-			z-index: 3
-			pointer-events: none
-			img
-				width: 100vw
-		.wave_3
-			position: absolute
-			top: 85%
-			z-index: 5
-			img
-				width: 100vw
-				height: 100%
-		.meditation
-			position: absolute
-			top: 28vw
-			left: 13%
-		.execut
-			position: absolute
-			top: 12vw
-			left: 13%
-		.fear
-			position: absolute
-			top: 12vw
-			left: 89%
+    .breathe
+      position: absolute
+      top: 4.2vw
+      left: 57%
+      font-size: 16px
+    .health
+      position: absolute
+      top: 24.5vw
+      left: 80%
+    .focus
+      position: absolute
+      top: 24.6vw
+      left: 57.3%
+      font-size: 14px
+    .breathe_2
+      position: absolute
+      top: 33.6vw
+      left: 77%
+    .leader
+      position: absolute
+      top: 17.6vw
+      left: 67%
 
-		.breathe
-			position: absolute
-			top: 4.2vw
-			left: 57%
-			font-size: 16px
-		.health
-			position: absolute
-			top: 24.5vw
-			left: 80%
-		.focus
-			position: absolute
-			top: 24.6vw
-			left: 57.3%
-			font-size: 14px
-		.breathe_2
-			position: absolute
-			top: 33.6vw
-			left: 77%
-		.leader 
-			position: absolute
-			top: 17.6vw
-			left: 67%
+  .head_txt
+    position: absolute
+    margin-left: 27%
+    margin-right: 30%
+    margin-top: 10.5%
+    width: 100%
+    color: $silvet_head_txt
+    img
+      width: 43%
+    h1
+      width: 70%
+      font-size: 55px
+      margin-top: 50px
+      font-weight: 600
+    p
+      font-weight: 300
+      line-height: 41px
+      width: 480px
+      margin-top: 25px
+      font-size: 18px
+    .button
+      margin-top: 50px
+      background: linear-gradient(0deg, #E90B74 0%, #FF0B0B 100%)
+      color: $white
+      display: inline-block
+      border-radius: 100px
+      font-size: 16px
+      padding: 14px 59px 16px 59px
+      box-shadow: 0 9px 24px 0 $red
+      transition: all 0.7s ease
+      cursor: pointer
+      position: absolute
+      &:hover
+        transform: translateY(-10px) translateX(-5px)
+        box-shadow: 0px 14px 24px 2px $red
+    span
+      margin-left: 42px
+      margin-top: 50px
+      font-weight: 600
 
-	.head_txt
-		position: absolute
-		margin-left: 27%
-		margin-right: 30%
-		margin-top: 10.5%
-		width: 100%
-		color: $silvet_head_txt
-		img
-			width: 43%
-		h1
-			width: 70%
-			font-size: 55px
-			margin-top: 50px
-			font-weight: 600
-		p
-			font-weight: 300
-			line-height: 41px
-			width: 480px
-			margin-top: 25px
-			font-size: 18px
-		.button
-			margin-top: 50px
-			background: linear-gradient(0deg, #E90B74 0%, #FF0B0B 100%)
-			color: $white
-			display: inline-block
-			border-radius: 100px
-			font-size: 16px
-			padding: 14px 59px 16px 59px
-			box-shadow: 0 9px 24px 0 $red
-			transition: all 0.7s ease
-			cursor: pointer
-			position: absolute
-			&:hover
-				transform: translateY(-10px) translateX(-5px)
-				box-shadow: 0px 14px 24px 2px $red
-		span
-			margin-left: 42px
-			margin-top: 50px
-			font-weight: 600
 .title_txt
-	position: relative
-	margin-top: 4%
-	margin-left: 26.6%
-	z-index: 103
-	h2
-		font-size: 82px
-		font-weight: 600
-		line-height: 97px
-		color: $black_txt
-	p
-		margin-top: 1%
-		font-size: 28px
-		color: $silver
-		font-style: italic	
+  position: relative
+  margin-top: 4%
+  margin-left: 26.6%
+  z-index: 103
+  h2
+    font-size: 82px
+    font-weight: 600
+    line-height: 97px
+    color: $black_txt
+  p
+    margin-top: 1%
+    font-size: 28px
+    color: $silver
+    font-style: italic
+
 .how_work
-	height: 100vh
-	background-color: $white
-	z-index: 100
-	.section_how
-		position: relative
-		height: 80vh
-		background-image: url('../img/how-it-works-bg.png')
-		background-size: 73vw 70vh
-		background-repeat: no-repeat
-		padding: 0
-		margin-top: 1%
-		.how_icon
-			position: relative
-			display: block
-			width: 100%
-			height: 100%
-			left: 65%
-			font-size: 24px
-		.privat_chat, .secure_mess, .ease_shedul
-			line-height: 18px
-			font-weight: 600
-			color: $silver
-			position: relative
-		.privat_chat
-			margin-top: 20%
-		.secure_mess
-			margin-top: 20vh
-			top: -100px
-		.ease_shedul
-			margin-top: 20vh
-			top: -200px
-			p
-				padding-top: 5%
-		.active
-			color: $black_txt
-		figure
-			margin-top: 6%
-			overflow: hidden
-			width: 100%
-			height: 100%
-			position: relative
-			i
-				display: none
-			img
-				position: relative
-				bottom: 92px
-				width: 55%
-				margin-left: -10px
-				z-index: 100
-			img.secure
-				width: 55%
-			img.cal
-				width: 50%
-			.text
-				font-size: 18px
-				color: $silver
-				margin-left: 3%
-			p
-				line-height: 30px
-				font-weight: 300
-			.number
-				position: relative
-				bottom: 93px
-				left: 25vw
-				margin-left: 0px
-				color: $silver_txt
-				font-size: 84px
-				font-weight: 600
-				span
-					position: absolute
-					font-size: 32px
-					top: 5%
-			.text_bottom
-				position: relative
-				left: 42vw
-				color: $silver
-				top: -500px
-				margin-top: 20vh
-				h3
-					color: $black_txt
-					font-size: 28px
-					font-weight: 600
-				.tx
-					margin-top: 3%
-					bottom: 0px
-				.some
-					position: relative
-					right: 8%
-					top: 60px
-			.slick-prev
-				background-image: url('../img/left.png')
-				background-repeat: no-repeat
-				background-size: contain
-				top: 24px
-				left: 57%
-				cursor: pointer
-				z-index: 1000
-				&::before
-					font-family: Lato
-					font-size: 14px
-					color: black
-					content: 'Prev'
-					position: absolute
-					right: 40px
-					top: 0
-					font-weight: 600
-			.slick-next
-				position: absolute
-				top: 24px
-				left: 67%
-				background-image: url('../img/right.png')
-				background-repeat: no-repeat
-				background-size: contain
-				cursor: pointer
-				&::before
-					font-family: Lato
-					font-size: 14px
-					color: black
-					content: 'Next'
-					position: absolute
-					left: 40px
-					top: 0
-					font-weight: 600
+  height: 100vh
+  background-color: $white
+  z-index: 100
+  .section_how
+    position: relative
+    height: 80vh
+    background-image: url('../img/how-it-works-bg.png')
+    background-size: 73vw 70vh
+    background-repeat: no-repeat
+    padding: 0
+    margin-top: 1%
+    .how_icon
+      position: relative
+      display: block
+      width: 100%
+      height: 100%
+      left: 65%
+      font-size: 24px
+    .privat_chat, .secure_mess, .ease_shedul
+      line-height: 18px
+      font-weight: 600
+      color: $silver
+      position: relative
+    .privat_chat
+      margin-top: 20%
+    .secure_mess
+      margin-top: 20vh
+      top: -100px
+    .ease_shedul
+      margin-top: 20vh
+      top: -200px
+      p
+        padding-top: 5%
+    .active
+      color: $black_txt
+    figure
+      margin-top: 6%
+      overflow: hidden
+      width: 100%
+      height: 100%
+      position: relative
+      i
+        display: none
+      img
+        position: relative
+        bottom: 92px
+        width: 55%
+        margin-left: -10px
+        z-index: 100
+      img.secure
+        width: 55%
+      img.cal
+        width: 50%
+      .text
+        font-size: 18px
+        color: $silver
+        margin-left: 3%
+      p
+        line-height: 30px
+        font-weight: 300
+      .number
+        position: relative
+        bottom: 93px
+        left: 25vw
+        margin-left: 0px
+        color: $silver_txt
+        font-size: 84px
+        font-weight: 600
+        span
+          position: absolute
+          font-size: 32px
+          top: 5%
+      .text_bottom
+        position: relative
+        left: 42vw
+        color: $silver
+        top: -500px
+        margin-top: 20vh
+        h3
+          color: $black_txt
+          font-size: 28px
+          font-weight: 600
+        .tx
+          margin-top: 3%
+          bottom: 0px
+        .some
+          position: relative
+          right: 8%
+          top: 60px
+      .slick-prev
+        background-image: url('../img/left.png')
+        background-repeat: no-repeat
+        background-size: contain
+        top: 24px
+        left: 57%
+        cursor: pointer
+        z-index: 1000
+        &::before
+          font-family: Lato
+          font-size: 14px
+          color: black
+          content: 'Prev'
+          position: absolute
+          right: 40px
+          top: 0
+          font-weight: 600
+      .slick-next
+        position: absolute
+        top: 24px
+        left: 67%
+        background-image: url('../img/right.png')
+        background-repeat: no-repeat
+        background-size: contain
+        cursor: pointer
+        &::before
+          font-family: Lato
+          font-size: 14px
+          color: black
+          content: 'Next'
+          position: absolute
+          left: 40px
+          top: 0
+          font-weight: 600
 
 .review
-	position: relative
-	background-color: $bgc
-	z-index: 100
-	.background_circle
-		position: absolute
-		right: 0%
-		width: 58%
-		top: calc(5% - 230px)
-		z-index: 1
-		img
-			width: 100%
-			z-index: 100
-	.white
-		background-color: $white
-		height: 650px
-		width: 100%
-		position: absolute
-	.title_txt
-		p
-			margin-bottom: 2%
-	.block-for-slider
-		position: relative
-		z-index: 100
-		height: 84vh
-		bottom: 90px
-		.slidewrapper
-			.slide
-				overflow: hidden
-				.slide_img
-					position: relative
-					img
-						width: 48%
-						position: relative
-						left: 52%
-						margin-top: 20vh
-						bottom: 580px
-						z-index: 2
-				.text
-					position: relative
-				.about_txt
-					position: relative
-					bottom: 50px
-					position: relative
-					margin-left: 26.6%
-					left: 0px
-					width: 19vw
-					h3
-						margin-top: 0px
-						font-size: 40px
-						font-weight: 300
-						a
-							color: $black_txt
-					p
-						margin-top: 13%
-						font-size: 14px
-						line-height: 28px
-						font-weight: 300
-						color: $silver
-				.number
-					position: relative
-					left: 47%
-					bottom: 10px
-					font-size: 140px
-					color: $silver_number
-					font-weight: 600
-					font-family: Lato
-				.side
-					position: absolute
-					transform: rotate(90deg)
-					margin-top: 10%
-					top: 100px
-					margin-left: 15%
-					left: -80px
-					width: 20%
-					img
-						width: 22px
-						position: absolute
-						bottom: 15%
-						left: -50px
-						transform: rotate(-90deg)
-					h4
-						font-size: 28px
-						font-family: 'SF_NS'
-						a
-							color: $blue_txt
-					span
-						color: $silver
-						font-weight: 600
-						font-size: 14px
-						font-family: Lato
-		.select-img
-			width: 600px
-			cursor: pointer
-			position: absolute
-			margin-top: -10vw
-			top: 700px
-			left: 36vw
-			margin-left: -380px
-			.slick-slide
-				margin-right: 8%
-				img
-					padding: 10%
-					margin-right: 20%
-					border: none
-					border-radius: 10px
-					margin: 0 10%
-					transition: border 0.5s ease-in-out
-			.slick-current
-				img
-					border: 1px solid $silver_txt
-					border-radius: 10px
-					padding: 10% 10%
-		.slick-initialized .slick-slide
-			outline: none
+  position: relative
+  background-color: $bgc
+  z-index: 100
+  .background_circle
+    position: absolute
+    right: 0%
+    width: 58%
+    top: calc(5% - 230px)
+    z-index: 1
+    img
+      width: 100%
+      z-index: 100
+  .white
+    background-color: $white
+    height: 650px
+    width: 100%
+    position: absolute
+  .title_txt
+    p
+      margin-bottom: 2%
+  .block-for-slider
+    position: relative
+    z-index: 100
+    height: 84vh
+    bottom: 90px
+    .slidewrapper
+      .slide
+        overflow: hidden
+        .slide_img
+          position: relative
+          img
+            width: 48%
+            position: relative
+            left: 52%
+            margin-top: 20vh
+            bottom: 580px
+            z-index: 2
+        .text
+          position: relative
+        .about_txt
+          position: relative
+          bottom: 50px
+          position: relative
+          margin-left: 26.6%
+          left: 0px
+          width: 19vw
+          h3
+            margin-top: 0px
+            font-size: 40px
+            font-weight: 300
+            a
+              color: $black_txt
+          p
+            margin-top: 13%
+            font-size: 14px
+            line-height: 28px
+            font-weight: 300
+            color: $silver
+        .number
+          position: relative
+          left: 47%
+          bottom: 10px
+          font-size: 140px
+          color: $silver_number
+          font-weight: 600
+          font-family: Lato
+        .side
+          position: absolute
+          transform: rotate(90deg)
+          margin-top: 10%
+          top: 100px
+          margin-left: 15%
+          left: -80px
+          width: 20%
+          img
+            width: 22px
+            position: absolute
+            bottom: 15%
+            left: -50px
+            transform: rotate(-90deg)
+          h4
+            font-size: 28px
+            font-family: 'SF_NS'
+            a
+              color: $blue_txt
+          span
+            color: $silver
+            font-weight: 600
+            font-size: 14px
+            font-family: Lato
+    .select-img
+      width: 600px
+      cursor: pointer
+      position: absolute
+      margin-top: -10vw
+      top: 700px
+      left: 36vw
+      margin-left: -380px
+      .slick-slide
+        margin-right: 8%
+        img
+          padding: 10%
+          margin-right: 20%
+          border: none
+          border-radius: 10px
+          margin: 0 10%
+          transition: border 0.5s ease-in-out
+      .slick-current
+        img
+          border: 1px solid $silver_txt
+          border-radius: 10px
+          padding: 10% 10%
+    .slick-initialized .slick-slide
+      outline: none
 
 .viewport
-	.slick-prev
-		background-image: url('../img/left.png')
-		background-repeat: no-repeat
-		background-size: contain
-		top: 860px
-		margin-top: -10vw
-		left: 40vw
-		margin-left: -200px
-		cursor: pointer
-		z-index: 100
-		position: absolute
-		&::before
-			font-family: Lato
-			font-size: 15px
-			color: $black_txt
-			font-weight: 600
-			content: 'Prev'
-			position: absolute
-			right: 60px
-			top: 0
-	.slick-next
-		position: absolute
-		top: 860px
-		margin-top: -10vw
-		left: 40vw
-		margin-left: 20px
-		z-index: 100
-		background-image: url('../img/right.png')
-		background-repeat: no-repeat
-		background-size: contain
-		cursor: pointer
-		&::before
-			font-family: Lato
-			font-size: 15px
-			color: $black_txt
-			font-weight: 600
-			content: 'Next'
-			position: absolute
-			left: 40px
-			top: -2px
-	.slick-dots li.slick-active button:before
-		color: $red
-		border-radius: 50%
-	.slick-dots 
-		position: absolute
-		display: inline-flex
-		top: 850px
-		margin-top: -10vw
-		left: 40vw
-		margin-left: -135px
-	.slick-dots li button:before
-		width: 12.2px
-		height: 12px
-		line-height: 13px
-		transition: opacity 0.4s ease-in-out
-			
+  .slick-prev
+    background-image: url('../img/left.png')
+    background-repeat: no-repeat
+    background-size: contain
+    top: 860px
+    margin-top: -10vw
+    left: 40vw
+    margin-left: -200px
+    cursor: pointer
+    z-index: 100
+    position: absolute
+    &::before
+      font-family: Lato
+      font-size: 15px
+      color: $black_txt
+      font-weight: 600
+      content: 'Prev'
+      position: absolute
+      right: 60px
+      top: 0
+  .slick-next
+    position: absolute
+    top: 860px
+    margin-top: -10vw
+    left: 40vw
+    margin-left: 20px
+    z-index: 100
+    background-image: url('../img/right.png')
+    background-repeat: no-repeat
+    background-size: contain
+    cursor: pointer
+    &::before
+      font-family: Lato
+      font-size: 15px
+      color: $black_txt
+      font-weight: 600
+      content: 'Next'
+      position: absolute
+      left: 40px
+      top: -2px
+  .slick-dots li.slick-active button:before
+    color: $red
+    border-radius: 50%
+  .slick-dots
+    position: absolute
+    display: inline-flex
+    top: 850px
+    margin-top: -10vw
+    left: 40vw
+    margin-left: -135px
+  .slick-dots li button:before
+    width: 12.2px
+    height: 12px
+    line-height: 13px
+    transition: opacity 0.4s ease-in-out
 
-			
 .slick-slide
-	outline: none
-
+  outline: none
 
 section.coaches
-	height: 100vh
-	position: relative
-	width: 100%
-	z-index: 100
-	background-color: $bgc
-	&::after
-		content: 'Guide'
-		position: absolute
-		font-size: 30vw
-		left: 5%
-		font-family: 'SF_NS'
-		color: $white
-		top: 0%
-		z-index: -1
-	.coaches_sld
-		width: 72%
-		margin: 0 auto
-		margin-top: 3%
-		position: relative
-		left: 5%
-		z-index: 100
-		h4
-			color: $black_txt
-			margin-bottom: 10%
-			font-size: 22px
-			font-weight: 600
-		.button
-			background-color: $red
-			display: inline
-			color: $white
-			font-weight: 300
-			padding: 3px 10px
-			border-radius: 10px
-			font-size: 12px
-			transition: all 0.3s ease-in-out
-			cursor: pointer
-			&:hover
-				box-shadow: 0px 1px 1px 1px $red
-		p
-			color: $silver
-			font-size: 14px
-			width: 26%
-			margin-top: 10%
-		.rank
-			h5
-				font-weight: 600
-				margin: 0 0
-				margin-top: 10%
-			.check_rank
-				input
-					display: none
-				input + label
-					cursor: pointer
-				label
-					position: relative
-					width: 10px
-					display: inline-block
-					height: 10px
-					border: 3px solid $border_circle
-					border-radius: 50%
-					margin-top: 2%
-					margin-right: 4px
-				p
-					color: $blue_txt
-					font-size: 10px
-					font-weight: 600
-					font-family: Lato
-					font-style: italic
-					position: relative
-					bottom: 0px
-					margin: 0 0
-					margin-top: 2%
-		.photo_slide
-			position: relative
-			img
-				position: absolute
-				bottom: 0px
-				width: 32%
-				height: auto
-				left: 70px
-				margin-left: 3vw
-				border-radius: 10px
-	.slick_slide
-		outline: none
-		text-decoration: none
-	.slick-prev
-		background-image: url('../img/left.png')
-		background-repeat: no-repeat
-		background-size: contain
-		margin-top: 7vw
-		top: 274px
-		left: auto
-		cursor: pointer
-		right: calc(55% + 120px)
-		&::before
-			font-family: Lato
-			font-size: 14px
-			color: black
-			content: 'Prev'
-			position: absolute
-			right: 40px
-			top: 0
-			font-weight: 600
-	.slick-next
-		position: absolute
-		margin-top: 7vw
-		top: 274px
-		left: 390px
-		background-image: url('../img/right.png')
-		background-repeat: no-repeat
-		background-size: contain
-		cursor: pointer
-		left: calc(50% + 120px)
-		&::before
-			font-family: Lato
-			font-size: 14px
-			color: black
-			content: 'Next'
-			position: absolute
-			left: 40px
-			top: 0
-			font-weight: 600
-	.slick-dots li.slick-active button:before
-		color: $red
-		border-radius: 50%
-	.slick-dots 
-		position: absolute
-		// margin-top: 7vw
-		top: 255px
-		left: 196px
-		display: inline-block
-		left: -5%
-		right: 0
-		text-align: center
-		width: 240px
-		margin: 7vw auto 0
-		bottom: auto
-	.slick-dots li button:before
-		width: 12.2px
-		height: 12px
-		line-height: 13px
-		transition: opacity 0.4s ease-in-out
-		left: 3px
-		top: 4px
-	.show
-		position: absolute
-		bottom: 10%
-		width: 100vw
-		.button
-			min-width: 210px
-			max-height: 50px
-			background: linear-gradient(0deg, #E90B74 0%, #FF0B0B 100%)
-			color: $white
-			display: inline-block
-			border-radius: 100px
-			font-size: 16px
-			padding: 14px 59px 16px 59px
-			box-shadow: 0 9px 24px 0 $red
-			transition: all 0.7s ease
-			cursor: pointer
-			position: absolute
-			left: 45vw
-			margin-left: -290px
-			text-align: center
-			&:hover
-				transform: translateY(-10px) translateX(-5px)
-				box-shadow: 0px 14px 24px 2px $red
-		.text
-			width: 30%
-			margin: 0 auto
-			position: relative
-			left: 10vw
-			line-height: 32px
-			color: $black_txt
-			bottom: 8px
-			font-weight: 600
-	.border_bottom
-		position: absolute
-		bottom: 30px
-		height: 4px
-		width: 40%
-		left: 30vw
-		border-radius: 50px
-		box-shadow: 0 3px 9px 0 #82D3D4
-		background: linear-gradient(180deg, #48CEDB 0%, #0281A9 100%)
+  height: 100vh
+  position: relative
+  width: 100%
+  z-index: 100
+  background-color: $bgc
+  &::after
+    content: 'Guide'
+    position: absolute
+    font-size: 30vw
+    left: 5%
+    font-family: 'SF_NS'
+    color: $white
+    top: 0%
+    z-index: -1
+  .coaches_sld
+    width: 72%
+    margin: 0 auto
+    margin-top: 3%
+    position: relative
+    left: 5%
+    z-index: 100
+    h4
+      color: $black_txt
+      margin-bottom: 10%
+      font-size: 22px
+      font-weight: 600
+    .button
+      background-color: $red
+      display: inline
+      color: $white
+      font-weight: 300
+      padding: 3px 10px
+      border-radius: 10px
+      font-size: 12px
+      transition: all 0.3s ease-in-out
+      cursor: pointer
+      &:hover
+        box-shadow: 0px 1px 1px 1px $red
+    p
+      color: $silver
+      font-size: 14px
+      width: 26%
+      margin-top: 10%
+    .rank
+      h5
+        font-weight: 600
+        margin: 0 0
+        margin-top: 10%
+      .check_rank
+        input
+          display: none
+        input + label
+          cursor: pointer
+        label
+          position: relative
+          width: 10px
+          display: inline-block
+          height: 10px
+          border: 3px solid $border_circle
+          border-radius: 50%
+          margin-top: 2%
+          margin-right: 4px
+        p
+          color: $blue_txt
+          font-size: 10px
+          font-weight: 600
+          font-family: Lato
+          font-style: italic
+          position: relative
+          bottom: 0px
+          margin: 0 0
+          margin-top: 2%
+    .photo_slide
+      position: relative
+      img
+        position: absolute
+        bottom: 0px
+        width: 32%
+        height: auto
+        left: 70px
+        margin-left: 3vw
+        border-radius: 10px
+  .slick_slide
+    outline: none
+    text-decoration: none
+  .slick-prev
+    background-image: url('../img/left.png')
+    background-repeat: no-repeat
+    background-size: contain
+    margin-top: 7vw
+    top: 274px
+    left: auto
+    cursor: pointer
+    right: calc(55% + 120px)
+    &::before
+      font-family: Lato
+      font-size: 14px
+      color: black
+      content: 'Prev'
+      position: absolute
+      right: 40px
+      top: 0
+      font-weight: 600
+  .slick-next
+    position: absolute
+    margin-top: 7vw
+    top: 274px
+    left: 390px
+    background-image: url('../img/right.png')
+    background-repeat: no-repeat
+    background-size: contain
+    cursor: pointer
+    left: calc(50% + 120px)
+    &::before
+      font-family: Lato
+      font-size: 14px
+      color: black
+      content: 'Next'
+      position: absolute
+      left: 40px
+      top: 0
+      font-weight: 600
+  .slick-dots li.slick-active button:before
+    color: $red
+    border-radius: 50%
+  .slick-dots
+    position: absolute
+    // margin-top: 7vw
+    top: 255px
+    left: 196px
+    display: inline-block
+    left: -5%
+    right: 0
+    text-align: center
+    width: 240px
+    margin: 7vw auto 0
+    bottom: auto
+  .slick-dots li button:before
+    width: 12.2px
+    height: 12px
+    line-height: 13px
+    transition: opacity 0.4s ease-in-out
+    left: 3px
+    top: 4px
+  .show
+    position: absolute
+    bottom: 10%
+    width: 100vw
+    .button
+      min-width: 210px
+      max-height: 50px
+      background: linear-gradient(0deg, #E90B74 0%, #FF0B0B 100%)
+      color: $white
+      display: inline-block
+      border-radius: 100px
+      font-size: 16px
+      padding: 14px 59px 16px 59px
+      box-shadow: 0 9px 24px 0 $red
+      transition: all 0.7s ease
+      cursor: pointer
+      position: absolute
+      left: 45vw
+      margin-left: -290px
+      text-align: center
+      &:hover
+        transform: translateY(-10px) translateX(-5px)
+        box-shadow: 0px 14px 24px 2px $red
+    .text
+      width: 30%
+      margin: 0 auto
+      position: relative
+      left: 10vw
+      line-height: 32px
+      color: $black_txt
+      bottom: 8px
+      font-weight: 600
+  .border_bottom
+    position: absolute
+    bottom: 30px
+    height: 4px
+    width: 40%
+    left: 30vw
+    border-radius: 50px
+    box-shadow: 0 3px 9px 0 #82D3D4
+    background: linear-gradient(180deg, #48CEDB 0%, #0281A9 100%)
 
 .advance
-	position: relative
-	height: 100%
-	width: 100%
-	overflow: hidden
-	background-color: $bgc
-	z-index: 100
-	.back_link_wave
-		position: relative
-		.link
-			font-size: 28px
-			font-weight: 600
-			position: relative
-			.slick-list
-				overflow: visible
-			a
-				text-decoration: none
-				color: $black_txt
-				position: absolute
-				display: inline-block
-				transition: all 0.7s ease-in-out
-			.style0
-				bottom: 0px
-				left: calc(13vw - 53px)
-			.style1
-				left: calc(13vw - 123px)
-				top: calc(0px - 7vw)
-			.style2
-				right: 0px
-				top: 0
-				margin-top: 0
-				top: calc(0px - 15vw)
-			.style5
-				left: calc(23vw + 10px)
-				top: calc(-20px - 15vw)
-			.style6
-				left: calc(5% + 64px)
-				top: calc(4vw - 130px)
-				margin-top: 0
+  position: relative
+  height: 100%
+  width: 100%
+  overflow: hidden
+  background-color: $bgc
+  z-index: 100
+  .back_link_wave
+    position: relative
+    .link
+      font-size: 28px
+      font-weight: 600
+      position: relative
+      .slick-list
+        overflow: visible
+      a
+        text-decoration: none
+        color: $black_txt
+        position: absolute
+        display: inline-block
+        transition: all 0.7s ease-in-out
+      .style0
+        bottom: 0px
+        left: calc(13vw - 53px)
+      .style1
+        left: calc(13vw - 123px)
+        top: calc(0px - 7vw)
+      .style2
+        right: 0px
+        top: 0
+        margin-top: 0
+        top: calc(0px - 15vw)
+      .style5
+        left: calc(23vw + 10px)
+        top: calc(-20px - 15vw)
+      .style6
+        left: calc(5% + 64px)
+        top: calc(4vw - 130px)
+        margin-top: 0
 
-	.back
-		position: absolute
-		left: 33%
-		top: 10%
-	.title_advance
-		font-size: 32px
-		color: $silver
-		font-family: Lato
-		font-weight: 600
-		position: relative
-		left: 75vw
-		margin-left: -620px
-		top: 65px
-	.column_one
-		position: relative
-		width: 100%
-		height: 100%
-		color: $black_txt
-		left: 45%
-		margin-top: 14%
-		h3
-			font-size: 28px
-		.number
-			span:nth-child(1)
-				font-size: 153px
-				font-weight: 300
-			span:nth-child(2)
-				position: absolute
-				top: 78px
-				left: 210px
-				background: linear-gradient(0deg, #48CEDB 0%, #0281A9 100%)
-				box-shadow: 0 0 15px 0 #82D3D4
-				border-radius: 23.5px
-				width: 85px
-				height: 30px
-				line-height: 30px
-				font-size: 18px
-				color: #FFFFFF
-				text-align: center
-	.slide_search
-		position: relative
-		.window
-			position: relative
-			width: 70%
-			height: 60vh
-			padding: 0px 40px
-			background-color: $white
-			border-radius: 13px
-			left: 15%
-			overflow: hidden
-			margin-top: 150px
-			background-image: url('../img/waves@2x.png')
-			background-size: contain
-			background-repeat: no-repeat
-			background-position: center bottom
-			z-index: 10
-			h5
-				font-size: 2.4vw
-				font-weight: 600
-				margin: 10% 0
-				color: $black_txt
-			p
-				font-size: 14px
-				width: 100%
-				line-height: 32px
-				color: $black_txt
-			.slide
-				padding: 40px 20px
-				outline: none
-			.slick-prev
-				background-image: url('../img/left.png')
-				background-repeat: no-repeat
-				background-size: contain
-				top: 476px
-				left: 60px
-				cursor: pointer
-				z-index: 100
-				&::before
-					font-family: Lato
-					font-size: 12px
-					color: black
-					content: 'Prev'
-					position: absolute
-					right: 30px
-					top: 0
-					font-weight: 600
-			.slick-next
-				position: absolute
-				top: 476px
-				left: 120px
-				background-image: url('../img/right.png')
-				background-repeat: no-repeat
-				background-size: contain
-				cursor: pointer
-				z-index: 100
-				&::before
-					font-family: Lato
-					font-size: 12px
-					color: black
-					content: 'Next'
-					position: absolute
-					left: 30px
-					top: 0
-					font-weight: 600
-			.button
-				display: inline
-				margin-top: 30px
-				background: linear-gradient(0deg, #E90B74 0%, #FF0B0B 100%)
-				color: $white
-				display: inline-block
-				border-radius: 100px
-				font-size: 14px
-				padding: 10px 39px 10px 39px
-				box-shadow: 0 9px 24px 0 $red
-				transition: all 0.7s ease
-				cursor: pointer
-				&:hover
-					transform: translateY(-10px) translateX(-5px)
-					box-shadow: 0px 14px 24px 2px $red	
+  .back
+    position: absolute
+    left: 33%
+    top: 10%
+  .title_advance
+    font-size: 32px
+    color: $silver
+    font-family: Lato
+    font-weight: 600
+    position: relative
+    left: 75vw
+    margin-left: -620px
+    top: 65px
+  .column_one
+    position: relative
+    width: 100%
+    height: 100%
+    color: $black_txt
+    left: 45%
+    margin-top: 14%
+    h3
+      font-size: 28px
+    .number
+      span:nth-child(1)
+        font-size: 153px
+        font-weight: 300
+      span:nth-child(2)
+        position: absolute
+        top: 78px
+        left: 210px
+        background: linear-gradient(0deg, #48CEDB 0%, #0281A9 100%)
+        box-shadow: 0 0 15px 0 #82D3D4
+        border-radius: 23.5px
+        width: 85px
+        height: 30px
+        line-height: 30px
+        font-size: 18px
+        color: #FFFFFF
+        text-align: center
+  .slide_search
+    position: relative
+    .window
+      position: relative
+      width: 70%
+      height: 60vh
+      padding: 0px 40px
+      background-color: $white
+      border-radius: 13px
+      left: 15%
+      overflow: hidden
+      margin-top: 150px
+      background-image: url('../img/waves@2x.png')
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center bottom
+      z-index: 10
+      h5
+        font-size: 2.4vw
+        font-weight: 600
+        margin: 10% 0
+        color: $black_txt
+      p
+        font-size: 14px
+        width: 100%
+        line-height: 32px
+        color: $black_txt
+      .slide
+        padding: 40px 20px
+        outline: none
+      .slick-prev
+        background-image: url('../img/left.png')
+        background-repeat: no-repeat
+        background-size: contain
+        top: 476px
+        left: 60px
+        cursor: pointer
+        z-index: 100
+        &::before
+          font-family: Lato
+          font-size: 12px
+          color: black
+          content: 'Prev'
+          position: absolute
+          right: 30px
+          top: 0
+          font-weight: 600
+      .slick-next
+        position: absolute
+        top: 476px
+        left: 120px
+        background-image: url('../img/right.png')
+        background-repeat: no-repeat
+        background-size: contain
+        cursor: pointer
+        z-index: 100
+        &::before
+          font-family: Lato
+          font-size: 12px
+          color: black
+          content: 'Next'
+          position: absolute
+          left: 30px
+          top: 0
+          font-weight: 600
+      .button
+        display: inline
+        margin-top: 30px
+        background: linear-gradient(0deg, #E90B74 0%, #FF0B0B 100%)
+        color: $white
+        display: inline-block
+        border-radius: 100px
+        font-size: 14px
+        padding: 10px 39px 10px 39px
+        box-shadow: 0 9px 24px 0 $red
+        transition: all 0.7s ease
+        cursor: pointer
+        &:hover
+          transform: translateY(-10px) translateX(-5px)
+          box-shadow: 0px 14px 24px 2px $red
 
-	footer
-		position: absolute
-		bottom: 0
-		height: 100px
-		left: 10%
-		width: 80%
-		z-index: 90
-		.border_top
-			border-top: 2px solid rgba($silver, 0.4)
-			width: 100%
-			height: 100%
-		.logo
-			position: relative
-			right: 5%
-			img
-				position: relative
-				margin-top: 29px
-			.circle
-				position: absolute
-				top: 64px
-				left: 22px
-				border: 4px solid $main_color
-				border-radius: 50%
-				box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
-			a
-				position: relative
-				text-decoration: none
-				color: black
-				display: block
-				left: 62px
-				bottom: 40px
-				span
-					color: $blue_txt
-		.social
-			color: $silvet_head_txt
-			font-size: 16px
-			position: relative
-			left: 20%
-			font-weight: 600
-			margin-top: 60px
-			i
-				padding: 0 30px
-			a
-				text-decoration: none
-				color: $silvet_head_txt
-		.link_email
-			margin-top: 60px
-			color: $silver
-			font-size: 16px
-			font-weight: 600
-			position: relative
-			text-align: right
-			left: 2%
-			span
-				padding: 0 4%
-			a
-				text-decoration: none
-				color: $silver
-
-
-
-
+  footer
+    position: absolute
+    bottom: 0
+    height: 100px
+    left: 10%
+    width: 80%
+    z-index: 90
+    .border_top
+      border-top: 2px solid rgba($silver, 0.4)
+      width: 100%
+      height: 100%
+    .logo
+      position: relative
+      right: 5%
+      img
+        position: relative
+        margin-top: 29px
+      .circle
+        position: absolute
+        top: 64px
+        left: 22px
+        border: 4px solid $main_color
+        border-radius: 50%
+        box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+      a
+        position: relative
+        text-decoration: none
+        color: black
+        display: block
+        left: 62px
+        bottom: 40px
+        span
+          color: $blue_txt
+    .social
+      color: $silvet_head_txt
+      font-size: 16px
+      position: relative
+      left: 20%
+      font-weight: 600
+      margin-top: 60px
+      i
+        padding: 0 30px
+      a
+        text-decoration: none
+        color: $silvet_head_txt
+    .link_email
+      margin-top: 60px
+      color: $silver
+      font-size: 16px
+      font-weight: 600
+      position: relative
+      text-align: right
+      left: 2%
+      span
+        padding: 0 4%
+      a
+        text-decoration: none
+        color: $silver
 
 form
-	position: relative
-	z-index: 99
-	input
-		border: 1px solid $silver_txt
-		border-radius: 50px
-		font-size: 16px
-		padding: 10px 29px
-		width: 60%
-		height: 60px
-		outline: none
-		position: absolute
-		font-style: italic
-		z-index: 100
-		left: 6.5vw
-		margin-left: 0px
-		bottom: -20px
-		z-index: 101
-		box-shadow: 0px 2px 5px 0px rgba(0,0,0, 0.3)
-	.shape
-		position: absolute
-		width: 19px
-		height: 19px
-		background-image: url('../img/Shape.png')
-		background-size: contain
-		background-repeat: no-repeat
-		bottom: 0px
-		z-index: 102
-		right: 7.6vw
-
+  position: relative
+  z-index: 99
+  input
+    border: 1px solid $silver_txt
+    border-radius: 50px
+    font-size: 16px
+    padding: 10px 29px
+    width: 60%
+    height: 60px
+    outline: none
+    position: absolute
+    font-style: italic
+    z-index: 100
+    left: 6.5vw
+    margin-left: 0px
+    bottom: -20px
+    z-index: 101
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3)
+  .shape
+    position: absolute
+    width: 19px
+    height: 19px
+    background-image: url('../img/Shape.png')
+    background-size: contain
+    background-repeat: no-repeat
+    bottom: 0px
+    z-index: 102
+    right: 7.6vw
 
 .text_advance
-	width: 50%
-	margin: 66px auto
-	color: $black_txt_adv
-	h3
-		font-size: 18px
-		font-weight: 600
-		margin-bottom: 9%
-	p
-		font-size: 14px
-		line-height: 24px
-	.logo
-		position: relative
-		display: inline-block
-		img
-			position: relative
-			left: -11px
-			top: -69px
-			margin-bottom: -43px
-		.circle
-			position: absolute
-			top: -34.4px
-			left: 11px
-			width: 4px
-			border: 4px solid $main_color
-			border-radius: 50%
-			box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
-		
+  width: 50%
+  margin: 66px auto
+  color: $black_txt_adv
+  h3
+    font-size: 18px
+    font-weight: 600
+    margin-bottom: 9%
+  p
+    font-size: 14px
+    line-height: 24px
+  .logo
+    position: relative
+    display: inline-block
+    img
+      position: relative
+      left: -11px
+      top: -69px
+      margin-bottom: -43px
+    .circle
+      position: absolute
+      top: -34.4px
+      left: 11px
+      width: 4px
+      border: 4px solid $main_color
+      border-radius: 50%
+      box-shadow: 0 0 11px 0 rgba($main_color, 0.8)
+
 /*my style*/
 
 .dn
-	display: none
+  display: none
 
 .advance
-	.back_link_wave
-		position: relative
-		bottom: 0
-		.link 
-			a
-				position: relative
-				z-index: -40
-			.style8, .style4, .style7
-				display: none !important
-			.slide
-				display: block
-.ab
-	width: 100%
-	position: absolute
-	bottom: 214px
-	z-index: -1
+  .back_link_wave
+    position: relative
+    bottom: 0
+    .link
+      a
+        position: relative
+        z-index: -40
+      .style8, .style4, .style7
+        display: none !important
+      .slide
+        display: block
 
-		
+.ab
+  width: 100%
+  position: absolute
+  bottom: 214px
+  z-index: -1
+
 a.slide.slick-slide.slick-active.style3
-	opacity: 0 !important
-	transition: 0s
+  opacity: 0 !important
+  transition: 0s
